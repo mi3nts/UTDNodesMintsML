@@ -1,0 +1,43 @@
+function mintsData = PPDS42NSDuoRead(filename,timeSpan)
+    
+    %% Input handling
+
+    % If dataLines is not specified, define defaults
+    dataLines = [2, Inf];
+
+    %% Setup the Import Options and import the data
+    opts = delimitedTextImportOptions("NumVariables", 9);
+
+    % Specify range and delimiter
+    opts.DataLines = [1, Inf];
+    opts.Delimiter = ",";
+
+    % Specify column names and types
+    opts.VariableNames = ["dateTime", "Var2", "Var3", "Var4", "Var5", "Var6", "Var7", "Var8", "Var9"];
+    opts.SelectedVariableNames = "dateTime";
+    opts.VariableTypes = ["datetime", "string", "string", "string", "string", "string", "string", "string", "string"];
+
+    % Specify file level properties
+    opts.ExtraColumnsRule = "ignore";
+    opts.EmptyLineRule = "read";
+
+    % Specify variable properties
+    opts = setvaropts(opts, ["Var2", "Var3", "Var4", "Var5", "Var6", "Var7", "Var8", "Var9"], "WhitespaceRule", "preserve");
+    opts = setvaropts(opts, ["Var2", "Var3", "Var4", "Var5", "Var6", "Var7", "Var8", "Var9"], "EmptyFieldRule", "auto");
+    opts = setvaropts(opts, "dateTime", "InputFormat", "yyyy-MM-dd HH:mm:ss.SSS");
+
+
+    
+    %% Import the data
+    mintsData = readtable(filename, opts);
+    
+    mintsData   =  retime(table2timetable(mintsData),'regular',@nanmean,'TimeStep',timeSpan);
+    
+    mintsData.dateTime.TimeZone = "utc";
+    
+     %% Clear temporary variables
+    clear opts
+    
+    
+
+end
