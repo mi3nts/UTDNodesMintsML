@@ -1,4 +1,4 @@
-function mintsData = PPDS42NSDuoRead(filename,timeSpan)
+function mintsData = PPD42NSDuoRead(filename,timeSpan)
     
     %% Input handling
 

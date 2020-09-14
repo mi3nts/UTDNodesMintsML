@@ -1,5 +1,5 @@
 
-function mintsData = GPRMCRead(fileName,timeSpan)
+function mintsData = GPRMCReadUtd(fileName,timeSpan)
     %% Import data from text file
     % Script for importing data from the following text file:
     %
@@ -48,12 +48,11 @@ function mintsData = GPRMCRead(fileName,timeSpan)
     mintsData.dateTime.TimeZone = "utc";
 
     mintsData   =  rmmissing(retime(table2timetable(mintsData),'regular',@nanmean,'TimeStep',timeSpan));
+
+%     mintsData.altitude(:) =  nan;
     
-    % 
-    mintsData.altitude(:) =  nan;
-    
-    fileParts = strsplit(fileName,'_');
-    mintsData.sensor(:) =fileParts(end-3);
+%     fileParts = strsplit(fileName,'_');
+%     mintsData.sensor(:) =fileParts(end-3);
 
     
  %% Clear temporary variables

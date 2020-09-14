@@ -44,8 +44,8 @@ function mintsData = GPGGARead(fileName,timeSpan)
     mintsData.dateTime.TimeZone = "utc";
 
     mintsData           = rmmissing(retime(table2timetable(mintsData),'regular',@nanmean,'TimeStep',timeSpan));
-    fileParts = strsplit(fileName,'_');
-    mintsData.sensor(:) =fileParts(end-3);
+%     fileParts = strsplit(fileName,'_');
+%     mintsData.sensor(:) =fileParts(end-3);
 
    %% Clear temporary variables
     clear opts
