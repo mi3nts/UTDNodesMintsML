@@ -13,15 +13,14 @@ mintsDefinitions  = ReadYaml('../mintsDefinitions.yaml')
 nodeIDs     = mintsDefinitions.nodeIDs;
 timeSpan    = seconds(mintsDefinitions.timeSpan);
 
-
 dataFolder  = mintsDefinitions.dataFolder;
 rawFolder          =  dataFolder + "/raw";
-rawDotMatsFolder   =  dataFolder + "/rawMats";
+rawMatsFolder   =  dataFolder + "/rawMats";
 
 display(newline)
 display("Data Folder Located @:"+ dataFolder)
 display("Raw Data Located @: "+ dataFolder)
-display("Raw DotMat Data Located @ :"+ rawDotMatsFolder)
+display("Raw DotMat Data Located @ :"+ rawMatsFolder)
 
 display(newline)
 
@@ -48,12 +47,12 @@ for nodeIndex = 1:length(nodeIDs)
     
     mintsDataAS7262       = sensorRead(AS7262Files,@AS7262Read,timeSpan);
     mintsDataBME280       = sensorRead(BME280Files,@BME280Read,timeSpan);
-    mintsDataGPSGPGGA2    = sensorRead(GPSGPGGA2Files,@GPGGARead,timeSpan);
-    mintsDataGPSGPRMC2    = sensorRead(GPSGPRMC2Files,@GPGRMCRead,timeSpan);
+    mintsDataGPSGPGGA2    = sensorRead(GPSGPGGA2Files,@GPGGAUtdRead,timeSpan);
+    mintsDataGPSGPRMC2    = sensorRead(GPSGPRMC2Files,@GPGRMCUtdRead,timeSpan);
     mintsDataMGS001       = sensorRead(MGS001Files,@MGS001Read,timeSpan);
     mintsDataOPCN2        = sensorRead(OPCN2Files,@OPCN2Read,timeSpan);
     mintsDataOPCN3        = sensorRead(OPCN3Files,@OPCN3Read,timeSpan);
-    mintsDataPPD42NSDuo  = sensorRead(PPD42NSDuoFiles,@PPD42NSDuoRead,timeSpan);
+    mintsDataPPD42NSDuo   = sensorRead(PPD42NSDuoFiles,@PPD42NSDuoRead,timeSpan);
     mintsDataSCD30        = sensorRead(SCD30Files,@SCD30Read,timeSpan);
     mintsDataSKYCAM_002   = sensorRead(SKYCAM_002Files,@SKYCAM_002Read,timeSpan);
     mintsDataTSL2591      = sensorRead(TSL2591Files,@TSL2591Read,timeSpan);
@@ -69,8 +68,7 @@ for nodeIndex = 1:length(nodeIDs)
     for stackIndex = 1: length(inputStack)
          concatStr = strcat(concatStr,"mintsData",inputStack{stackIndex},",");
     end
-    concatStr  = strcat(concatStr,"'union');"); 
-    display(concatStr)
+    concatStr  = strcat(concatStr,"'union');");   
     eval(concatStr)
          
     if(height(mintsDataAll) >0)
@@ -84,7 +82,6 @@ for nodeIndex = 1:length(nodeIDs)
         
     clearvars -except dataFolder rawFolder rawMatsFolder ...
                       nodeIDs timeSpan rawFolder ...
-                      nodeIndex
-        
+                      nodeIndex mintsDefinitions
        
     end    
