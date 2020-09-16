@@ -6,6 +6,7 @@ close all
 poolobj = gcp('nocreate');
 delete(poolobj);
 
+
 display(newline)
 display("---------------------MINTS---------------------")
 
@@ -23,7 +24,9 @@ pValid             = mintsDefinitions.pValid;
 airmarID           = mintsDefinitions.airmarID;
 instruments        = mintsDefinitions.instruments;
 units               = mintsDefinitions.units;
+poolWorkers         = mintsDefinitions.poolWorkers;
 
+parpool(poolWorkers)
 % mintsInputsStack1    = mintsDefinitions.mintsInputsStack1;
 % mintsInputsStack2    = mintsDefinitions.mintsInputsStack2;
 % mintsInputsStack3    = mintsDefinitions.mintsInputsStack3;
@@ -369,6 +372,8 @@ for nodeIndex = 1:length(nodeIDs)
     
 end   
 
+poolobj = gcp('nocreate');
+delete(poolobj);
 
 function [In_Train,Out_Train,...
             In_Validation,Out_Validation,...
