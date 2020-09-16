@@ -13,14 +13,14 @@ nodeIDs     = mintsDefinitions.nodeIDs;
 timeSpan    = seconds(mintsDefinitions.timeSpan);
 
 
-dataFolder  = mintsDefinitions.dataFolder;
-rawFolder          =  dataFolder + "/raw";
-rawDotMatsFolder   =  dataFolder + "/rawMats";
+dataFolder      = mintsDefinitions.dataFolder;
+rawFolder       =  dataFolder + "/raw";
+rawMatsFolder   =  dataFolder + "/rawMats";
 
 display(newline)
 display("Data Folder Located @:"+ dataFolder)
 display("Raw Data Located @: "+ dataFolder)
-display("Raw DotMat Data Located @ :"+ rawDotMatsFolder)
+display("Raw DotMat Data Located @ :"+ rawMatsFolder)
 
 display(newline)
 
@@ -82,7 +82,7 @@ for nodeIndex = 1:length(nodeIDs)
         
     clearvars -except dataFolder rawFolder rawMatsFolder ...
                       nodeIDs timeSpan rawFolder ...
-                      nodeIndex
+                      nodeIndex mintsDefinitions
         
        
     end    
