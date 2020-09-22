@@ -1,4 +1,4 @@
-function [] = drawScatterPlotMintsCombinedLimitsUTD(...
+function results = drawScatterPlotMintsCombinedLimitsUTD(...
                                     dataXTrain,...
                                     dataYTrain,...
                                     dataXValid,...
@@ -162,5 +162,13 @@ function [] = drawScatterPlotMintsCombinedLimitsUTD(...
    
     Fig_name =strrep(saveNameFig,'.png','.fig');
     saveas(figure_1,char(Fig_name));
+    results= struct;
+    results.rmseTrain       = rmseTrain;
+    results.rSquaredTrain   = rSquaredTrain;
+    results.rmseValid       = rmseValid;
+    results.rSquaredValid   = rSquaredValid;
+    results.rmse            = rmse;
+    results.rSquared        = rSquared;
 
+    
 end
