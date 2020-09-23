@@ -2,7 +2,7 @@
 function [] = utdNodesCalibrator(nodeIndex)
 
 clc
-clear all 
+clearvars -except nodeIndex 
 close all 
 
 poolobj = gcp('nocreate');
