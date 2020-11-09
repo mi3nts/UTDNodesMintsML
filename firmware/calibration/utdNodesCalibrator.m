@@ -163,7 +163,10 @@ results=  struct;
        display(strcat("No Data Exists for Node: ",nodeID)); 
        return  
     end
-    
+    %% Removing Extreme Outliers 
+    mintsDataAll(mintsDataAll.pm1>500)  = [] ; 
+
+
     %% Cropping GPS Coordinates 
     utdMintsAll = GPSCropCoordinatesUTD(mintsDataAll,32.992179, -96.757777,0.0015,0.0015);
     
