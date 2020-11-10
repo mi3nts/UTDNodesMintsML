@@ -301,8 +301,8 @@ function [] = utdNodesOptSolo2(nodeIndex)
                resultsCurrent.target             = target;
                resultsCurrent.binsPerColumn      = binsPerColumn;
                resultsCurrent.numberPerBin       = numberPerBin;
-               resultsCurrent.trainRows          = length(trainingTT);
-               resultsCurrent.validRows          = length(validatingTT);
+               resultsCurrent.trainRows          = height(trainingTT);
+               resultsCurrent.validRows          = height(validatingTT);
                
                
                resultsCurrent.versionStrMdl = versionStrMdl;
