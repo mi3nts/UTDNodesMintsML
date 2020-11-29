@@ -1,0 +1,1565 @@
+Running calibration scripts for UTD Node: 10
+Running on host: compute-1-1-23
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2020 The MathWorks, Inc.
+              R2020a Update 1 (9.8.0.1359463) 64-bit (glnxa64)
+                               April 9, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+
+    "---------------------MINTS---------------------"
+
+22-Nov-2020 18:39:23
+
+mintsDefinitions = 
+
+  struct with fields:
+
+                dataFolder: '/home/lhw150030/mintsData'
+               poolWorkers: 16
+                  timeSpan: 30
+                  airmarID: '001e0610c0e4'
+             binsPerColumn: 500
+              numberPerBin: 2
+                    pValid: 0.1500
+                   nodeIDs: {1x16 cell}
+               inputStack1: {1x9 cell}
+         mintsInputsStack1: {1x35 cell}
+    mintsInputLabelsStack1: {1x35 cell}
+               inputStack2: {1x11 cell}
+         mintsInputsStack2: {1x35 cell}
+    mintsInputLabelsStack2: {1x35 cell}
+               inputStack3: {1x10 cell}
+         mintsInputsStack3: {1x38 cell}
+    mintsInputLabelsStack3: {1x38 cell}
+              mintsTargets: {1x10 cell}
+         mintsTargetLabels: {1x10 cell}
+                     units: {1x10 cell}
+               instruments: {1x10 cell}
+
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 16).
+
+ans = 
+
+ ProcessPool with properties: 
+
+            Connected: true
+           NumWorkers: 16
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+
+airmarFolder = 
+
+    "/home/lhw150030/mintsData/referenceMats/airmar"
+
+UTD_Rsl_All_2020_11_22_18_39_50
+
+
+UTD_Rsl_All_Daily
+
+
+Super Learner All Inputs
+
+
+
+
+    "Data Folder Located @:/home/lhw150030/mintsData"
+
+    "Raw Data Located @: /home/lhw150030/mintsData"
+
+    "Raw DotMat Data Located @ :/home/lhw150030/mintsData/rawMats"
+
+    "UTD Nodes DotMat Data Located @ :/home/lhw150030/mintsData/rawMats/UTDNodes"
+
+    "Reference Data Located @: /home/lhw150030/mintsData/reference"
+
+    "Reference DotMat Data Located @ :/home/lhw150030/mintsData/referenceMats"
+
+    "Palas Raw Data Located @ :/home/lhw150030/mintsData/reference/palasStream"
+
+    "Palas DotMat Data Located @ :/home/lhw150030/mintsData/referenceMats/palas"
+
+    "Car GPS Files Located @ :/home/lhw150030/mintsData/referenceMats/carMintsGPS"
+
+    "Loading Palas Files"
+
+    "Loading GPS Files"
+
+    "Loading Airmar Files"
+
+    "Aligning GPS data with Palas Data"
+
+    "WSTC Palas Data"
+
+    "Palas With Airmar"
+
+    "Analysis"
+
+    "Save merged data for calibration: 001e063239e3"
+
+
+
+    "Creating Training Data Sets for Node: 001e063239e3"
+
+
+
+    "Gainin Data set for Node 001e063239e3 with target output pm1_palas @ 22-Nov-2020 18:39:59"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 283 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 39 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 487 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 125 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 108 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 59 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 22 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 13 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 149 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 208 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 172 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 128 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        8325
+
+
+ans =
+
+        1469
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       2 | Best   |      3.2965 |      2.7289 |      3.2965 |      19.649 |            8 |     0.058293 |
+|    2 |       2 | Accept |      22.508 |      2.7907 |      3.2965 |      19.649 |           74 |    0.0052716 |
+|    3 |       2 | Accept |      6.7468 |      2.9607 |      3.2965 |      19.649 |           82 |    0.0014904 |
+|    4 |       2 | Accept |      7.8459 |      2.8805 |      3.2965 |      19.649 |           65 |      0.23377 |
+|    5 |       2 | Accept |      30.913 |      2.7811 |      3.2965 |      19.649 |           73 |     0.053334 |
+|    6 |       2 | Accept |      15.451 |       2.795 |      3.2965 |      19.649 |           82 |      0.85231 |
+|    7 |       2 | Accept |      14.979 |      2.8022 |      3.2965 |      19.649 |           71 |      0.85804 |
+|    8 |       2 | Accept |      71.072 |      2.8198 |      3.2965 |      19.649 |           94 |    0.0012596 |
+|    9 |       2 | Accept |      15.077 |      2.7265 |      3.2965 |      19.649 |           23 |      0.21397 |
+|   10 |       2 | Accept |      24.147 |      2.7145 |      3.2965 |      19.649 |           36 |     0.092547 |
+|   11 |       2 | Accept |      13.925 |      2.7583 |      3.2965 |      19.649 |           74 |      0.33024 |
+|   12 |       2 | Accept |      10.719 |      2.7873 |      3.2965 |      19.649 |           91 |     0.002381 |
+|   13 |       2 | Accept |       21.28 |      2.7462 |      3.2965 |      19.649 |           71 |      0.06824 |
+|   14 |       2 | Accept |      23.056 |      2.7913 |      3.2965 |      19.649 |           98 |      0.08458 |
+|   15 |       2 | Accept |      13.714 |      2.7577 |      3.2965 |      19.649 |           97 |     0.020166 |
+|   16 |      16 | Best   |      1.8723 |      3.4681 |      1.8723 |      18.538 |           25 |    0.0015669 |
+|   17 |       2 | Accept |       9.119 |     0.75075 |      1.8723 |      15.948 |            5 |      0.99526 |
+|   18 |       2 | Accept |      16.454 |      0.6992 |      1.8723 |      15.948 |           70 |      0.58183 |
+|   19 |       2 | Accept |      6.6647 |     0.76545 |      1.8723 |      15.948 |          100 |      0.34064 |
+|   20 |       2 | Accept |      9.3584 |     0.64907 |      1.8723 |      15.948 |           70 |      0.11618 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      13.868 |     0.80491 |      1.8723 |      15.948 |           58 |     0.063552 |
+|   22 |       2 | Accept |      23.314 |     0.78337 |      1.8723 |      15.948 |           76 |     0.062067 |
+|   23 |       2 | Accept |      16.722 |     0.63307 |      1.8723 |      15.948 |           91 |      0.21475 |
+|   24 |       2 | Accept |      9.3729 |     0.56745 |      1.8723 |      15.948 |           39 |      0.70847 |
+|   25 |       2 | Accept |      20.387 |      0.6299 |      1.8723 |      15.948 |           68 |    0.0018091 |
+|   26 |       2 | Accept |      6.4945 |     0.62363 |      1.8723 |      15.948 |           45 |     0.010507 |
+|   27 |       2 | Accept |       7.776 |     0.68423 |      1.8723 |      15.948 |           65 |     0.046651 |
+|   28 |       2 | Accept |      29.356 |     0.60359 |      1.8723 |      15.948 |           53 |    0.0079758 |
+|   29 |       2 | Accept |       11.53 |      0.5511 |      1.8723 |      15.948 |           26 |    0.0037392 |
+|   30 |       2 | Accept |      8.3409 |     0.66641 |      1.8723 |      15.948 |           65 |     0.075962 |
+|   31 |       2 | Accept |      9.0327 |     0.65852 |      1.8723 |      15.948 |           90 |     0.079892 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 31
+Total elapsed time: 15.5779 seconds.
+Total objective function evaluation time: 55.3794
+
+Best observed feasible point:
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          25           0.0015669
+
+Observed objective function value = 1.8723
+Estimated objective function value = 15.9482
+Function evaluation time = 3.4681
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          39           0.70847
+
+Estimated objective function value = 15.9481
+Estimated function evaluation time = 1.4059
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          39           0.70847
+
+The identifier was:
+MATLAB:license:checkouterrorThere was an error! The message was:
+License checkout failed.
+License Manager Error -92
+Verify that the HostID of the license file matches this machine, and that the HostID on the SERVER line matches the HostID of the license file.
+
+Troubleshoot this issue by visiting: 
+https://www.mathworks.com/support/lme/R2020a/92
+
+Diagnostic Information:
+Feature: Neural_Network_Toolbox 
+License path: /home/lhw150030/.matlab/R2020a_licenses:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/license.dat:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/network.lic 
+Licensing error: -92,147.
+
+    "Gainin Data set for Node 001e063239e3 with target output pm2_5_palas @ 22-Nov-2020 18:40:40"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 283 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 39 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 487 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 125 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 108 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 59 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 22 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 13 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 149 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 208 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 172 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 128 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        8089
+
+
+ans =
+
+        1427
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |      16 | Best   |      17.355 |     0.27117 |      17.355 |      17.355 |           37 |     0.032236 |
+|    2 |       2 | Accept |      2.2397 |     0.78703 |       2.109 |      15.859 |            7 |    0.0023047 |
+|    3 |       2 | Accept |      26.798 |     0.68881 |       2.109 |      15.859 |          100 |      0.10115 |
+|    4 |       2 | Accept |      14.012 |     0.68046 |       2.109 |      15.859 |           66 |    0.0014675 |
+|    5 |       2 | Accept |       10.44 |     0.64988 |       2.109 |      15.859 |           52 |     0.057216 |
+|    6 |       2 | Accept |      7.6305 |     0.66623 |       2.109 |      15.859 |           71 |      0.07288 |
+|    7 |       2 | Accept |      54.184 |     0.64321 |       2.109 |      15.859 |           84 |     0.062508 |
+|    8 |       2 | Accept |      10.094 |     0.63996 |       2.109 |      15.859 |           85 |      0.34641 |
+|    9 |       2 | Accept |      28.596 |     0.61783 |       2.109 |      15.859 |           21 |    0.0086956 |
+|   10 |       2 | Accept |      13.712 |     0.65662 |       2.109 |      15.859 |           67 |     0.018544 |
+|   11 |       2 | Accept |      5.2146 |     0.61303 |       2.109 |      15.859 |           14 |     0.054051 |
+|   12 |       2 | Best   |       2.109 |       1.257 |       2.109 |      15.859 |           15 |    0.0012442 |
+|   13 |       2 | Accept |      19.331 |     0.70085 |       2.109 |      15.859 |           94 |      0.48411 |
+|   14 |       2 | Accept |      8.0799 |     0.63345 |       2.109 |      15.859 |           24 |      0.75751 |
+|   15 |       2 | Accept |      10.544 |     0.66166 |       2.109 |      15.859 |           53 |      0.48543 |
+|   16 |       2 | Accept |      23.403 |     0.55294 |       2.109 |      15.859 |           23 |      0.12122 |
+|   17 |      16 | Accept |      22.836 |     0.43023 |       2.109 |      16.269 |           43 |    0.0031029 |
+|   18 |       2 | Accept |      7.4685 |     0.14238 |       2.109 |       10.71 |            5 |      0.55423 |
+|   19 |       2 | Accept |      6.1564 |     0.24381 |       2.109 |       10.71 |           24 |     0.043404 |
+|   20 |       2 | Accept |      13.558 |     0.34105 |       2.109 |       10.71 |           88 |      0.31431 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      30.115 |     0.28775 |       2.109 |       10.71 |           46 |       0.3518 |
+|   22 |       2 | Accept |      3.9626 |     0.22542 |       2.109 |       10.71 |           11 |      0.13571 |
+|   23 |       2 | Accept |      20.316 |     0.36195 |       2.109 |       10.71 |           62 |    0.0052665 |
+|   24 |       2 | Accept |       41.77 |     0.32075 |       2.109 |       10.71 |           82 |     0.027174 |
+|   25 |       2 | Accept |      12.857 |     0.34832 |       2.109 |       10.71 |           73 |      0.82369 |
+|   26 |       2 | Accept |      16.507 |     0.40174 |       2.109 |       10.71 |           85 |     0.019621 |
+|   27 |       2 | Accept |      34.436 |     0.30175 |       2.109 |       10.71 |           49 |    0.0084601 |
+|   28 |       2 | Accept |      5.9263 |     0.29454 |       2.109 |       10.71 |           45 |    0.0074604 |
+|   29 |       2 | Accept |      7.0091 |     0.34194 |       2.109 |       10.71 |           59 |      0.11188 |
+|   30 |       2 | Accept |      6.5027 |     0.27685 |       2.109 |       10.71 |           31 |    0.0011255 |
+|   31 |       2 | Accept |      19.157 |     0.25088 |       2.109 |       10.71 |           24 |     0.012741 |
+|   32 |       2 | Accept |      17.321 |     0.41583 |       2.109 |       10.71 |           89 |      0.39593 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 32
+Total elapsed time: 6.122 seconds.
+Total objective function evaluation time: 15.7053
+
+Best observed feasible point:
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          15           0.0012442
+
+Observed objective function value = 2.109
+Estimated objective function value = 11.3362
+Function evaluation time = 1.257
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          14           0.054051
+
+Estimated objective function value = 10.7096
+Estimated function evaluation time = 0.61302
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          14           0.054051
+
+The identifier was:
+MATLAB:license:checkouterrorThere was an error! The message was:
+License checkout failed.
+License Manager Error -92
+Verify that the HostID of the license file matches this machine, and that the HostID on the SERVER line matches the HostID of the license file.
+
+Troubleshoot this issue by visiting: 
+https://www.mathworks.com/support/lme/R2020a/92
+
+Diagnostic Information:
+Feature: Neural_Network_Toolbox 
+License path: /home/lhw150030/.matlab/R2020a_licenses:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/license.dat:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/network.lic 
+Licensing error: -92,147.
+
+    "Gainin Data set for Node 001e063239e3 with target output pm4_palas @ 22-Nov-2020 18:41:11"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 283 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 39 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 487 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 125 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 108 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 59 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 22 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 13 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 149 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 208 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 172 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 128 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        7860
+
+
+ans =
+
+        1387
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |      16 | Best   |      6.2172 |     0.16258 |      6.2172 |      6.2172 |           16 |     0.011551 |
+|    2 |       2 | Accept |      24.076 |     0.58203 |      6.2172 |      6.2186 |           99 |      0.01037 |
+|    3 |       2 | Accept |      37.979 |     0.53902 |      6.2172 |      6.2186 |           57 |    0.0018703 |
+|    4 |       2 | Accept |      16.194 |     0.43219 |      6.2172 |      6.2186 |           15 |      0.70803 |
+|    5 |       2 | Accept |      37.464 |     0.49056 |      6.2172 |      6.2186 |           35 |      0.10451 |
+|    6 |       2 | Accept |      11.823 |     0.58711 |      6.2172 |      6.2186 |           70 |      0.27745 |
+|    7 |       2 | Accept |      38.644 |     0.58472 |      6.2172 |      6.2186 |           54 |    0.0025876 |
+|    8 |       2 | Accept |      9.3016 |     0.52712 |      6.2172 |      6.2186 |           13 |    0.0023182 |
+|    9 |       2 | Accept |      58.275 |     0.49803 |      6.2172 |      6.2186 |           64 |    0.0011343 |
+|   10 |       2 | Accept |      32.183 |     0.52304 |      6.2172 |      6.2186 |           36 |     0.066288 |
+|   11 |       2 | Accept |      8.1391 |     0.50517 |      6.2172 |      6.2186 |           39 |    0.0029303 |
+|   12 |       2 | Accept |      12.415 |     0.45567 |      6.2172 |      6.2186 |            7 |     0.012048 |
+|   13 |       2 | Accept |      24.835 |     0.48863 |      6.2172 |      6.2186 |           32 |      0.41368 |
+|   14 |       2 | Accept |      17.008 |     0.63066 |      6.2172 |      6.2186 |           65 |     0.032863 |
+|   15 |       2 | Accept |      21.451 |     0.62679 |      6.2172 |      6.2186 |           81 |     0.038763 |
+|   16 |       2 | Accept |      9.2879 |      0.6404 |      6.2172 |      6.2186 |           45 |     0.047044 |
+|   17 |      16 | Accept |      17.237 |     0.17239 |      6.2172 |       6.219 |           50 |     0.064964 |
+|   18 |       2 | Accept |      12.994 |     0.19846 |      6.2172 |      11.034 |           13 |    0.0090084 |
+|   19 |       2 | Accept |      28.296 |      0.2508 |      6.2172 |      11.034 |           62 |    0.0055054 |
+|   20 |       2 | Accept |      10.054 |     0.15817 |      6.2172 |      11.034 |           16 |      0.16105 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      22.438 |     0.29211 |      6.2172 |      11.034 |           89 |     0.011108 |
+|   22 |       2 | Accept |      12.493 |     0.21913 |      6.2172 |      11.034 |           10 |     0.055464 |
+|   23 |       2 | Accept |      9.2501 |     0.16798 |      6.2172 |      11.034 |           19 |     0.043018 |
+|   24 |       2 | Accept |      29.103 |     0.26676 |      6.2172 |      11.034 |           49 |      0.26813 |
+|   25 |       2 | Accept |      61.635 |     0.29738 |      6.2172 |      11.034 |           58 |      0.38371 |
+|   26 |       2 | Accept |       8.161 |     0.16875 |      6.2172 |      11.034 |           11 |    0.0026796 |
+|   27 |       2 | Accept |      29.762 |     0.29097 |      6.2172 |      11.034 |           77 |    0.0012404 |
+|   28 |       2 | Accept |      24.202 |     0.20035 |      6.2172 |      11.034 |            9 |      0.73379 |
+|   29 |       2 | Accept |      7.5587 |     0.22362 |      6.2172 |      11.034 |           37 |     0.011346 |
+|   30 |       2 | Accept |      28.955 |     0.22042 |      6.2172 |      11.034 |           44 |    0.0033415 |
+|   31 |       2 | Accept |      22.052 |      0.2323 |      6.2172 |      11.034 |           59 |      0.67424 |
+|   32 |       2 | Accept |      10.652 |     0.26598 |      6.2172 |      11.034 |           75 |     0.034234 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 32
+Total elapsed time: 4.7999 seconds.
+Total objective function evaluation time: 11.8993
+
+Best observed feasible point:
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          16           0.011551
+
+Observed objective function value = 6.2172
+Estimated objective function value = 10.7092
+Function evaluation time = 0.16258
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          13           0.0090084
+
+Estimated objective function value = 11.0337
+Estimated function evaluation time = 0.28069
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          13           0.0090084
+
+The identifier was:
+MATLAB:license:checkouterrorThere was an error! The message was:
+License checkout failed.
+License Manager Error -92
+Verify that the HostID of the license file matches this machine, and that the HostID on the SERVER line matches the HostID of the license file.
+
+Troubleshoot this issue by visiting: 
+https://www.mathworks.com/support/lme/R2020a/92
+
+Diagnostic Information:
+Feature: Neural_Network_Toolbox 
+License path: /home/lhw150030/.matlab/R2020a_licenses:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/license.dat:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/network.lic 
+Licensing error: -92,147.
+
+    "Gainin Data set for Node 001e063239e3 with target output pm10_palas @ 22-Nov-2020 18:41:38"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 283 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 39 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 487 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 125 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 108 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 59 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 22 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 13 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 149 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 208 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 172 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 128 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        7038
+
+
+ans =
+
+        1242
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       1 | Best   |      15.837 |     0.20773 |      15.837 |       15.84 |           15 |     0.012348 |
+|    2 |       1 | Accept |      165.47 |      0.2359 |      15.837 |       15.84 |           66 |     0.014447 |
+|    3 |       1 | Accept |      79.347 |     0.28489 |      15.837 |       15.84 |           96 |    0.0010722 |
+|    4 |       1 | Accept |      68.857 |     0.26492 |      15.837 |       15.84 |           84 |       0.2988 |
+|    5 |       1 | Accept |      113.63 |     0.29034 |      15.837 |       15.84 |           61 |    0.0061883 |
+|    6 |       1 | Accept |      56.109 |     0.22309 |      15.837 |       15.84 |           12 |     0.026114 |
+|    7 |       1 | Accept |      42.369 |     0.26628 |      15.837 |       15.84 |           65 |      0.22131 |
+|    8 |       1 | Accept |      35.678 |     0.31443 |      15.837 |       15.84 |           89 |     0.010141 |
+|    9 |       1 | Accept |      117.29 |     0.23858 |      15.837 |       15.84 |           60 |      0.83937 |
+|   10 |       1 | Accept |      41.702 |     0.29147 |      15.837 |       15.84 |           79 |      0.16859 |
+|   11 |       1 | Accept |      21.416 |     0.29736 |      15.837 |       15.84 |           76 |     0.029887 |
+|   12 |       1 | Accept |      41.418 |      0.2096 |      15.837 |       15.84 |           31 |      0.08303 |
+|   13 |       1 | Accept |      18.959 |     0.22814 |      15.837 |       15.84 |            8 |     0.018049 |
+|   14 |       1 | Accept |       45.29 |     0.20327 |      15.837 |       15.84 |           30 |    0.0098719 |
+|   15 |       1 | Accept |      63.909 |     0.22686 |      15.837 |       15.84 |           22 |     0.050777 |
+|   16 |       1 | Accept |      33.533 |     0.23942 |      15.837 |       15.84 |           15 |      0.59849 |
+|   17 |      16 | Accept |      43.781 |     0.15286 |      15.837 |      26.977 |            8 |     0.011603 |
+|   18 |       2 | Accept |      95.075 |     0.22258 |      15.837 |      42.855 |           71 |     0.010675 |
+|   19 |       2 | Accept |      61.415 |     0.23271 |      15.837 |      42.855 |           92 |      0.17225 |
+|   20 |       2 | Accept |      82.924 |     0.22719 |      15.837 |      42.855 |           82 |      0.00502 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      97.006 |      0.2262 |      15.837 |      42.855 |           68 |    0.0013481 |
+|   22 |       2 | Accept |      27.713 |     0.26364 |      15.837 |      42.855 |           97 |      0.29754 |
+|   23 |       2 | Accept |      253.22 |     0.25777 |      15.837 |      42.855 |           81 |    0.0012732 |
+|   24 |       2 | Accept |      41.804 |     0.24918 |      15.837 |      42.855 |           96 |     0.067741 |
+|   25 |       2 | Accept |       73.24 |     0.23825 |      15.837 |      42.855 |           50 |     0.010334 |
+|   26 |       2 | Accept |       64.44 |     0.16268 |      15.837 |      42.855 |           24 |     0.053398 |
+|   27 |       2 | Accept |      45.238 |     0.18511 |      15.837 |      42.855 |           45 |      0.49863 |
+|   28 |       2 | Accept |       34.33 |     0.25449 |      15.837 |      42.855 |           85 |     0.014022 |
+|   29 |       2 | Accept |      216.08 |     0.19247 |      15.837 |      42.855 |           58 |     0.052621 |
+|   30 |       2 | Accept |      72.373 |      0.2007 |      15.837 |      42.855 |           62 |     0.054647 |
+|   31 |       2 | Accept |      90.108 |     0.21633 |      15.837 |      42.855 |           48 |    0.0028244 |
+|   32 |       2 | Accept |       58.35 |     0.49968 |      15.837 |      42.855 |           80 |     0.019151 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 32
+Total elapsed time: 4.442 seconds.
+Total objective function evaluation time: 7.8041
+
+Best observed feasible point:
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          15           0.012348
+
+Observed objective function value = 15.8371
+Estimated objective function value = 40.873
+Function evaluation time = 0.20773
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize       lr   
+    _______________    ________
+
+           8           0.018049
+
+Estimated objective function value = 42.8549
+Estimated function evaluation time = 0.20981
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize       lr   
+    _______________    ________
+
+           8           0.018049
+
+The identifier was:
+MATLAB:license:checkouterrorThere was an error! The message was:
+License checkout failed.
+License Manager Error -92
+Verify that the HostID of the license file matches this machine, and that the HostID on the SERVER line matches the HostID of the license file.
+
+Troubleshoot this issue by visiting: 
+https://www.mathworks.com/support/lme/R2020a/92
+
+Diagnostic Information:
+Feature: Neural_Network_Toolbox 
+License path: /home/lhw150030/.matlab/R2020a_licenses:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/license.dat:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/network.lic 
+Licensing error: -92,147.
+
+    "Gainin Data set for Node 001e063239e3 with target output pmTotal_palas @ 22-Nov-2020 18:42:04"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 283 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 39 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 487 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 125 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 108 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 59 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 22 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 13 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 149 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 208 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 172 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 128 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        6792
+
+
+ans =
+
+        1199
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       1 | Accept |      300.64 |     0.16877 |      43.643 |      186.72 |           30 |    0.0013156 |
+|    2 |       1 | Accept |      62.986 |     0.20722 |      43.643 |      186.72 |           34 |     0.029207 |
+|    3 |       1 | Accept |      233.52 |     0.20524 |      43.643 |      186.72 |           63 |      0.82504 |
+|    4 |       1 | Accept |      51.698 |     0.16028 |      43.643 |      186.72 |           19 |      0.59442 |
+|    5 |       1 | Accept |      178.53 |     0.24252 |      43.643 |      186.72 |           97 |     0.055165 |
+|    6 |       1 | Accept |      134.84 |     0.18397 |      43.643 |      186.72 |           42 |      0.85647 |
+|    7 |       1 | Best   |      43.643 |     0.20461 |      43.643 |      186.72 |            6 |    0.0023213 |
+|    8 |       1 | Accept |      276.11 |     0.15438 |      43.643 |      186.72 |           15 |      0.68549 |
+|    9 |       1 | Accept |      268.65 |     0.23444 |      43.643 |      186.72 |           86 |     0.001921 |
+|   10 |       1 | Accept |      195.92 |     0.17775 |      43.643 |      186.72 |           37 |     0.081049 |
+|   11 |       1 | Accept |      251.87 |     0.24602 |      43.643 |      186.72 |           96 |     0.063389 |
+|   12 |       1 | Accept |      243.46 |     0.21886 |      43.643 |      186.72 |           76 |     0.016188 |
+|   13 |       1 | Accept |      88.293 |      0.1875 |      43.643 |      186.72 |           42 |    0.0038039 |
+|   14 |       1 | Accept |      161.44 |     0.19845 |      43.643 |      186.72 |           52 |    0.0017921 |
+|   15 |       1 | Accept |      282.73 |     0.30141 |      43.643 |      186.72 |           97 |      0.21689 |
+|   16 |       1 | Accept |      213.32 |      0.2153 |      43.643 |      186.72 |           36 |    0.0038288 |
+|   17 |      16 | Best   |      31.712 |     0.13259 |      31.712 |      148.63 |            5 |    0.0010009 |
+|   18 |       1 | Accept |      52.777 |      0.2097 |      31.712 |      106.89 |           51 |     0.061691 |
+|   19 |       1 | Accept |      64.981 |      0.2081 |      31.712 |      106.89 |           42 |    0.0096116 |
+|   20 |       1 | Accept |      80.855 |     0.24881 |      31.712 |      106.89 |           58 |     0.010724 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       1 | Accept |      266.16 |     0.21958 |      31.712 |      106.89 |           68 |      0.39102 |
+|   22 |       1 | Accept |      85.066 |     0.17939 |      31.712 |      106.89 |           41 |        0.717 |
+|   23 |       1 | Accept |      270.67 |     0.23582 |      31.712 |      106.89 |           79 |     0.064697 |
+|   24 |       1 | Accept |      83.214 |      0.2559 |      31.712 |      106.89 |           87 |      0.11662 |
+|   25 |       1 | Accept |      261.36 |     0.27638 |      31.712 |      106.89 |           92 |     0.025539 |
+|   26 |       1 | Accept |      55.772 |     0.17869 |      31.712 |      106.89 |           23 |    0.0010678 |
+|   27 |       1 | Accept |       48.76 |     0.17404 |      31.712 |      106.89 |           26 |     0.002027 |
+|   28 |       1 | Accept |      79.567 |     0.24851 |      31.712 |      106.89 |           76 |     0.023214 |
+|   29 |       1 | Accept |      137.31 |     0.25153 |      31.712 |      106.89 |           94 |     0.071568 |
+|   30 |       1 | Accept |      65.602 |      0.1827 |      31.712 |      106.89 |           31 |     0.038799 |
+|   31 |       1 | Accept |      81.422 |     0.20767 |      31.712 |      106.89 |           64 |      0.46642 |
+|   32 |       1 | Accept |      58.585 |      0.1857 |      31.712 |      106.89 |           28 |    0.0023092 |
+|   33 |       1 | Accept |      43.377 |     0.11293 |      31.712 |      106.89 |            5 |      0.92554 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 33
+Total elapsed time: 3.8479 seconds.
+Total objective function evaluation time: 6.8147
+
+Best observed feasible point:
+    hiddenLayerSize       lr    
+    _______________    _________
+
+           5           0.0010009
+
+Observed objective function value = 31.7116
+Estimated objective function value = 101.8316
+Function evaluation time = 0.13259
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          19           0.59442
+
+Estimated objective function value = 106.8886
+Estimated function evaluation time = 0.15163
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          19           0.59442
+
+The identifier was:
+MATLAB:license:checkouterrorThere was an error! The message was:
+License checkout failed.
+License Manager Error -97
+License Manager cannot start. 
+Check that the ports specified in the license file are not already in use. 
+Restarting your machine may clear the ports.
+
+Troubleshoot this issue by visiting: 
+https://www.mathworks.com/support/lme/R2020a/97
+
+Diagnostic Information:
+Feature: Neural_Network_Toolbox 
+License path: /home/lhw150030/.matlab/R2020a_licenses:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/license.dat:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/network.lic 
+Licensing error: -97,121.
+
+    "Gainin Data set for Node 001e063239e3 with target output dCn_palas @ 22-Nov-2020 18:42:31"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 283 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 39 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 487 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 125 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 108 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 59 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 22 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 13 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 149 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 208 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 172 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 128 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        8111
+
+
+ans =
+
+        1431
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       2 | Accept |      456.09 |     0.22047 |      59.969 |      442.84 |           51 |     0.065138 |
+|    2 |       2 | Best   |      59.969 |     0.21096 |      59.969 |      442.84 |            6 |        0.602 |
+|    3 |       2 | Accept |       964.9 |     0.25791 |      59.969 |      442.84 |           82 |      0.61268 |
+|    4 |       2 | Accept |       168.2 |      0.2748 |      59.969 |      442.84 |           94 |     0.010261 |
+|    5 |       2 | Accept |      527.83 |     0.17484 |      59.969 |      442.84 |           25 |     0.022665 |
+|    6 |       2 | Accept |      1029.1 |     0.17973 |      59.969 |      442.84 |           27 |     0.003131 |
+|    7 |       2 | Accept |      200.05 |     0.18558 |      59.969 |      442.84 |           31 |      0.44282 |
+|    8 |       2 | Accept |      88.332 |     0.16649 |      59.969 |      442.84 |           17 |    0.0095368 |
+|    9 |       2 | Accept |      585.57 |     0.19962 |      59.969 |      442.84 |           29 |      0.11694 |
+|   10 |       2 | Accept |      527.41 |     0.25324 |      59.969 |      442.84 |           50 |     0.049104 |
+|   11 |       2 | Accept |      686.74 |     0.25103 |      59.969 |      442.84 |           85 |      0.16705 |
+|   12 |       2 | Accept |      617.14 |     0.22243 |      59.969 |      442.84 |           61 |     0.038434 |
+|   13 |       2 | Accept |       336.3 |     0.18407 |      59.969 |      442.84 |           33 |    0.0023875 |
+|   14 |       2 | Accept |      182.75 |     0.24791 |      59.969 |      442.84 |           47 |     0.025531 |
+|   15 |       2 | Accept |      212.43 |      0.1501 |      59.969 |      442.84 |           10 |      0.29288 |
+|   16 |      16 | Accept |      677.81 |     0.29339 |      59.969 |      457.53 |           97 |     0.008223 |
+|   17 |       1 | Accept |      173.17 |     0.14334 |      57.017 |      129.49 |            5 |      0.99949 |
+|   18 |       1 | Accept |      742.47 |     0.22109 |      57.017 |      129.49 |           71 |      0.14776 |
+|   19 |       1 | Accept |      432.22 |     0.19799 |      57.017 |      129.49 |           39 |     0.002423 |
+|   20 |       1 | Accept |      223.39 |     0.15167 |      57.017 |      129.49 |           14 |     0.030466 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       1 | Accept |      73.782 |     0.17236 |      57.017 |      129.49 |           15 |    0.0033154 |
+|   22 |       1 | Accept |      381.39 |      0.2249 |      57.017 |      129.49 |           63 |    0.0028849 |
+|   23 |       1 | Accept |      228.06 |     0.22874 |      57.017 |      129.49 |           70 |      0.18112 |
+|   24 |       1 | Accept |      225.58 |     0.20051 |      57.017 |      129.49 |           13 |       0.7393 |
+|   25 |       1 | Accept |      152.98 |     0.15005 |      57.017 |      129.49 |           14 |     0.023085 |
+|   26 |       1 | Accept |      144.03 |      0.2701 |      57.017 |      129.49 |           99 |     0.013832 |
+|   27 |       1 | Accept |      352.37 |     0.20959 |      57.017 |      129.49 |           29 |     0.020975 |
+|   28 |       1 | Accept |      85.703 |     0.18996 |      57.017 |      129.49 |           19 |     0.026602 |
+|   29 |       1 | Accept |      386.24 |      0.2851 |      57.017 |      129.49 |           95 |    0.0071073 |
+|   30 |       1 | Accept |      543.33 |     0.25014 |      57.017 |      129.49 |           75 |      0.45816 |
+|   31 |       1 | Accept |      155.06 |     0.20486 |      57.017 |      129.49 |           35 |     0.033298 |
+|   32 |       1 | Best   |      57.017 |     0.10739 |      57.017 |      129.49 |            5 |      0.24928 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 32
+Total elapsed time: 4.6023 seconds.
+Total objective function evaluation time: 6.6803
+
+Best observed feasible point:
+    hiddenLayerSize      lr   
+    _______________    _______
+
+           5           0.24928
+
+Observed objective function value = 57.0172
+Estimated objective function value = 129.4858
+Function evaluation time = 0.10739
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize      lr   
+    _______________    _______
+
+           5           0.24928
+
+Estimated objective function value = 129.4858
+Estimated function evaluation time = 0.1546
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize      lr   
+    _______________    _______
+
+           5           0.24928
+
+The identifier was:
+MATLAB:license:checkouterrorThere was an error! The message was:
+License checkout failed.
+License Manager Error -97
+License Manager cannot start. 
+Check that the ports specified in the license file are not already in use. 
+Restarting your machine may clear the ports.
+
+Troubleshoot this issue by visiting: 
+https://www.mathworks.com/support/lme/R2020a/97
+
+Diagnostic Information:
+Feature: Neural_Network_Toolbox 
+License path: /home/lhw150030/.matlab/R2020a_licenses:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/license.dat:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/network.lic 
+Licensing error: -97,121.
+
+    "Gainin Data set for Node 001e063239e3 with target output temperatureAirmar @ 22-Nov-2020 18:43:00"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 283 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 39 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 487 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 125 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 108 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 59 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 22 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 13 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 149 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 208 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 172 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 128 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        8628
+
+
+ans =
+
+        1523
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       1 | Accept |      47.509 |     0.19407 |      7.4945 |      36.826 |           28 |      0.13934 |
+|    2 |       1 | Accept |       18.39 |     0.21933 |      7.4945 |      36.826 |           56 |     0.001401 |
+|    3 |       1 | Accept |      22.415 |     0.26585 |      7.4945 |      36.826 |           92 |      0.38331 |
+|    4 |       1 | Accept |      22.752 |     0.18101 |      7.4945 |      36.826 |           23 |    0.0079821 |
+|    5 |       1 | Accept |      13.956 |     0.20029 |      7.4945 |      36.826 |           38 |     0.005226 |
+|    6 |       1 | Accept |      45.938 |      0.1885 |      7.4945 |      36.826 |           31 |    0.0024811 |
+|    7 |       1 | Accept |       18.03 |     0.19584 |      7.4945 |      36.826 |           35 |      0.60119 |
+|    8 |       1 | Accept |      66.615 |     0.23278 |      7.4945 |      36.826 |           58 |      0.11266 |
+|    9 |       1 | Best   |      7.4945 |     0.18007 |      7.4945 |      36.826 |           23 |    0.0099313 |
+|   10 |       1 | Accept |      12.515 |      0.2257 |      7.4945 |      36.826 |           42 |     0.042846 |
+|   11 |       1 | Accept |      39.104 |      0.2211 |      7.4945 |      36.826 |           52 |     0.012872 |
+|   12 |       1 | Accept |       23.83 |     0.19875 |      7.4945 |      36.826 |           37 |    0.0010068 |
+|   13 |       1 | Accept |      94.495 |     0.21717 |      7.4945 |      36.826 |           53 |     0.031448 |
+|   14 |       1 | Accept |      67.335 |     0.26585 |      7.4945 |      36.826 |           87 |    0.0063857 |
+|   15 |       1 | Accept |      29.056 |     0.15787 |      7.4945 |      36.826 |           11 |    0.0012431 |
+|   16 |       1 | Accept |      59.805 |     0.27277 |      7.4945 |      36.826 |           88 |      0.57168 |
+|   17 |      16 | Accept |       8.997 |     0.13555 |      7.4945 |      17.354 |            5 |      0.98777 |
+|   18 |       2 | Accept |      17.727 |     0.22899 |      7.4945 |      24.806 |           53 |      0.14238 |
+|   19 |       2 | Accept |      59.506 |     0.28192 |      7.4945 |      24.806 |           96 |     0.012032 |
+|   20 |       2 | Accept |      24.922 |     0.16908 |      7.4945 |      24.806 |           32 |      0.24707 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      22.909 |     0.23282 |      7.4945 |      24.806 |           61 |    0.0057205 |
+|   22 |       2 | Accept |      16.559 |     0.18341 |      7.4945 |      24.806 |           27 |    0.0089041 |
+|   23 |       2 | Accept |      44.159 |     0.19765 |      7.4945 |      24.806 |           46 |       0.5255 |
+|   24 |       2 | Accept |      83.641 |     0.30003 |      7.4945 |      24.806 |           91 |    0.0037176 |
+|   25 |       2 | Accept |      7.9692 |     0.23125 |      7.4945 |      24.806 |           18 |    0.0046744 |
+|   26 |       2 | Accept |      32.169 |     0.29112 |      7.4945 |      24.806 |           79 |     0.084701 |
+|   27 |       2 | Accept |      19.459 |     0.24135 |      7.4945 |      24.806 |           58 |       0.2318 |
+|   28 |       2 | Accept |      14.971 |     0.26905 |      7.4945 |      24.806 |           72 |     0.033417 |
+|   29 |       2 | Accept |      10.429 |     0.20603 |      7.4945 |      24.806 |           21 |      0.90793 |
+|   30 |       2 | Accept |      58.053 |     0.24971 |      7.4945 |      24.806 |           67 |    0.0015234 |
+|   31 |       2 | Accept |      14.151 |      0.2737 |      7.4945 |      24.806 |           59 |     0.035012 |
+|   32 |       2 | Accept |      27.129 |     0.30757 |      7.4945 |      24.806 |           95 |      0.54267 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 32
+Total elapsed time: 4.118 seconds.
+Total objective function evaluation time: 7.2162
+
+Best observed feasible point:
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          23           0.0099313
+
+Observed objective function value = 7.4945
+Estimated objective function value = 24.8062
+Function evaluation time = 0.18007
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          23           0.0099313
+
+Estimated objective function value = 24.8062
+Estimated function evaluation time = 0.18245
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          23           0.0099313
+
+The identifier was:
+MATLAB:license:checkouterrorThere was an error! The message was:
+License checkout failed.
+License Manager Error -97
+License Manager cannot start. 
+Check that the ports specified in the license file are not already in use. 
+Restarting your machine may clear the ports.
+
+Troubleshoot this issue by visiting: 
+https://www.mathworks.com/support/lme/R2020a/97
+
+Diagnostic Information:
+Feature: Neural_Network_Toolbox 
+License path: /home/lhw150030/.matlab/R2020a_licenses:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/license.dat:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/network.lic 
+Licensing error: -97,121.
+
+    "Gainin Data set for Node 001e063239e3 with target output humidityAirmar @ 22-Nov-2020 18:43:25"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 283 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 39 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 487 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 125 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 108 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 59 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 22 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 13 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 149 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 208 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 172 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 128 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        8880
+
+
+ans =
+
+        1567
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       2 | Accept |       112.7 |     0.16377 |      19.709 |      37.413 |           12 |     0.026068 |
+|    2 |       2 | Accept |       74.06 |     0.19517 |      19.709 |      37.413 |           37 |      0.53876 |
+|    3 |       2 | Accept |      45.796 |     0.17869 |      19.709 |      37.413 |           22 |      0.10359 |
+|    4 |       2 | Accept |      56.917 |     0.14786 |      19.709 |      37.413 |            6 |     0.012544 |
+|    5 |       2 | Accept |      62.909 |      0.2703 |      19.709 |      37.413 |           92 |      0.52126 |
+|    6 |       2 | Accept |      153.22 |     0.26386 |      19.709 |      37.413 |           86 |    0.0072052 |
+|    7 |       2 | Accept |      82.118 |     0.27601 |      19.709 |      37.413 |           91 |    0.0056486 |
+|    8 |       2 | Best   |      19.709 |     0.14997 |      19.709 |      37.413 |            7 |      0.39173 |
+|    9 |       2 | Accept |      39.032 |     0.20394 |      19.709 |      37.413 |           46 |      0.43844 |
+|   10 |       2 | Accept |      24.004 |     0.16343 |      19.709 |      37.413 |           13 |      0.83234 |
+|   11 |       2 | Accept |      173.45 |     0.22774 |      19.709 |      37.413 |           58 |    0.0032355 |
+|   12 |       2 | Accept |      52.047 |      0.2553 |      19.709 |      37.413 |           78 |      0.20704 |
+|   13 |       2 | Accept |       60.59 |     0.24061 |      19.709 |      37.413 |           67 |     0.034035 |
+|   14 |       2 | Accept |      37.418 |     0.17527 |      19.709 |      37.413 |           21 |      0.10925 |
+|   15 |       2 | Accept |      27.641 |     0.15861 |      19.709 |      37.413 |           13 |    0.0011191 |
+|   16 |      16 | Accept |      51.795 |     0.31261 |      19.709 |      19.713 |           99 |    0.0044635 |
+|   17 |       2 | Best   |      18.413 |      0.1443 |      18.413 |        48.7 |            5 |      0.42962 |
+|   18 |       2 | Accept |       84.71 |     0.21552 |      18.413 |        48.7 |           46 |     0.085398 |
+|   19 |       2 | Accept |      102.19 |     0.22097 |      18.413 |        48.7 |           57 |      0.73169 |
+|   20 |       2 | Accept |      94.182 |     0.20196 |      18.413 |        48.7 |           33 |    0.0010161 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |       255.5 |     0.28172 |      18.413 |        48.7 |           85 |    0.0043846 |
+|   22 |       2 | Accept |      21.341 |     0.14778 |      18.413 |        48.7 |            6 |    0.0032686 |
+|   23 |       2 | Accept |      60.329 |     0.27731 |      18.413 |        48.7 |          100 |      0.18392 |
+|   24 |       2 | Accept |      23.499 |     0.17016 |      18.413 |        48.7 |           24 |      0.67695 |
+|   25 |       2 | Accept |       108.7 |     0.26363 |      18.413 |        48.7 |           98 |     0.069609 |
+|   26 |       2 | Accept |      145.38 |     0.22535 |      18.413 |        48.7 |           69 |      0.14146 |
+|   27 |       2 | Accept |      31.639 |     0.17484 |      18.413 |        48.7 |           32 |    0.0035847 |
+|   28 |       2 | Accept |       28.36 |     0.15845 |      18.413 |        48.7 |           19 |    0.0094926 |
+|   29 |       2 | Accept |      53.396 |     0.22224 |      18.413 |        48.7 |           61 |    0.0012574 |
+|   30 |       2 | Accept |      38.854 |     0.24652 |      18.413 |        48.7 |           62 |     0.050576 |
+|   31 |       2 | Accept |      33.569 |     0.24205 |      18.413 |        48.7 |           68 |    0.0010417 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 31
+Total elapsed time: 3.8711 seconds.
+Total objective function evaluation time: 6.5759
+
+Best observed feasible point:
+    hiddenLayerSize      lr   
+    _______________    _______
+
+           5           0.42962
+
+Observed objective function value = 18.413
+Estimated objective function value = 48.7
+Function evaluation time = 0.1443
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          13           0.83234
+
+Estimated objective function value = 48.7003
+Estimated function evaluation time = 0.1591
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          13           0.83234
+
+The identifier was:
+MATLAB:license:checkouterrorThere was an error! The message was:
+License checkout failed.
+License Manager Error -97
+License Manager cannot start. 
+Check that the ports specified in the license file are not already in use. 
+Restarting your machine may clear the ports.
+
+Troubleshoot this issue by visiting: 
+https://www.mathworks.com/support/lme/R2020a/97
+
+Diagnostic Information:
+Feature: Neural_Network_Toolbox 
+License path: /home/lhw150030/.matlab/R2020a_licenses:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/license.dat:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/network.lic 
+Licensing error: -97,121.
+
+    "Gainin Data set for Node 001e063239e3 with target output dewPointAirmar @ 22-Nov-2020 18:43:53"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 283 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 39 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 487 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 125 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 108 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 59 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 22 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 13 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 149 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 208 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 172 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 128 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        8850
+
+
+ans =
+
+        1562
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       1 | Accept |      40.736 |      0.2051 |      10.095 |      13.953 |           25 |      0.46848 |
+|    2 |       1 | Accept |      30.639 |     0.28052 |      10.095 |      13.953 |           93 |      0.69058 |
+|    3 |       1 | Accept |      26.326 |     0.28185 |      10.095 |      13.953 |           80 |    0.0026883 |
+|    4 |       1 | Accept |      14.886 |     0.24283 |      10.095 |      13.953 |           25 |     0.007451 |
+|    5 |       1 | Accept |      39.072 |     0.29616 |      10.095 |      13.953 |           71 |     0.071784 |
+|    6 |       1 | Best   |      10.095 |     0.21717 |      10.095 |      13.953 |           29 |     0.025885 |
+|    7 |       1 | Accept |      32.646 |     0.25828 |      10.095 |      13.953 |           27 |    0.0012262 |
+|    8 |       1 | Accept |      20.796 |      0.2222 |      10.095 |      13.953 |           52 |    0.0020241 |
+|    9 |       1 | Accept |      39.691 |      0.3015 |      10.095 |      13.953 |           68 |     0.011833 |
+|   10 |       1 | Accept |      27.797 |     0.29121 |      10.095 |      13.953 |           68 |      0.11555 |
+|   11 |       1 | Accept |       13.06 |     0.22181 |      10.095 |      13.953 |           24 |    0.0013089 |
+|   12 |       1 | Accept |      18.052 |     0.19654 |      10.095 |      13.953 |           16 |      0.59487 |
+|   13 |       1 | Accept |      32.911 |     0.24504 |      10.095 |      13.953 |           42 |      0.93506 |
+|   14 |       1 | Accept |      11.076 |     0.19655 |      10.095 |      13.953 |           20 |    0.0010886 |
+|   15 |       1 | Accept |      12.683 |     0.29985 |      10.095 |      13.953 |           94 |      0.01675 |
+|   16 |       1 | Accept |      18.875 |     0.19228 |      10.095 |      13.953 |            9 |    0.0018318 |
+|   17 |       2 | Accept |      24.348 |     0.16437 |      10.095 |      26.612 |           22 |    0.0018412 |
+|   18 |       2 | Accept |      35.019 |     0.17815 |      10.095 |      26.612 |           16 |    0.0011152 |
+|   19 |       2 | Accept |      27.805 |     0.22386 |      10.095 |      26.612 |           64 |    0.0089929 |
+|   20 |       2 | Accept |      41.498 |     0.20193 |      10.095 |      26.612 |           50 |    0.0045642 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      39.391 |     0.27688 |      10.095 |      26.612 |           97 |     0.023132 |
+|   22 |       2 | Accept |      50.593 |      0.1817 |      10.095 |      26.612 |           35 |      0.19665 |
+|   23 |       2 | Accept |      46.366 |     0.23477 |      10.095 |      26.612 |           67 |    0.0010984 |
+|   24 |       2 | Accept |      70.107 |     0.16324 |      10.095 |      26.612 |           25 |      0.45416 |
+|   25 |       2 | Accept |      50.367 |     0.17007 |      10.095 |      26.612 |           30 |      0.62368 |
+|   26 |       2 | Accept |      41.608 |     0.16196 |      10.095 |      26.612 |           17 |     0.022631 |
+|   27 |       2 | Accept |      25.096 |     0.26836 |      10.095 |      26.612 |           97 |      0.15859 |
+|   28 |       2 | Accept |       70.84 |     0.18367 |      10.095 |      26.612 |           33 |      0.90387 |
+|   29 |       2 | Accept |      44.933 |     0.25101 |      10.095 |      26.612 |           89 |      0.51541 |
+|   30 |       2 | Accept |      10.161 |     0.20057 |      10.095 |      26.612 |           50 |     0.026889 |
+|   31 |       2 | Accept |      45.989 |     0.24159 |      10.095 |      26.612 |           68 |      0.52279 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 31
+Total elapsed time: 3.2836 seconds.
+Total objective function evaluation time: 7.051
+
+Best observed feasible point:
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          29           0.025885
+
+Observed objective function value = 10.0948
+Estimated objective function value = 28.8802
+Function evaluation time = 0.21717
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          22           0.0018412
+
+Estimated objective function value = 26.6119
+Estimated function evaluation time = 0.19821
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          22           0.0018412
+
+The identifier was:
+MATLAB:license:checkouterrorThere was an error! The message was:
+License checkout failed.
+License Manager Error -97
+License Manager cannot start. 
+Check that the ports specified in the license file are not already in use. 
+Restarting your machine may clear the ports.
+
+Troubleshoot this issue by visiting: 
+https://www.mathworks.com/support/lme/R2020a/97
+
+Diagnostic Information:
+Feature: Neural_Network_Toolbox 
+License path: /home/lhw150030/.matlab/R2020a_licenses:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/license.dat:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/network.lic 
+Licensing error: -97,121.
+
+    "Gainin Data set for Node 001e063239e3 with target output pressureAirmar @ 22-Nov-2020 18:44:18"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 283 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 39 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 487 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 125 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 108 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 59 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 22 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 13 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 149 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 208 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 172 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 128 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        8713
+
+
+ans =
+
+        1538
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |      16 | Best   |    0.014854 |     0.61291 |    0.014854 |    0.014854 |           21 |     0.040783 |
+|    2 |      15 | Accept |    0.022175 |      1.3536 |    0.014854 |    0.014854 |           51 |    0.0055611 |
+|    3 |      15 | Accept |    0.021049 |      1.0599 |    0.014854 |    0.014854 |           73 |     0.042316 |
+|    4 |      13 | Accept |    0.011101 |      2.8009 |   0.0092099 |   0.0092082 |           18 |      0.16164 |
+|    5 |      13 | Accept |    0.020706 |      2.7506 |   0.0092099 |   0.0092082 |           37 |    0.0051685 |
+|    6 |      13 | Best   |   0.0092099 |      2.2299 |   0.0092099 |   0.0092082 |           11 |      0.57402 |
+|    7 |      13 | Accept |    0.012192 |      3.6263 |   0.0092099 |   0.0092085 |           62 |      0.36895 |
+|    8 |      14 | Accept |    0.011511 |        4.97 |   0.0092099 |   0.0096401 |           66 |      0.16797 |
+|    9 |      14 | Accept |   0.0097687 |      5.8972 |   0.0092099 |   0.0096258 |           63 |      0.14882 |
+|   10 |      11 | Accept |    0.022323 |      6.3553 |   0.0065367 |   0.0065379 |           46 |    0.0024107 |
+|   11 |      11 | Accept |    0.040191 |      7.4977 |   0.0065367 |   0.0065379 |           20 |    0.0055739 |
+|   12 |      11 | Accept |   0.0065838 |      3.7324 |   0.0065367 |   0.0065379 |            6 |      0.99572 |
+|   13 |      11 | Best   |   0.0065367 |     0.67801 |   0.0065367 |   0.0065379 |            5 |      0.43156 |
+|   14 |      16 | Accept |    0.020298 |      7.9695 |   0.0065367 |   0.0070815 |           19 |      0.04231 |
+|   15 |      14 | Accept |   0.0083504 |      3.8495 |    0.006503 |   0.0067886 |            5 |      0.42649 |
+|   16 |      14 | Best   |    0.006503 |     0.90737 |    0.006503 |   0.0067886 |           14 |      0.83729 |
+|   17 |      14 | Accept |    0.014927 |     0.30475 |    0.006503 |   0.0067886 |           62 |    0.0013093 |
+|   18 |      12 | Accept |   0.0096795 |        10.4 |    0.006503 |   0.0076215 |           79 |      0.76994 |
+|   19 |      12 | Accept |   0.0079832 |       2.584 |    0.006503 |   0.0076215 |           23 |       0.3758 |
+|   20 |      12 | Accept |    0.015563 |      1.9533 |    0.006503 |   0.0076215 |           33 |      0.25973 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |      10 | Accept |    0.026618 |      8.5462 |    0.006503 |   0.0076508 |           26 |    0.0010661 |
+|   22 |      10 | Accept |    0.010135 |      1.5384 |    0.006503 |   0.0076508 |            5 |      0.98127 |
+|   23 |      10 | Accept |   0.0074694 |     0.97855 |    0.006503 |   0.0076508 |           10 |      0.99286 |
+|   24 |      16 | Accept |   0.0066325 |      1.4795 |    0.006503 |   0.0070379 |           17 |      0.98179 |
+|   25 |      15 | Accept |    0.015268 |      14.129 |    0.006503 |   0.0070417 |           62 |     0.038438 |
+|   26 |      15 | Accept |   0.0081116 |      9.4143 |    0.006503 |   0.0070417 |           29 |      0.99715 |
+|   27 |      11 | Accept |    0.020442 |      14.655 |    0.006503 |   0.0070197 |           52 |     0.010932 |
+|   28 |      11 | Accept |    0.014469 |      7.9664 |    0.006503 |   0.0070197 |           44 |       0.1192 |
+|   29 |      11 | Accept |     0.01068 |       6.711 |    0.006503 |   0.0070197 |           98 |      0.71606 |
+|   30 |      11 | Accept |    0.026714 |      7.6344 |    0.006503 |   0.0070197 |           89 |     0.022886 |
+|   31 |      11 | Accept |   0.0068909 |      3.0466 |    0.006503 |   0.0070197 |            8 |      0.20936 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 31
+Total elapsed time: 17.7455 seconds.
+Total objective function evaluation time: 147.6332
+
+Best observed feasible point:
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          14           0.83729
+
+Observed objective function value = 0.006503
+Estimated objective function value = 0.0070197
+Function evaluation time = 0.90737
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          14           0.83729
+
+Estimated objective function value = 0.0070197
+Estimated function evaluation time = 3.1858
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          14           0.83729
+
+The identifier was:
+MATLAB:license:checkouterrorThere was an error! The message was:
+License checkout failed.
+License Manager Error -97
+License Manager cannot start. 
+Check that the ports specified in the license file are not already in use. 
+Restarting your machine may clear the ports.
+
+Troubleshoot this issue by visiting: 
+https://www.mathworks.com/support/lme/R2020a/97
+
+Diagnostic Information:
+Feature: Neural_Network_Toolbox 
+License path: /home/lhw150030/.matlab/R2020a_licenses:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/license.dat:/opt/ohpc/pub/unpackaged/apps/matlab/R2020a/licenses/network.lic 
+Licensing error: -97,121.
+
+Parallel pool using the 'local' profile is shutting down.
