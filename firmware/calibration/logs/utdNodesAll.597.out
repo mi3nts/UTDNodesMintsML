@@ -1,0 +1,1602 @@
+Running calibration scripts for UTD Node: 3
+Running on host: compute-1-1-4
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2020 The MathWorks, Inc.
+              R2020a Update 1 (9.8.0.1359463) 64-bit (glnxa64)
+                               April 9, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+
+
+    "---------------------MINTS---------------------"
+
+01-Dec-2020 16:49:52
+
+mintsDefinitions = 
+
+  struct with fields:
+
+                dataFolder: '/home/lhw150030/mintsData'
+               poolWorkers: 16
+                  timeSpan: 30
+                  airmarID: '001e0610c0e4'
+             binsPerColumn: 500
+              numberPerBin: 2
+                    pValid: 0.1500
+                   nodeIDs: {1x16 cell}
+               inputStack1: {1x9 cell}
+         mintsInputsStack1: {1x35 cell}
+    mintsInputLabelsStack1: {1x35 cell}
+               inputStack2: {1x11 cell}
+         mintsInputsStack2: {1x35 cell}
+    mintsInputLabelsStack2: {1x35 cell}
+               inputStack3: {1x10 cell}
+         mintsInputsStack3: {1x38 cell}
+    mintsInputLabelsStack3: {1x38 cell}
+              mintsTargets: {1x10 cell}
+         mintsTargetLabels: {1x10 cell}
+                     units: {1x10 cell}
+               instruments: {1x10 cell}
+
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 16).
+
+ans = 
+
+ ProcessPool with properties: 
+
+            Connected: true
+           NumWorkers: 16
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+
+airmarFolder = 
+
+    "/home/lhw150030/mintsData/referenceMats/airmar"
+
+UTD_Rsl_All_2020_12_01_16_51_30
+
+
+UTD_Rsl_All_Daily
+
+
+Super Learner All Inputs
+
+
+
+
+    "Data Folder Located @:/home/lhw150030/mintsData"
+
+    "Raw Data Located @: /home/lhw150030/mintsData"
+
+    "Raw DotMat Data Located @ :/home/lhw150030/mintsData/rawMats"
+
+    "UTD Nodes DotMat Data Located @ :/home/lhw150030/mintsData/rawMats/UTDNodes"
+
+    "Reference Data Located @: /home/lhw150030/mintsData/reference"
+
+    "Reference DotMat Data Located @ :/home/lhw150030/mintsData/referenceMats"
+
+    "Palas Raw Data Located @ :/home/lhw150030/mintsData/reference/palasStream"
+
+    "Palas DotMat Data Located @ :/home/lhw150030/mintsData/referenceMats/palas"
+
+    "Car GPS Files Located @ :/home/lhw150030/mintsData/referenceMats/carMintsGPS"
+
+    "Loading Palas Files"
+
+    "Loading GPS Files"
+
+    "Loading Airmar Files"
+
+    "Aligning GPS data with Palas Data"
+
+    "WSTC Palas Data"
+
+    "Palas With Airmar"
+
+    "Analysis"
+
+    "Save merged data for calibration: 001e06318cd1"
+
+
+
+    "Creating Training Data Sets for Node: 001e06318cd1"
+
+
+
+    "Gainin Data set for Node 001e06318cd1 with target output pm1_palas @ 01-Dec-2020 16:51:49"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 320 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 70 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 211 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 151 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 98 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 54 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 26 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 15 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 3 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 312 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 299 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 262 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 171 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        6833
+
+
+ans =
+
+        1206
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |      10 | Accept |      36.545 |      5.0768 |      20.736 |      24.739 |           18 |     0.098075 |
+|    2 |      10 | Accept |      49.126 |      5.2375 |      20.736 |      24.739 |           61 |     0.063442 |
+|    3 |      10 | Accept |      23.853 |      5.1424 |      20.736 |      24.739 |           95 |     0.018037 |
+|    4 |      10 | Best   |      20.736 |      6.1713 |      20.736 |      24.739 |           55 |    0.0078411 |
+|    5 |      10 | Accept |       81.46 |      5.8313 |      20.736 |      24.739 |           89 |     0.063669 |
+|    6 |      10 | Accept |      37.171 |      6.1556 |      20.736 |      24.739 |           93 |     0.020058 |
+|    7 |      10 | Accept |      42.759 |      4.9157 |      20.736 |      24.739 |           58 |    0.0018051 |
+|    8 |       8 | Accept |      57.477 |      10.719 |      6.7561 |      40.283 |           84 |      0.21991 |
+|    9 |       8 | Accept |      32.935 |      7.6045 |      6.7561 |      40.283 |           33 |      0.40703 |
+|   10 |       8 | Accept |       24.01 |      9.3445 |      6.7561 |      40.283 |           97 |    0.0011712 |
+|   11 |       8 | Accept |      53.532 |      7.1806 |      6.7561 |      40.283 |           51 |      0.51675 |
+|   12 |       8 | Accept |      70.905 |      9.4933 |      6.7561 |      40.283 |           33 |      0.15551 |
+|   13 |       8 | Best   |      6.7561 |      7.7598 |      6.7561 |      40.283 |           16 |      0.19386 |
+|   14 |       8 | Accept |      25.818 |      7.1024 |      6.7561 |      40.283 |           27 |    0.0026527 |
+|   15 |       8 | Accept |      60.348 |      9.2075 |      6.7561 |      40.283 |           93 |    0.0025171 |
+|   16 |       8 | Accept |      21.104 |      8.2364 |      6.7561 |      40.283 |            8 |     0.008173 |
+|   17 |      10 | Accept |      52.469 |      1.4135 |      6.7561 |      38.817 |           66 |    0.0094778 |
+|   18 |      10 | Accept |      31.003 |     0.69976 |      6.7561 |      38.817 |           16 |       0.2804 |
+|   19 |      10 | Accept |      31.974 |     0.82577 |      6.7561 |      38.817 |           13 |      0.12967 |
+|   20 |      10 | Accept |      79.623 |      1.4334 |      6.7561 |      38.817 |           51 |      0.30432 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |      10 | Accept |      23.833 |     0.68169 |      6.7561 |      38.817 |           69 |       0.6589 |
+|   22 |      10 | Accept |      16.217 |      1.2198 |      6.7561 |      38.817 |           81 |     0.013012 |
+|   23 |      10 | Accept |       13.15 |     0.88182 |      6.7561 |      38.817 |           71 |     0.024506 |
+|   24 |       6 | Accept |      9.6946 |      1.7307 |      6.7561 |       23.47 |            5 |    0.0010059 |
+|   25 |       6 | Accept |      67.177 |     0.86348 |      6.7561 |       23.47 |           62 |      0.29267 |
+|   26 |       6 | Accept |      36.151 |      1.0417 |      6.7561 |       23.47 |           51 |      0.19121 |
+|   27 |       6 | Accept |      25.753 |       1.696 |      6.7561 |       23.47 |           32 |      0.13638 |
+|   28 |       6 | Accept |      7.3164 |     0.65648 |      6.7561 |       23.47 |           10 |      0.26137 |
+|   29 |       6 | Accept |      82.866 |      1.4886 |      6.7561 |       23.47 |           55 |     0.029657 |
+|   30 |       6 | Accept |      21.684 |      1.1154 |      6.7561 |       23.47 |           93 |      0.13521 |
+|   31 |       6 | Accept |      27.384 |      1.0302 |      6.7561 |       23.47 |           83 |      0.80168 |
+|   32 |       6 | Accept |      17.201 |     0.97469 |      6.7561 |       23.47 |           78 |       0.4846 |
+|   33 |       6 | Accept |      8.3523 |     0.36503 |      6.7561 |       23.47 |           15 |      0.14065 |
+|   34 |       6 | Accept |      33.791 |     0.30111 |      6.7561 |       23.47 |           37 |     0.051756 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 34
+Total elapsed time: 33.9709 seconds.
+Total objective function evaluation time: 133.5977
+
+Best observed feasible point:
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          16           0.19386
+
+Observed objective function value = 6.7561
+Estimated objective function value = 25.2528
+Function evaluation time = 7.7598
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          13           0.12967
+
+Estimated objective function value = 23.4698
+Estimated function evaluation time = 2.4029
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          13           0.12967
+
+Elapsed time is 97.069995 seconds.
+Train a hyper-parameter optimized GPR model for regression
+First Optimize all the GPR parameters
+Copying objective function to workers...
+Done copying objective function to workers.
+|============================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |        Sigma | BasisFunction| KernelFuncti-|  KernelScale |  Standardize |
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              |              | on           |              |              |
+|============================================================================================================================================================|
+|    1 |      16 | Best   |      3.3076 |      1576.9 |      3.3076 |      3.3076 |       29.079 | pureQuadrati |     matern52 |   7.4488e+11 |        false |
+|    2 |      16 | Accept |      13.787 |        2161 |      3.3076 |      3.7243 |    0.0023954 |       linear |  exponential |   1.0267e+12 |         true |
+|    3 |      16 | Accept |      3.3077 |      2692.6 |      3.3076 |      3.5206 |      0.13042 |         none | squaredexpon |   4.4689e+11 |         true |
+|    4 |      16 | Accept |      3.9705 |      888.42 |      3.3076 |      3.3232 |       11.287 | pureQuadrati |     matern52 |   7.5456e+10 |        false |
+|    5 |      16 | Accept |      4.0765 |      3894.4 |      3.3076 |      3.3231 |    0.0052581 |         none | squaredexpon |   2.3053e+11 |        false |
+|    6 |      16 | Accept |      3.3077 |      3913.4 |      3.3076 |      3.3228 |      0.02862 |         none |     matern32 |    2.714e+12 |         true |
+|    7 |      16 | Accept |      3.9888 |      2789.7 |      3.3076 |      3.3219 |       14.209 | pureQuadrati |     matern32 |   1.4238e+10 |        false |
+|    8 |      16 | Accept |      3.3081 |      794.65 |      3.3076 |      3.3158 |       51.266 |         none |     matern32 |   3.9963e+11 |         true |
+|    9 |      16 | Accept |      8.9122 |        1699 |      3.3076 |      3.3181 |      0.12939 |       linear | squaredexpon |   2.4131e+11 |         true |
+|   10 |      16 | Accept |      3.3079 |      1602.5 |      3.3076 |      3.3176 |      0.12775 |     constant | squaredexpon |   2.3928e+11 |         true |
+|   11 |      16 | Accept |      3.3077 |      5764.4 |      3.3076 |      3.3172 |      0.21653 |         none |     matern52 |   7.2978e+09 |         true |
+|   12 |      16 | Accept |      3.3076 |      1155.9 |      3.3076 |      3.3078 |       1.2015 |     constant |     matern32 |   2.5797e+12 |         true |
+|   13 |      16 | Accept |      31.868 |      2833.2 |      3.3076 |       3.308 |   0.00010012 | pureQuadrati |     matern32 |   5.1788e+10 |        false |
+|   14 |      16 | Accept |      3.3077 |      2662.3 |      3.3076 |       3.308 |      0.13192 |         none | rationalquad |   5.2404e+12 |         true |
+|   15 |      16 | Accept |       3.308 |      1302.4 |      3.3076 |       3.308 |   0.00013389 |     constant |     matern52 |   1.4319e+11 |         true |
+|   16 |      16 | Accept |      3.3078 |      1264.7 |      3.3076 |      3.3079 |   0.00093376 |     constant |     matern32 |   8.0402e+11 |         true |
+|   17 |      16 | Accept |      3.4035 |      3369.5 |      3.3076 |      3.3078 |     0.029528 |     constant | squaredexpon |   5.7902e+12 |        false |
+|   18 |      16 | Accept |      8.3918 |      9271.1 |      3.3076 |      3.3079 |       18.072 |       linear |     matern32 |   1.8891e+10 |        false |
+|   19 |      16 | Accept |      3.3078 |      1375.4 |      3.3076 |      3.3078 |      0.20364 |     constant |     matern52 |   1.5166e+12 |         true |
+|   20 |      16 | Accept |      3.3077 |        6837 |      3.3076 |      3.3079 |     0.045561 |         none | squaredexpon |   2.1084e+10 |         true |
+|============================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |        Sigma | BasisFunction| KernelFuncti-|  KernelScale |  Standardize |
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              |              | on           |              |              |
+|============================================================================================================================================================|
+|   21 |      16 | Accept |      3.3076 |      1248.4 |      3.3076 |      3.3079 |       50.208 |     constant | squaredexpon |    1.733e+12 |        false |
+|   22 |      16 | Accept |      3.3078 |      1232.2 |      3.3076 |      3.3079 |         51.1 |     constant | squaredexpon |   4.0801e+10 |         true |
+|   23 |      16 | Accept |      3.3077 |        3031 |      3.3076 |      3.3079 |    0.0001547 |         none |     matern52 |   3.7256e+10 |         true |
+|   24 |      16 | Accept |      3.3077 |      2317.7 |      3.3076 |      3.3079 |    0.0001001 |         none | rationalquad |   1.7275e+11 |         true |
+|   25 |      15 | Accept |       3.312 |      4109.8 |      3.3076 |      3.3078 |       43.439 |         none | squaredexpon |   1.8178e+10 |        false |
+|   26 |      15 | Accept |      4.8209 |        3042 |      3.3076 |      3.3078 |       1.4199 |     constant | rationalquad |   1.5883e+11 |        false |
+|   27 |      16 | Error  |         NaN |      2713.7 |      3.3076 |      3.3078 |    0.0056329 |         none |     matern52 |   1.2206e+10 |        false |
+|   28 |      16 | Error  |         NaN |      3126.6 |      3.3076 |      3.3078 |    0.0052326 |     constant |     matern52 |   6.5023e+10 |        false |
+|   29 |      16 | Accept |      8.5856 |      3575.1 |      3.3076 |      3.3079 |     0.036166 |         none | rationalquad |   2.2109e+10 |        false |
+|   30 |      16 | Best   |      3.3076 |      8724.4 |      3.3076 |      3.3078 |      0.12676 |     constant | rationalquad |   8.7061e+11 |         true |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 30
+Total elapsed time: 14697.5461 seconds.
+Total objective function evaluation time: 90969.2694
+
+Best observed feasible point:
+     Sigma     BasisFunction     KernelFunction      KernelScale    Standardize
+    _______    _____________    _________________    ___________    ___________
+
+    0.12676      constant       rationalquadratic    8.7061e+11        true    
+
+Observed objective function value = 3.3076
+Estimated objective function value = 3.3078
+Function evaluation time = 8724.3504
+
+Best estimated feasible point (according to models):
+     Sigma     BasisFunction      KernelFunction      KernelScale    Standardize
+    _______    _____________    __________________    ___________    ___________
+
+    0.13042        none         squaredexponential    4.4689e+11        true    
+
+Estimated objective function value = 3.3078
+Estimated function evaluation time = 2447.775
+
+Elapsed time is 14965.766642 seconds.
+Take a copy of the best attributes
+Now use these optimum settings to do an exact GPR fit
+Elapsed time is 108.473366 seconds.
+Train a hyper-parameter optimized Ensemble of Trees model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===========================================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |       Method | NumLearningC-|    LearnRate |  MinLeafSize | MaxNumSplits | NumVariables-|
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              | ycles        |              |              |              | ToSample     |
+|===========================================================================================================================================================================|
+|    1 |      14 | Accept |      2.3724 |      3.6823 |      1.7482 |       1.826 |          Bag |           11 |            - |          231 |            7 |           32 |
+|    2 |      14 | Best   |      1.7482 |      3.2761 |      1.7482 |       1.826 |          Bag |           13 |            - |           36 |          278 |            7 |
+|    3 |      14 | Accept |      2.6918 |      3.6611 |      1.7482 |       1.826 |          Bag |           25 |            - |          574 |         5689 |            5 |
+|    4 |       7 | Accept |       3.228 |      21.379 |       1.359 |      1.3593 |          Bag |           14 |            - |          693 |         1907 |            3 |
+|    5 |       7 | Accept |      2.8784 |      5.0471 |       1.359 |      1.3593 |      LSBoost |           56 |     0.098083 |         1836 |         2923 |           18 |
+|    6 |       7 | Accept |      1.5156 |       42.65 |       1.359 |      1.3593 |      LSBoost |           24 |      0.16765 |            8 |           36 |           21 |
+|    7 |       7 | Accept |      1.6434 |      56.486 |       1.359 |      1.3593 |      LSBoost |          143 |     0.014109 |           45 |          418 |           18 |
+|    8 |       7 | Accept |      2.6783 |      5.8548 |       1.359 |      1.3593 |          Bag |           22 |            - |          423 |         6490 |           24 |
+|    9 |       7 | Accept |       2.645 |      41.421 |       1.359 |      1.3593 |          Bag |          380 |            - |           10 |            6 |            8 |
+|   10 |       7 | Accept |      1.5613 |      53.328 |       1.359 |      1.3593 |      LSBoost |           39 |     0.051672 |            1 |          184 |            7 |
+|   11 |       7 | Best   |       1.359 |      29.145 |       1.359 |      1.3593 |      LSBoost |           59 |      0.24088 |           90 |          267 |           24 |
+|   12 |      15 | Accept |      3.1415 |       1.308 |       1.359 |      1.6139 |          Bag |           14 |            - |           38 |          278 |            3 |
+|   13 |      15 | Accept |      3.3079 |      1.0127 |       1.359 |      1.6139 |      LSBoost |           11 |      0.63732 |         3350 |          164 |           29 |
+|   14 |      10 | Accept |      2.5874 |      121.92 |       1.359 |      1.3591 |          Bag |          119 |            - |            1 |            8 |            6 |
+|   15 |      10 | Accept |      2.1898 |      43.618 |       1.359 |      1.3591 |          Bag |          227 |            - |            6 |           29 |           11 |
+|   16 |      10 | Accept |      3.6898 |      12.686 |       1.359 |      1.3591 |      LSBoost |           18 |    0.0066872 |            2 |          925 |           20 |
+|   17 |      10 | Accept |      1.5955 |      14.897 |       1.359 |      1.3591 |          Bag |           27 |            - |           44 |         3540 |           28 |
+|   18 |      10 | Accept |      1.5258 |      17.853 |       1.359 |      1.3591 |      LSBoost |           67 |     0.073383 |          114 |          145 |           12 |
+|   19 |      10 | Accept |      2.2286 |      9.4701 |       1.359 |      1.3591 |      LSBoost |           51 |     0.088432 |            4 |            4 |           23 |
+|   20 |      13 | Accept |      2.8742 |      170.49 |       1.359 |      1.7669 |      LSBoost |          218 |    0.0030679 |            3 |           93 |           21 |
+|===========================================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |       Method | NumLearningC-|    LearnRate |  MinLeafSize | MaxNumSplits | NumVariables-|
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              | ycles        |              |              |              | ToSample     |
+|===========================================================================================================================================================================|
+|   21 |      13 | Accept |      2.6099 |      161.74 |       1.359 |      1.7669 |      LSBoost |          295 |      0.81524 |         2020 |            5 |           26 |
+|   22 |      13 | Accept |      2.8589 |      88.132 |       1.359 |      1.7669 |          Bag |           99 |            - |         1933 |         3136 |           33 |
+|   23 |      13 | Accept |      2.7231 |      73.407 |       1.359 |      1.7669 |      LSBoost |          162 |    0.0047768 |            2 |           46 |           32 |
+|   24 |       6 | Accept |       2.173 |      199.42 |       1.359 |      1.6537 |      LSBoost |          433 |     0.011415 |          484 |          775 |           24 |
+|   25 |       6 | Accept |      3.3079 |      58.765 |       1.359 |      1.6537 |          Bag |           97 |            - |         3416 |         3081 |           22 |
+|   26 |       6 | Accept |      2.3656 |      7.7299 |       1.359 |      1.6537 |      LSBoost |           39 |      0.20221 |            2 |            2 |           23 |
+|   27 |       6 | Accept |      3.0765 |      5.8129 |       1.359 |      1.6537 |          Bag |           52 |            - |            2 |            1 |           20 |
+|   28 |       6 | Accept |       1.368 |      27.868 |       1.359 |      1.6537 |          Bag |           20 |            - |            2 |         2607 |            9 |
+|   29 |       6 | Accept |      2.7734 |      15.477 |       1.359 |      1.6537 |          Bag |          116 |            - |           15 |            3 |            8 |
+|   30 |       6 | Accept |      2.4836 |      4.2157 |       1.359 |      1.6537 |          Bag |           15 |            - |          516 |         2577 |           30 |
+|   31 |       6 | Accept |      1.8457 |      21.554 |       1.359 |      1.6537 |          Bag |           10 |            - |           44 |          175 |            5 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 31
+Total elapsed time: 206.5016 seconds.
+Total objective function evaluation time: 1323.2963
+
+Best observed feasible point:
+    Method     NumLearningCycles    LearnRate    MinLeafSize    MaxNumSplits    NumVariablesToSample
+    _______    _________________    _________    ___________    ____________    ____________________
+
+    LSBoost           59             0.24088         90             267                  24         
+
+Observed objective function value = 1.359
+Estimated objective function value = 1.689
+Function evaluation time = 29.145
+
+Best estimated feasible point (according to models):
+    Method     NumLearningCycles    LearnRate    MinLeafSize    MaxNumSplits    NumVariablesToSample
+    _______    _________________    _________    ___________    ____________    ____________________
+
+    LSBoost           67            0.073383         114            145                  12         
+
+Estimated objective function value = 1.6537
+Estimated function evaluation time = 20.5244
+
+Elapsed time is 213.463087 seconds.
+Train the super learner model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|============================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |        Sigma | BasisFunction| KernelFuncti-|  KernelScale |  Standardize |
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              |              | on           |              |              |
+|============================================================================================================================================================|
+|    1 |      16 | Best   |      3.5552 |      875.37 |      3.5552 |      3.5552 |     0.069491 |     constant |  exponential |   2.7789e+10 |        false |
+|    2 |      16 | Accept |      5.5527 |      1414.7 |      3.5552 |       4.553 |    0.0022468 |         none |  exponential |   9.4893e+10 |        false |
+|    3 |      16 | Best   |      3.3078 |      1256.8 |      3.3078 |      4.1375 |       48.294 |     constant |     matern32 |   2.5588e+10 |        false |
+|    4 |      16 | Accept |      6.8979 |      2940.5 |      3.3078 |       3.308 |   0.00030204 | pureQuadrati |     matern32 |   1.2463e+10 |        false |
+|    5 |      16 | Best   |      3.3077 |      3151.6 |      3.3077 |      3.3912 |         25.3 | pureQuadrati |     matern32 |    6.367e+11 |        false |
+|    6 |      16 | Accept |      4.8856 |      4117.1 |      3.3077 |      3.3891 |      0.14176 |         none | rationalquad |   5.3223e+11 |        false |
+|    7 |      16 | Accept |       3.309 |      1362.7 |      3.3077 |       3.311 |       41.018 |     constant |     matern32 |   4.0202e+12 |         true |
+|    8 |      16 | Accept |       3.309 |      4335.2 |      3.3077 |       3.313 |       6.7399 |         none | squaredexpon |   8.7601e+09 |        false |
+|    9 |      16 | Accept |      3.3079 |      4859.2 |      3.3077 |      3.3119 |       4.1021 |         none | squaredexpon |     8.97e+09 |         true |
+|   10 |      16 | Accept |      3.9536 |       671.1 |      3.3077 |      3.3079 |       19.605 | pureQuadrati |     matern32 |   5.1222e+11 |        false |
+|   11 |      16 | Accept |      3.3088 |      648.61 |      3.3077 |      3.3409 |       11.252 |         none | squaredexpon |   4.9016e+10 |        false |
+|   12 |      16 | Accept |      7.4335 |        2299 |      3.3077 |      3.3387 |     0.055714 |     constant |     matern32 |   3.0315e+10 |        false |
+|   13 |      16 | Accept |      3.9286 |      2524.9 |      3.3077 |      3.3373 |        24.96 | pureQuadrati |     matern32 |   1.2207e+12 |        false |
+|   14 |      16 | Accept |      3.9856 |      678.85 |      3.3077 |      3.3374 |       41.628 | pureQuadrati |     matern32 |    1.211e+12 |        false |
+|   15 |      16 | Accept |      3.3089 |      1004.4 |      3.3077 |      3.3358 |       1.3451 |     constant |     matern32 |   1.0813e+10 |         true |
+|   16 |      16 | Accept |      3.3079 |      973.97 |      3.3077 |      3.3341 |      0.45107 |         none | squaredexpon |   2.7886e+11 |         true |
+|   17 |      16 | Accept |      3.3077 |      1207.2 |      3.3077 |      3.3322 |     0.031019 |     constant |     matern32 |   1.9919e+11 |         true |
+|   18 |      16 | Accept |      9.4667 |      7934.8 |      3.3077 |      3.3252 |       4.5531 |       linear |  exponential |   2.6237e+12 |        false |
+|   19 |      15 | Accept |      34.992 |      7938.4 |      3.2668 |      3.2935 |       5.1322 | pureQuadrati | squaredexpon |   4.1468e+10 |         true |
+|   20 |      15 | Best   |      3.2668 |      1945.2 |      3.2668 |      3.2935 |       1.7565 |     constant |  exponential |   3.7358e+12 |        false |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 20 reached.
+Total function evaluations: 20
+Total elapsed time: 8131.7061 seconds.
+Total objective function evaluation time: 52139.4805
+
+Best observed feasible point:
+    Sigma     BasisFunction    KernelFunction    KernelScale    Standardize
+    ______    _____________    ______________    ___________    ___________
+
+    1.7565      constant        exponential      3.7358e+12        false   
+
+Observed objective function value = 3.2668
+Estimated objective function value = 3.2882
+Function evaluation time = 1945.1524
+
+Best estimated feasible point (according to models):
+    Sigma     BasisFunction    KernelFunction    KernelScale    Standardize
+    ______    _____________    ______________    ___________    ___________
+
+    1.3451      constant          matern32       1.0813e+10        true    
+
+Estimated objective function value = 3.2935
+Estimated function evaluation time = 1911.2566
+
+Elapsed time is 8228.064110 seconds.
+Train the super learner error model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|============================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |        Sigma | BasisFunction| KernelFuncti-|  KernelScale |  Standardize |
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              |              | on           |              |              |
+|============================================================================================================================================================|
+|    1 |      16 | Best   |      3.3077 |      1233.5 |      3.3077 |      3.3077 |        3.543 |         none | squaredexpon |   1.2042e+11 |        false |
+|    2 |      16 | Accept |       6.854 |        1354 |      3.3077 |      3.4487 |       14.184 |       linear |     matern32 |    1.103e+10 |        false |
+|    3 |      15 | Accept |      3.3076 |      1451.7 |      3.3076 |      4.1732 |       4.2936 |         none |     matern52 |   3.5817e+10 |        false |
+|    4 |      15 | Best   |      3.3076 |      1432.9 |      3.3076 |      4.1732 |       38.036 |         none |  exponential |   3.3636e+10 |        false |
+|    5 |      16 | Accept |       6.484 |      1825.1 |      3.3076 |      4.6362 |       46.413 |       linear | rationalquad |   1.7641e+10 |        false |
+|    6 |      16 | Best   |       3.216 |      2663.8 |       3.216 |      3.2616 |       2.0816 |         none |  exponential |   1.4182e+11 |        false |
+|    7 |      15 | Error  |         NaN |      2841.5 |       3.216 |       3.221 |      0.04456 |         none |     matern52 |   8.4276e+10 |        false |
+|    8 |      15 | Accept |      3.3076 |      1298.2 |       3.216 |       3.221 |       22.072 |         none |  exponential |   1.0944e+10 |        false |
+|    9 |      15 | Accept |      7.6024 |      3090.9 |       3.216 |      3.2161 |      0.19001 |         none | squaredexpon |    7.178e+11 |        false |
+|   10 |      16 | Accept |      3.3079 |      5003.3 |       3.216 |      3.2161 |       5.6352 |     constant |     matern32 |   3.8794e+12 |         true |
+|   11 |      16 | Accept |      3.3078 |      5297.3 |       3.216 |      3.2161 |       0.1241 |         none |     matern32 |   2.1296e+12 |         true |
+|   12 |      16 | Accept |      5.1541 |      996.89 |       3.216 |      3.2161 |   0.00010029 |         none |  exponential |   1.1226e+11 |        false |
+|   13 |      16 | Accept |      3.3076 |      1451.7 |       3.216 |      3.2161 |       17.681 |         none | squaredexpon |    1.813e+11 |        false |
+|   14 |      16 | Accept |      3.3076 |      1408.9 |       3.216 |      3.2161 |       33.324 |         none |     matern52 |   2.2801e+11 |        false |
+|   15 |      16 | Accept |      3.3078 |      6502.9 |       3.216 |      3.2161 |    0.0071491 |         none |     matern52 |   1.3457e+12 |         true |
+|   16 |      16 | Accept |      3.3078 |      1008.4 |       3.216 |      3.2161 |      0.89423 |         none |     matern32 |   4.8943e+12 |         true |
+|   17 |      16 | Accept |      6.7235 |      3097.6 |       3.216 |      3.2161 |   0.00039622 |     constant |  exponential |    5.283e+12 |        false |
+|   18 |      16 | Accept |      3.3088 |        1244 |       3.216 |      3.2161 |       51.278 |     constant |     matern32 |   1.8204e+11 |         true |
+|   19 |      16 | Accept |      4.4826 |      1487.8 |       3.216 |      3.2162 |      0.17182 |         none |  exponential |   3.4055e+11 |        false |
+|   20 |      16 | Accept |      3.3078 |      1175.2 |       3.216 |      3.2162 |   0.00045206 |         none |     matern52 |   6.4995e+10 |         true |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 20 reached.
+Total function evaluations: 20
+Total elapsed time: 8337.9958 seconds.
+Total objective function evaluation time: 45865.4134
+
+Best observed feasible point:
+    Sigma     BasisFunction    KernelFunction    KernelScale    Standardize
+    ______    _____________    ______________    ___________    ___________
+
+    2.0816        none          exponential      1.4182e+11        false   
+
+Observed objective function value = 3.216
+Estimated objective function value = 3.2162
+Function evaluation time = 2663.7969
+
+Best estimated feasible point (according to models):
+    Sigma     BasisFunction    KernelFunction    KernelScale    Standardize
+    ______    _____________    ______________    ___________    ___________
+
+    2.0816        none          exponential      1.4182e+11        false   
+
+Estimated objective function value = 3.2162
+Estimated function evaluation time = 1879.9983
+
+Elapsed time is 8587.308229 seconds.
+Elapsed time is 8587.320344 seconds.
+Use the hyper-parameter optimized NN model for regression
+Elapsed time is 0.194089 seconds.
+Use the hyper-parameter optimized GPR model for regression
+Elapsed time is 0.453289 seconds.
+Use the hyper-parameter optimized Ensemble of Trees model for regression
+Elapsed time is 0.329871 seconds.
+Use the super learner model for regression
+Elapsed time is 1.485478 seconds.
+Use the error estimate to update the Super Learner Estimate
+Elapsed time is 1.220163 seconds.
+Use the hyper-parameter optimized NN model for regression
+Elapsed time is 0.102784 seconds.
+Use the hyper-parameter optimized GPR model for regression
+Elapsed time is 0.157915 seconds.
+Use the hyper-parameter optimized Ensemble of Trees model for regression
+Elapsed time is 0.155537 seconds.
+Use the super learner model for regression
+Elapsed time is 0.276587 seconds.
+Use the error estimate to update the Super Learner Estimate
+Elapsed time is 0.195698 seconds.
+
+
+
+combinedFigDaily = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06318cd1/UTD_Rsl_All_Daily_001e06318cd1_pm1_palas.png"
+
+
+combinedFig = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06318cd1/UTD_Rsl_All_2020_12_01_16_51_30/UTD_Rsl_All_2020_12_01_16_51_30_001e06318cd1_pm1_palas.png"
+
+    "Creating Folder @: '/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06318cd1/UTD_Rsl_All_2020_12_01_16_51_30'"
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x6833 double]
+              YData: [1x6833 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x6833 double]
+              YData: [1x6833 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+    "Saving Model Files for Node: 001e06318cd1 & target :PM_{1}"
+
+
+modelsSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06318cd1/daily_Mdl_001e06318cd1_pm1_palas.mat"
+
+
+modelsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06318cd1/UTD_Rsl_All_2020_12_01_16_51_30/UTD_Rsl_All_2020_12_01_16_51_30_001e06318cd1_pm1_palas.mat"
+
+
+resultsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06318cd1/daily_Mdl_001e06318cd1_pm1_palas.csv"
+
+    "Creating Folder @: '/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06318cd1/UTD_Rsl_All_2020_12_01_16_51_30'"
+
+
+
+
+
+
+trainingSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06318cd1/UTD_Rsl_All_Daily_001e06318cd1_pm1_palas.mat"
+
+
+trainingSaveName = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06318cd1/UTD_Rsl_All_2020_12_01_16_51_30/UTD_Rsl_All_2020_12_01_16_51_30_001e06318cd1_pm1_palas.mat"
+
+    "Creating Folder @: '/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06318cd1/UTD_Rsl_All_2020_12_01_16_51_30'"
+
+
+
+    "Gainin Data set for Node 001e06318cd1 with target output pm2_5_palas @ 02-Dec-2020 01:52:30"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 320 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 70 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 211 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 151 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 98 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 54 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 26 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 15 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 3 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 312 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 299 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 262 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 171 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        6754
+
+
+ans =
+
+        1192
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       8 | Accept |      18.778 |     0.69191 |      8.8881 |      8.8979 |           44 |    0.0017981 |
+|    2 |       8 | Accept |      22.504 |     0.79594 |      8.8881 |      8.8979 |           26 |     0.033212 |
+|    3 |       8 | Accept |      12.344 |     0.75859 |      8.8881 |      8.8979 |           16 |    0.0017959 |
+|    4 |       8 | Accept |      24.803 |     0.93936 |      8.8881 |      8.8979 |           42 |      0.91022 |
+|    5 |       8 | Accept |      32.316 |     0.99652 |      8.8881 |      8.8979 |           14 |      0.89816 |
+|    6 |       8 | Accept |       109.4 |     0.95791 |      8.8881 |      8.8979 |           61 |     0.051852 |
+|    7 |       8 | Accept |      92.001 |     0.72819 |      8.8881 |      8.8979 |           95 |     0.091854 |
+|    8 |       8 | Best   |      8.8881 |     0.73986 |      8.8881 |      8.8979 |           19 |      0.27556 |
+|    9 |       8 | Accept |       18.55 |     0.73108 |      8.8881 |      8.8979 |           14 |    0.0037656 |
+|   10 |       5 | Accept |      48.734 |       2.668 |      8.8881 |      19.056 |           80 |     0.065616 |
+|   11 |       5 | Accept |      52.882 |      2.3404 |      8.8881 |      19.056 |           49 |      0.40129 |
+|   12 |       5 | Accept |      55.336 |      2.6591 |      8.8881 |      19.056 |           55 |     0.014039 |
+|   13 |       5 | Accept |       122.7 |      2.0161 |      8.8881 |      19.056 |           69 |      0.22823 |
+|   14 |       5 | Accept |      48.135 |      2.6698 |      8.8881 |      19.056 |           20 |       0.1939 |
+|   15 |       5 | Accept |       30.56 |      2.7704 |      8.8881 |      19.056 |           76 |      0.03566 |
+|   16 |       5 | Accept |      39.382 |      2.6189 |      8.8881 |      19.056 |           60 |    0.0030695 |
+|   17 |       5 | Accept |      19.374 |     0.15001 |      8.8881 |      19.056 |           14 |    0.0083697 |
+|   18 |       5 | Accept |      35.007 |     0.20261 |      8.8881 |      19.056 |           45 |     0.017486 |
+|   19 |       5 | Accept |      49.494 |     0.16537 |      8.8881 |      19.056 |           15 |      0.22521 |
+|   20 |       5 | Accept |      35.519 |     0.22291 |      8.8881 |      19.056 |           32 |      0.06147 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       5 | Accept |      53.652 |     0.30956 |      8.8881 |      19.056 |           66 |    0.0027866 |
+|   22 |       8 | Accept |      41.415 |     0.78311 |       7.935 |      27.396 |           29 |    0.0010004 |
+|   23 |       8 | Best   |       7.935 |     0.65445 |       7.935 |      27.396 |           15 |      0.86658 |
+|   24 |       8 | Accept |      19.165 |     0.82287 |       7.935 |      27.396 |           98 |     0.026745 |
+|   25 |       8 | Accept |      19.913 |     0.62092 |       7.935 |      27.396 |            5 |      0.07203 |
+|   26 |       8 | Accept |      146.97 |     0.20555 |       7.935 |      27.396 |           67 |     0.081277 |
+|   27 |       8 | Accept |      74.045 |     0.16135 |       7.935 |      27.396 |           15 |     0.013211 |
+|   28 |       8 | Accept |      42.553 |     0.17367 |       7.935 |      27.396 |           22 |    0.0025361 |
+|   29 |       8 | Accept |      94.006 |     0.31496 |       7.935 |      27.396 |           73 |     0.008254 |
+|   30 |       8 | Accept |      25.404 |     0.50934 |       7.935 |      27.396 |           31 |     0.010095 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 30
+Total elapsed time: 8.3425 seconds.
+Total objective function evaluation time: 30.3787
+
+Best observed feasible point:
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          15           0.86658
+
+Observed objective function value = 7.935
+Estimated objective function value = 27.3959
+Function evaluation time = 0.65445
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          15           0.86658
+
+Estimated objective function value = 27.3959
+Estimated function evaluation time = 0.67569
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          15           0.86658
+
+Elapsed time is 58.947256 seconds.
+Train a hyper-parameter optimized GPR model for regression
+First Optimize all the GPR parameters
+Copying objective function to workers...
+Done copying objective function to workers.
+|============================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |        Sigma | BasisFunction| KernelFuncti-|  KernelScale |  Standardize |
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              |              | on           |              |              |
+|============================================================================================================================================================|
+|    1 |      16 | Best   |      35.263 |      1503.6 |      35.263 |      35.263 |       7.5011 | pureQuadrati |     matern32 |   2.5624e+10 |         true |
+|    2 |      16 | Best   |      4.0652 |      1558.4 |      4.0652 |      5.3057 |    0.0032484 |     constant | squaredexpon |   1.5567e+11 |         true |
+|    3 |      16 | Best   |      4.0652 |      1823.9 |      4.0652 |      4.0764 |    0.0022254 |     constant | rationalquad |   1.9036e+10 |         true |
+|    4 |      16 | Best   |      4.0652 |        1947 |      4.0652 |      4.0658 |     0.041919 |     constant | squaredexpon |   1.0893e+12 |         true |
+|    5 |      16 | Accept |      5.9239 |      2483.6 |      4.0652 |      4.0656 |        55.02 |       linear | rationalquad |   4.9132e+11 |        false |
+|    6 |      16 | Accept |      4.0659 |      2676.3 |      4.0652 |      4.0656 |       1.4908 |     constant | rationalquad |   7.7344e+09 |         true |
+|    7 |      16 | Accept |       24.57 |        5609 |      4.0652 |      4.0657 |   0.00012627 | pureQuadrati | rationalquad |   7.2942e+10 |        false |
+|    8 |      16 | Accept |      4.0653 |      1947.9 |      4.0652 |      4.0656 |   0.00068626 |         none | squaredexpon |   4.3158e+11 |         true |
+|    9 |      16 | Best   |      4.0514 |      6855.8 |      4.0514 |      4.0656 |    0.0012697 |         none |  exponential |   7.7567e+09 |        false |
+|   10 |      16 | Accept |      4.0655 |      1784.6 |      4.0514 |      4.0655 |      0.38222 |     constant |     matern52 |   1.7095e+10 |         true |
+|   11 |      16 | Accept |      4.0653 |      3899.4 |      4.0514 |      4.0655 |      0.42741 |         none | rationalquad |   3.5076e+10 |         true |
+|   12 |      16 | Accept |      4.0654 |       974.7 |      4.0514 |      4.0654 |       43.326 |         none |     matern52 |   1.7208e+10 |         true |
+|   13 |      16 | Accept |      5.3819 |        3331 |      4.0514 |      4.0654 |       0.3081 |         none | squaredexpon |   4.4298e+11 |        false |
+|   14 |      16 | Accept |      26.389 |      9765.4 |      4.0514 |      4.0655 |    0.0017328 | pureQuadrati |     matern52 |   9.7438e+09 |         true |
+|   15 |      16 | Accept |      15.468 |      1996.9 |      4.0514 |      4.0655 |     0.063787 |       linear | rationalquad |   1.4501e+11 |         true |
+|   16 |      16 | Accept |      7.8944 |      5909.3 |      4.0514 |      4.0655 |    0.0042608 |     constant | rationalquad |   8.7178e+09 |        false |
+|   17 |      16 | Accept |      10.329 |      1584.9 |      4.0514 |      4.0655 |       11.727 |       linear | squaredexpon |   5.9017e+11 |        false |
+|   18 |      16 | Accept |      4.0653 |      912.09 |      4.0514 |      4.0655 |       18.033 |         none |     matern32 |   1.5885e+10 |         true |
+|   19 |      16 | Accept |      12.443 |       11831 |      4.0514 |      4.0655 |       1.8259 |       linear |     matern32 |   6.4815e+10 |        false |
+|   20 |      16 | Accept |      9.4799 |      4825.9 |      4.0514 |      4.0655 |    0.0027299 |         none | rationalquad |   1.7556e+11 |        false |
+|============================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |        Sigma | BasisFunction| KernelFuncti-|  KernelScale |  Standardize |
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              |              | on           |              |              |
+|============================================================================================================================================================|
+|   21 |      16 | Accept |      4.0659 |      1511.7 |      4.0514 |      4.0655 |    0.0033822 |     constant |     matern32 |   1.7621e+10 |         true |
+|   22 |      16 | Error  |         NaN |      2479.2 |      4.0514 |      4.0655 |   0.00019869 |         none |     matern32 |   7.3929e+09 |        false |
+|   23 |      16 | Accept |      4.4408 |      1100.2 |      4.0514 |      4.0655 |   0.00011085 |     constant |  exponential |   7.9093e+09 |        false |
+|   24 |      16 | Error  |         NaN |      3850.1 |      4.0514 |      4.0655 |    0.0090393 |     constant |     matern52 |    4.102e+10 |        false |
+|   25 |      16 | Accept |      13.421 |      7860.2 |      4.0514 |      4.0655 |       43.845 |       linear | squaredexpon |   6.1905e+11 |         true |
+|   26 |      16 | Error  |         NaN |      2761.4 |      4.0514 |      4.0655 |    0.0046091 |     constant |     matern32 |   8.0481e+09 |        false |
+|   27 |      16 | Best   |      1.6995 |      3098.9 |      1.6995 |      1.7003 |   0.00011212 |     constant |  exponential |   2.8571e+10 |         true |
+|   28 |      16 | Accept |      4.0653 |      5298.3 |      1.6995 |      1.7002 |       13.302 |         none |  exponential |   1.0571e+10 |         true |
+|   29 |      16 | Accept |      4.0733 |      7620.9 |      1.6995 |      1.7002 |       2.6301 |         none |     matern52 |   1.6681e+10 |        false |
+|   30 |      16 | Accept |       4.122 |       18118 |      1.6995 |      1.7002 |     0.012056 |     constant | squaredexpon |   1.5823e+12 |        false |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 30
+Total elapsed time: 18151.4961 seconds.
+Total objective function evaluation time: 126919.3466
+
+Best observed feasible point:
+      Sigma       BasisFunction    KernelFunction    KernelScale    Standardize
+    __________    _____________    ______________    ___________    ___________
+
+    0.00011212      constant        exponential      2.8571e+10        true    
+
+Observed objective function value = 1.6995
+Estimated objective function value = 1.7002
+Function evaluation time = 3098.9165
+
+Best estimated feasible point (according to models):
+      Sigma       BasisFunction    KernelFunction    KernelScale    Standardize
+    __________    _____________    ______________    ___________    ___________
+
+    0.00011212      constant        exponential      2.8571e+10        true    
+
+Estimated objective function value = 1.7002
+Estimated function evaluation time = 3141.138
+
+Elapsed time is 18200.527710 seconds.
+Take a copy of the best attributes
+Now use these optimum settings to do an exact GPR fit
+Elapsed time is 67.484020 seconds.
+Train a hyper-parameter optimized Ensemble of Trees model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===========================================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |       Method | NumLearningC-|    LearnRate |  MinLeafSize | MaxNumSplits | NumVariables-|
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              | ycles        |              |              |              | ToSample     |
+|===========================================================================================================================================================================|
+|    1 |      16 | Best   |      4.5891 |      4.0739 |      4.5891 |      4.5891 |      LSBoost |           22 |     0.001423 |           33 |           10 |           16 |
+|    2 |      12 | Accept |      4.0655 |      5.0246 |      1.7454 |      1.7457 |      LSBoost |           37 |      0.54333 |         3074 |          138 |           33 |
+|    3 |      12 | Accept |       3.703 |      10.386 |      1.7454 |      1.7457 |          Bag |          114 |            - |          582 |         1640 |            3 |
+|    4 |      12 | Best   |      1.7454 |      15.056 |      1.7454 |      1.7457 |          Bag |           48 |            - |           21 |         5594 |           11 |
+|    5 |      12 | Accept |      2.5267 |       11.65 |      1.7454 |      1.7457 |          Bag |           67 |            - |          244 |           59 |           12 |
+|    6 |      12 | Accept |      3.6816 |      11.015 |      1.7454 |      1.7457 |          Bag |          112 |            - |          274 |           60 |            3 |
+|    7 |       9 | Accept |      3.0881 |      41.971 |      1.7454 |      1.7458 |          Bag |           29 |            - |          606 |           49 |           18 |
+|    8 |       9 | Accept |      4.1348 |      67.457 |      1.7454 |      1.7458 |      LSBoost |           38 |    0.0072749 |           10 |           39 |           34 |
+|    9 |       9 | Accept |      2.2014 |      46.061 |      1.7454 |      1.7458 |      LSBoost |          405 |      0.22726 |         1280 |          833 |           30 |
+|   10 |       9 | Accept |      2.8556 |      3.3208 |      1.7454 |      1.7458 |          Bag |           18 |            - |           16 |            5 |           10 |
+|   11 |      13 | Accept |      3.6232 |      89.089 |      1.7454 |      1.7457 |      LSBoost |          166 |      0.23031 |         1067 |          173 |            4 |
+|   12 |      13 | Accept |      2.0381 |      74.164 |      1.7454 |      1.7457 |          Bag |          333 |            - |           92 |         3217 |           14 |
+|   13 |      13 | Accept |      1.8238 |      89.529 |      1.7454 |      1.7457 |          Bag |           68 |            - |           26 |         2193 |           12 |
+|   14 |      13 | Accept |      3.3725 |      6.5841 |      1.7454 |      1.7457 |          Bag |           69 |            - |         1156 |            2 |           10 |
+|   15 |       8 | Best   |      1.5738 |      23.901 |      1.5738 |      1.5726 |          Bag |           10 |            - |            7 |         6603 |           16 |
+|   16 |       8 | Accept |      1.5901 |      35.082 |      1.5738 |      1.5726 |      LSBoost |           11 |        0.511 |            1 |           93 |           33 |
+|   17 |       8 | Accept |      4.3537 |      19.694 |      1.5738 |      1.5726 |      LSBoost |           72 |    0.0021819 |            6 |           75 |           19 |
+|   18 |       8 | Accept |      2.5728 |      14.756 |      1.5738 |      1.5726 |      LSBoost |           38 |     0.032011 |            7 |         2110 |           14 |
+|   19 |       8 | Accept |      1.7167 |       32.97 |      1.5738 |      1.5726 |          Bag |           19 |            - |           21 |          207 |           18 |
+|   20 |       8 | Accept |      2.4573 |      18.536 |      1.5738 |      1.5726 |          Bag |           83 |            - |            4 |            6 |           30 |
+|===========================================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |       Method | NumLearningC-|    LearnRate |  MinLeafSize | MaxNumSplits | NumVariables-|
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              | ycles        |              |              |              | ToSample     |
+|===========================================================================================================================================================================|
+|   21 |      16 | Accept |      3.3654 |      20.347 |      1.5738 |      1.5725 |          Bag |           37 |            - |         1193 |         6511 |           13 |
+|   22 |       9 | Accept |      1.5668 |      64.784 |      1.5479 |      1.5576 |      LSBoost |          197 |     0.041498 |           41 |          282 |           13 |
+|   23 |       9 | Accept |      2.5366 |      2.9016 |      1.5479 |      1.5576 |      LSBoost |           27 |      0.57487 |         1549 |            2 |           32 |
+|   24 |       9 | Accept |       1.943 |      69.106 |      1.5479 |      1.5576 |          Bag |          206 |            - |            2 |           46 |           21 |
+|   25 |       9 | Best   |      1.5479 |      51.968 |      1.5479 |      1.5576 |      LSBoost |          107 |      0.44102 |          182 |           34 |           34 |
+|   26 |       9 | Accept |      2.5416 |      11.895 |      1.5479 |      1.5576 |          Bag |           50 |            - |           56 |            4 |           33 |
+|   27 |       9 | Accept |      4.0436 |      25.851 |      1.5479 |      1.5576 |      LSBoost |          156 |    0.0023495 |          459 |          480 |           16 |
+|   28 |       9 | Accept |      2.7656 |      61.442 |      1.5479 |      1.5576 |          Bag |          197 |            - |            3 |            8 |           10 |
+|   29 |       9 | Accept |      2.9994 |      225.78 |      1.5479 |      1.5576 |          Bag |          230 |            - |          106 |            2 |           30 |
+|   30 |      16 | Accept |      2.2657 |      4.8358 |      1.5479 |      1.5625 |      LSBoost |           23 |      0.31235 |           35 |            2 |           32 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 30
+Total elapsed time: 283.263 seconds.
+Total objective function evaluation time: 1159.2246
+
+Best observed feasible point:
+    Method     NumLearningCycles    LearnRate    MinLeafSize    MaxNumSplits    NumVariablesToSample
+    _______    _________________    _________    ___________    ____________    ____________________
+
+    LSBoost           107            0.44102         182             34                  34         
+
+Observed objective function value = 1.5479
+Estimated objective function value = 1.5625
+Function evaluation time = 51.9679
+
+Best estimated feasible point (according to models):
+    Method     NumLearningCycles    LearnRate    MinLeafSize    MaxNumSplits    NumVariablesToSample
+    _______    _________________    _________    ___________    ____________    ____________________
+
+    LSBoost           107            0.44102         182             34                  34         
+
+Estimated objective function value = 1.5625
+Estimated function evaluation time = 51.964
+
+Elapsed time is 290.815608 seconds.
+Train the super learner model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|============================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |        Sigma | BasisFunction| KernelFuncti-|  KernelScale |  Standardize |
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              |              | on           |              |              |
+|============================================================================================================================================================|
+|    1 |      16 | Best   |      4.0656 |      1034.6 |      4.0656 |      4.0656 |       19.362 |         none |     matern52 |    5.332e+12 |         true |
+|    2 |      16 | Accept |       6.537 |      1742.1 |      4.0656 |      4.2294 |   0.00040303 |       linear |     matern52 |   1.9822e+10 |         true |
+|    3 |      16 | Accept |      4.2649 |      2145.8 |      4.0656 |      4.1505 |       1.5228 |       linear | rationalquad |     3.72e+10 |        false |
+|    4 |      16 | Accept |       5.744 |      2776.1 |      4.0656 |      4.2498 |      0.61194 |       linear | squaredexpon |   1.7743e+11 |        false |
+|    5 |      16 | Accept |      4.0656 |      1065.7 |      4.0656 |      4.0656 |        17.63 |         none |     matern52 |   3.4095e+12 |         true |
+|    6 |      16 | Error  |         NaN |      3019.4 |      4.0656 |      4.0656 |       1.3223 |         none |     matern32 |   8.8072e+09 |        false |
+|    7 |      16 | Accept |      4.0657 |      902.41 |      4.0656 |      4.0656 |       54.058 |         none |     matern52 |   5.9732e+12 |         true |
+|    8 |      16 | Best   |      4.0656 |        1079 |      4.0656 |      4.0656 |       19.421 |         none |     matern52 |   5.6387e+12 |         true |
+|    9 |      16 | Accept |      4.0657 |      1300.3 |      4.0656 |      4.0656 |       55.619 |         none | rationalquad |   3.6423e+12 |         true |
+|   10 |      16 | Accept |      4.0662 |      1750.6 |      4.0656 |      4.0656 |       20.936 |     constant |     matern52 |   7.6429e+11 |         true |
+|   11 |      16 | Best   |      4.0655 |      1705.4 |      4.0655 |      4.0656 |       12.644 |     constant |     matern32 |     7.25e+11 |         true |
+|   12 |      16 | Accept |      4.0665 |      2126.1 |      4.0655 |      4.0656 |       74.787 |     constant | rationalquad |   3.5329e+12 |         true |
+|   13 |      16 | Accept |      4.0656 |      1372.7 |      4.0655 |      4.0656 |       7.7568 |         none |     matern32 |   2.0414e+12 |         true |
+|   14 |      16 | Best   |      4.0652 |      8508.8 |      4.0652 |      4.0656 |       64.315 |     constant |     matern52 |   3.4588e+10 |        false |
+|   15 |      16 | Accept |      13.407 |      5732.5 |      4.0652 |      4.0656 |       1.1007 |         none | rationalquad |   3.7244e+10 |        false |
+|   16 |      16 | Accept |      4.0659 |      2587.5 |      4.0652 |      4.0656 |        34.14 |     constant | rationalquad |   3.8448e+12 |        false |
+|   17 |      16 | Accept |       9.251 |        9274 |      4.0652 |      4.0656 |   0.00011744 |       linear |     matern32 |    1.421e+12 |         true |
+|   18 |      16 | Accept |      4.0659 |      1785.4 |      4.0652 |      4.0656 |       8.1435 |     constant |  exponential |   1.0096e+12 |         true |
+|   19 |      16 | Accept |      32.942 |      5791.1 |      4.0652 |      4.0657 |       1.5454 | pureQuadrati | rationalquad |   3.5313e+10 |        false |
+|   20 |      16 | Accept |      4.0656 |       958.6 |      4.0652 |      4.0657 |       6.6164 |         none |  exponential |    2.012e+12 |         true |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 20 reached.
+Total function evaluations: 20
+Total elapsed time: 10166.3649 seconds.
+Total objective function evaluation time: 56658.2694
+
+Best observed feasible point:
+    Sigma     BasisFunction    KernelFunction    KernelScale    Standardize
+    ______    _____________    ______________    ___________    ___________
+
+    64.315      constant          matern52       3.4588e+10        false   
+
+Observed objective function value = 4.0652
+Estimated objective function value = 4.0655
+Function evaluation time = 8508.7716
+
+Best estimated feasible point (according to models):
+    Sigma     BasisFunction    KernelFunction    KernelScale    Standardize
+    ______    _____________    ______________    ___________    ___________
+
+    19.362        none            matern52        5.332e+12        true    
+
+Estimated objective function value = 4.0657
+Estimated function evaluation time = 1053.3203
+
+Elapsed time is 10211.914938 seconds.
+Train the super learner error model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|============================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |        Sigma | BasisFunction| KernelFuncti-|  KernelScale |  Standardize |
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              |              | on           |              |              |
+|============================================================================================================================================================|
+|    1 |      16 | Best   |      4.0651 |      1464.5 |      4.0651 |      4.0651 |       30.038 |         none | squaredexpon |   7.3759e+10 |        false |
+|    2 |      16 | Accept |      4.0657 |        1587 |      4.0651 |      4.0652 |    0.0055404 |     constant |     matern52 |   9.1526e+11 |         true |
+|    3 |      16 | Accept |      4.0663 |      936.11 |      4.0651 |      4.0657 |       1.9273 |         none | squaredexpon |   6.8078e+10 |        false |
+|    4 |      16 | Accept |       38.32 |      3235.6 |      4.0651 |      4.0664 |       1.6889 | pureQuadrati |     matern32 |   1.4036e+10 |        false |
+|    5 |      16 | Best   |      2.1691 |      1938.6 |      2.1691 |      2.1702 |       0.6626 |       linear | rationalquad |   2.8165e+10 |        false |
+|    6 |      16 | Error  |         NaN |      3686.5 |      2.1691 |      2.1702 |   0.00035278 | pureQuadrati |     matern52 |   7.4389e+09 |        false |
+|    7 |      16 | Accept |      4.0651 |      2115.3 |      2.1691 |        2.17 |       17.409 |     constant | rationalquad |   5.5495e+10 |         true |
+|    8 |      16 | Accept |       35.08 |      5730.1 |      2.1691 |      2.1705 |        0.595 | pureQuadrati | rationalquad |   5.2866e+11 |        false |
+|    9 |      16 | Accept |      4.0656 |      6377.1 |      2.1691 |      2.1703 |      0.20567 |         none |     matern32 |   9.9909e+11 |         true |
+|   10 |      16 | Accept |      6.8037 |      3476.1 |      2.1691 |      2.1702 |       0.1447 |       linear | squaredexpon |    1.666e+11 |        false |
+|   11 |      16 | Accept |      4.0656 |      2757.3 |      2.1691 |      2.1701 |   0.00017916 |         none | rationalquad |   5.4008e+10 |         true |
+|   12 |      16 | Accept |      5.6731 |      8526.3 |      2.1691 |        2.17 |      0.23685 |       linear | rationalquad |   3.6692e+12 |         true |
+|   13 |      16 | Best   |     0.92084 |      8771.9 |     0.92084 |     0.92176 |   0.00044239 |       linear | squaredexpon |   4.6237e+11 |         true |
+|   14 |      16 | Accept |      5.2148 |      8838.2 |     0.92084 |     0.92169 |      0.23822 |       linear | rationalquad |    1.227e+12 |         true |
+|   15 |      16 | Accept |      4.0651 |      9191.6 |     0.92084 |     0.92164 |       18.814 |         none |     matern52 |   3.9094e+10 |        false |
+|   16 |      16 | Accept |      7.3818 |      5741.6 |     0.92084 |     0.92163 |      0.84631 |         none | rationalquad |   1.8255e+11 |        false |
+|   17 |      16 | Accept |      4.0654 |        2223 |     0.92084 |      0.9216 |     0.050667 |     constant |     matern32 |   9.4361e+11 |         true |
+|   18 |      16 | Accept |      4.0656 |      1352.7 |     0.92084 |     0.92157 |      0.22312 |         none | squaredexpon |   6.2403e+10 |         true |
+|   19 |      16 | Accept |      4.0668 |      1408.1 |     0.92084 |     0.92155 |       63.672 |     constant | squaredexpon |   7.8789e+10 |        false |
+|   20 |      16 | Accept |      6.9228 |      6204.2 |     0.92084 |     0.92154 |       1.2188 |     constant | rationalquad |   4.3544e+10 |        false |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 20 reached.
+Total function evaluations: 20
+Total elapsed time: 12005.5677 seconds.
+Total objective function evaluation time: 85561.8667
+
+Best observed feasible point:
+      Sigma       BasisFunction      KernelFunction      KernelScale    Standardize
+    __________    _____________    __________________    ___________    ___________
+
+    0.00044239       linear        squaredexponential    4.6237e+11        true    
+
+Observed objective function value = 0.92084
+Estimated objective function value = 0.92154
+Function evaluation time = 8771.8686
+
+Best estimated feasible point (according to models):
+      Sigma       BasisFunction      KernelFunction      KernelScale    Standardize
+    __________    _____________    __________________    ___________    ___________
+
+    0.00044239       linear        squaredexponential    4.6237e+11        true    
+
+Estimated objective function value = 0.92154
+Estimated function evaluation time = 8765.2348
+
+[Warning: Explicit basis matrix in the GPR model is not of full column rank -
+some basis coefficients are not identifiable. This could be because the
+predictor matrix X is rank deficient or has a constant predictor.] 
+[> In classreg.learning.impl/GPImpl/checkExplicitBasisRank (line 3132)
+  In classreg.learning.impl/GPImpl/make (line 236)
+  In RegressionGP (line 277)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In RegressionGP.fit (line 308)
+  In fitrgp (line 469)
+  In classreg.learning.paramoptim.fitToFullDataset (line 7)
+  In classreg.learning.paramoptim.fitoptimizing (line 40)
+  In fitrgp (line 467)
+  In fitrsuperOptimized (line 119)
+  In utdNodesOptSolo2 (line 214)] 
+Elapsed time is 12099.614734 seconds.
+Elapsed time is 12099.627268 seconds.
+Use the hyper-parameter optimized NN model for regression
+Elapsed time is 0.123612 seconds.
+Use the hyper-parameter optimized GPR model for regression
+Elapsed time is 1.225359 seconds.
+Use the hyper-parameter optimized Ensemble of Trees model for regression
+Elapsed time is 0.218884 seconds.
+Use the super learner model for regression
+Elapsed time is 1.501404 seconds.
+Use the error estimate to update the Super Learner Estimate
+Elapsed time is 0.517785 seconds.
+Use the hyper-parameter optimized NN model for regression
+Elapsed time is 0.021997 seconds.
+Use the hyper-parameter optimized GPR model for regression
+Elapsed time is 0.037177 seconds.
+Use the hyper-parameter optimized Ensemble of Trees model for regression
+Elapsed time is 0.057446 seconds.
+Use the super learner model for regression
+Elapsed time is 0.038177 seconds.
+Use the error estimate to update the Super Learner Estimate
+Elapsed time is 0.023083 seconds.
+
+
+
+combinedFigDaily = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06318cd1/UTD_Rsl_All_Daily_001e06318cd1_pm2_5_palas.png"
+
+
+combinedFig = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06318cd1/UTD_Rsl_All_2020_12_01_16_51_30/UTD_Rsl_All_2020_12_01_16_51_30_001e06318cd1_pm2_5_palas.png"
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x6754 double]
+              YData: [1x6754 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x6754 double]
+              YData: [1x6754 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+    "Saving Model Files for Node: 001e06318cd1 & target :PM_{2.5}"
+
+
+modelsSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06318cd1/daily_Mdl_001e06318cd1_pm2_5_palas.mat"
+
+
+modelsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06318cd1/UTD_Rsl_All_2020_12_01_16_51_30/UTD_Rsl_All_2020_12_01_16_51_30_001e06318cd1_pm2_5_palas.mat"
+
+
+resultsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06318cd1/daily_Mdl_001e06318cd1_pm2_5_palas.csv"
+
+
+
+
+
+
+trainingSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06318cd1/UTD_Rsl_All_Daily_001e06318cd1_pm2_5_palas.mat"
+
+
+trainingSaveName = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06318cd1/UTD_Rsl_All_2020_12_01_16_51_30/UTD_Rsl_All_2020_12_01_16_51_30_001e06318cd1_pm2_5_palas.mat"
+
+
+
+    "Gainin Data set for Node 001e06318cd1 with target output pm4_palas @ 02-Dec-2020 13:22:01"
+
+Going through column 1 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 320 bins for this column. With 2 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 70 bins for this column. With 2 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 2 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 211 bins for this column. With 2 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 151 bins for this column. With 2 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 98 bins for this column. With 2 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 54 bins for this column. With 2 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 26 bins for this column. With 2 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 15 bins for this column. With 2 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 10 bins for this column. With 2 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 7 bins for this column. With 2 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 3 bins for this column. With 2 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 2 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 4 bins for this column. With 2 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 312 bins for this column. With 2 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 299 bins for this column. With 2 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 262 bins for this column. With 2 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 171 bins for this column. With 2 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 500 bins for this column. With 2 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1000 bins for this column. With 4 members per bin.
+
+ans =
+
+        6422
+
+
+ans =
+
+        1133
+
+    "Running Regression"
+
+Train a hyper-parameter optimized NN model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |      15 | Best   |       89.16 |     0.23749 |       89.16 |      93.887 |           58 |    0.0012973 |
+|    2 |      15 | Accept |      171.79 |     0.28061 |       89.16 |      93.887 |           90 |      0.10243 |
+|    3 |       5 | Accept |      124.98 |      1.6617 |      29.802 |      71.647 |           50 |      0.90998 |
+|    4 |       5 | Accept |      74.127 |       1.416 |      29.802 |      71.647 |           32 |     0.029057 |
+|    5 |       5 | Accept |      34.174 |      1.5099 |      29.802 |      71.647 |           10 |    0.0010936 |
+|    6 |       5 | Accept |      61.598 |      1.5605 |      29.802 |      71.647 |            7 |     0.083311 |
+|    7 |       5 | Accept |      192.15 |     0.43496 |      29.802 |      71.647 |           70 |    0.0011874 |
+|    8 |       5 | Accept |      50.629 |     0.47252 |      29.802 |      71.647 |           68 |     0.009046 |
+|    9 |       5 | Best   |      29.802 |      1.4848 |      29.802 |      71.647 |           23 |      0.22987 |
+|   10 |       5 | Accept |      71.325 |     0.41175 |      29.802 |      71.647 |            7 |    0.0020569 |
+|   11 |       5 | Accept |      90.276 |     0.41264 |      29.802 |      71.647 |           91 |      0.28303 |
+|   12 |       5 | Accept |      78.005 |     0.38465 |      29.802 |      71.647 |           29 |      0.02928 |
+|   13 |       5 | Accept |      273.07 |     0.76818 |      29.802 |      71.647 |           72 |    0.0036729 |
+|   14 |      12 | Accept |      64.976 |      2.2898 |      29.802 |      72.592 |           38 |    0.0042605 |
+|   15 |      12 | Accept |      36.581 |      2.3199 |      29.802 |      72.592 |           72 |    0.0026074 |
+|   16 |      12 | Accept |        44.6 |      2.2423 |      29.802 |      72.592 |           19 |      0.47825 |
+|   17 |      12 | Accept |      143.88 |     0.48921 |      29.802 |      72.592 |           54 |    0.0015618 |
+|   18 |      12 | Accept |      137.26 |     0.18632 |      29.802 |      72.592 |           47 |      0.09438 |
+|   19 |       2 | Accept |      52.346 |      1.1521 |      29.802 |      100.13 |          100 |      0.91848 |
+|   20 |       2 | Accept |      87.027 |      1.1291 |      29.802 |      100.13 |           47 |     0.017191 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      39.144 |      1.1933 |      29.802 |      100.13 |           66 |     0.017483 |
+|   22 |       2 | Accept |      351.88 |     0.23223 |      29.802 |      100.13 |           86 |       0.3591 |
+|   23 |       2 | Accept |      116.25 |      1.2339 |      29.802 |      100.13 |           97 |    0.0020659 |
+|   24 |       2 | Accept |      47.237 |     0.27199 |      29.802 |      100.13 |           75 |      0.87575 |
+|   25 |       2 | Accept |      84.841 |     0.21582 |      29.802 |      100.13 |           47 |     0.015469 |
+|   26 |       2 | Accept |      40.148 |      1.0742 |      29.802 |      100.13 |           64 |     0.042806 |
+|   27 |       2 | Accept |      70.336 |     0.53536 |      29.802 |      100.13 |           41 |       0.2636 |
+|   28 |       2 | Accept |      95.635 |     0.46099 |      29.802 |      100.13 |           29 |     0.010065 |
+|   29 |       2 | Accept |       150.5 |     0.56141 |      29.802 |      100.13 |           79 |     0.054107 |
+|   30 |       9 | Accept |      48.163 |      0.2507 |      29.608 |      72.084 |           16 |     0.001002 |
+|   31 |       9 | Accept |      110.13 |     0.15602 |      29.608 |      72.084 |           20 |    0.0031737 |
+|   32 |       9 | Accept |      63.829 |     0.17982 |      29.608 |      72.084 |           13 |     0.033024 |
+|   33 |       9 | Best   |      29.608 |     0.25548 |      29.608 |      72.084 |            9 |      0.27759 |
+|   34 |       9 | Accept |      70.098 |     0.23096 |      29.608 |      72.084 |            6 |     0.020165 |
+|   35 |       9 | Accept |      55.141 |     0.26956 |      29.608 |      72.084 |            6 |     0.010715 |
+|   36 |       9 | Accept |      129.44 |      0.2904 |      29.608 |      72.084 |           72 |     0.095714 |
+|   37 |       9 | Accept |      304.42 |     0.32491 |      29.608 |      72.084 |           58 |    0.0050662 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 37
+Total elapsed time: 7.6905 seconds.
+Total objective function evaluation time: 28.5814
+
+Best observed feasible point:
+    hiddenLayerSize      lr   
+    _______________    _______
+
+           9           0.27759
+
+Observed objective function value = 29.6078
+Estimated objective function value = 71.7596
+Function evaluation time = 0.25548
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          13           0.033024
+
+Estimated objective function value = 72.0844
+Estimated function evaluation time = 0.55028
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          13           0.033024
+
+Elapsed time is 39.863266 seconds.
+Train a hyper-parameter optimized GPR model for regression
+First Optimize all the GPR parameters
+Copying objective function to workers...
+Done copying objective function to workers.
+|============================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |        Sigma | BasisFunction| KernelFuncti-|  KernelScale |  Standardize |
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              |              | on           |              |              |
+|============================================================================================================================================================|
+|    1 |      16 | Best   |      5.5218 |      4261.7 |      5.5218 |      5.5218 |     0.041442 |         none |     matern32 |   6.6431e+12 |        false |
+|    2 |      16 | Error  |         NaN |      5278.1 |         NaN |      5.5218 |    0.0022304 |       linear |     matern32 |   9.0894e+09 |        false |
+|    3 |      16 | Accept |       5.218 |      5522.8 |         NaN |      5.5097 |   0.00017256 |         none | rationalquad |   2.3709e+11 |         true |
+|    4 |      16 | Accept |      5.2215 |        1285 |       5.218 |      5.2242 |       41.586 | pureQuadrati |     matern32 |   2.0587e+10 |        false |
+|    5 |      16 | Accept |      6.0123 |      5737.4 |       5.218 |      5.3171 |    0.0063715 |         none |     matern32 |   2.2734e+12 |        false |
+|    6 |      16 | Accept |      9.7272 |      7328.3 |       5.218 |      5.2591 |   0.00011039 |         none | rationalquad |   3.1092e+11 |        false |
+|    7 |      16 | Accept |       26.94 |        8733 |       5.218 |      5.2235 |       1.7632 | pureQuadrati |     matern52 |   4.0536e+10 |         true |
+|    8 |      16 | Best   |       5.218 |      3433.9 |       5.218 |      5.2182 |     0.089181 |         none | rationalquad |   2.4399e+11 |         true |
+|    9 |      16 | Accept |      28.754 |      1760.4 |       5.218 |      5.2184 |       37.625 | pureQuadrati |     matern32 |   2.3257e+10 |         true |
+|   10 |      16 | Accept |      16.533 |      9139.8 |       5.218 |      5.2184 |       32.031 |       linear |  exponential |   2.4235e+10 |        false |
+|   11 |      16 | Accept |      5.2181 |      9658.1 |       5.218 |      5.2184 |       23.454 |     constant | squaredexpon |   1.3781e+10 |         true |
+|   12 |      16 | Accept |       5.218 |      4211.1 |       5.218 |      5.2182 |     0.000198 |         none | rationalquad |   3.3143e+11 |         true |
+|   13 |      16 | Accept |       5.218 |      1022.9 |       5.218 |      5.2182 |       3.9999 |         none |     matern52 |   3.6726e+11 |         true |
+|   14 |      16 | Accept |       5.218 |       970.7 |       5.218 |      5.2181 |       30.369 |         none |     matern32 |   7.1312e+12 |         true |
+|   15 |      16 | Accept |       5.218 |      2432.9 |       5.218 |      5.2181 |      0.14824 |         none | squaredexpon |   2.3207e+11 |         true |
+|   16 |      16 | Accept |       9.675 |      1828.9 |       5.218 |      5.2181 |     0.036803 |       linear | rationalquad |   3.0172e+11 |         true |
+|   17 |      16 | Accept |      5.2185 |      1497.1 |       5.218 |      5.2181 |      0.28171 |     constant |     matern52 |   4.1819e+11 |         true |
+|   18 |      16 | Accept |      5.2224 |      1531.3 |       5.218 |      5.2181 |       1.8664 |         none | squaredexpon |   2.3686e+11 |        false |
+|   19 |      16 | Accept |       8.646 |      1665.1 |       5.218 |      5.2181 |       7.1848 |       linear | squaredexpon |   2.4277e+11 |         true |
+|   20 |      16 | Accept |      5.2189 |      5264.5 |       5.218 |      5.2181 |       128.21 |         none |     matern52 |   6.4648e+12 |        false |
+|============================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |        Sigma | BasisFunction| KernelFuncti-|  KernelScale |  Standardize |
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              |              | on           |              |              |
+|============================================================================================================================================================|
+|   21 |      16 | Accept |      5.2183 |      1490.2 |       5.218 |      5.2181 |      0.31223 |     constant |     matern32 |   2.2479e+12 |         true |
+|   22 |      16 | Accept |      5.2187 |      1530.1 |       5.218 |      5.2181 |    0.0043754 |     constant |  exponential |   2.4229e+12 |         true |
+|   23 |      16 | Accept |      8.3156 |      3173.4 |       5.218 |      5.2181 |     0.090227 |       linear | squaredexpon |   2.2787e+11 |        false |
+|   24 |      16 | Error  |         NaN |      3129.1 |       5.218 |      5.2181 |    0.0011979 |         none |  exponential |   6.7936e+12 |         true |
+|   25 |      16 | Accept |      5.2183 |      1397.7 |       5.218 |      5.2181 |       19.206 |     constant |  exponential |   4.4165e+12 |        false |
+|   26 |      16 | Accept |       5.218 |      8618.1 |       5.218 |      5.2181 |   0.00018864 |     constant | rationalquad |   2.4925e+11 |         true |
+|   27 |      16 | Accept |      14.786 |      1507.9 |       5.218 |      5.2181 |       104.52 |       linear |     matern52 |    7.208e+12 |        false |
+|   28 |      16 | Accept |      5.3723 |       18386 |       5.218 |      5.2181 |    0.0005225 |     constant |     matern52 |   3.2871e+12 |        false |
+|   29 |      16 | Accept |      5.2181 |      6021.5 |       5.218 |      5.2181 |       3.3175 |     constant |     matern32 |   7.0899e+12 |        false |
+|   30 |      16 | Accept |      30.371 |      3933.8 |       5.218 |      5.2181 |      0.65891 | pureQuadrati | squaredexpon |   2.3923e+11 |        false |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 30
+Total elapsed time: 22251.826 seconds.
+Total objective function evaluation time: 131751.1847
+
+Best observed feasible point:
+     Sigma      BasisFunction     KernelFunction      KernelScale    Standardize
+    ________    _____________    _________________    ___________    ___________
+
+    0.089181        none         rationalquadratic    2.4399e+11        true    
+
+Observed objective function value = 5.218
+Estimated objective function value = 5.2181
+Function evaluation time = 3433.9193
+
+Best estimated feasible point (according to models):
+     Sigma      BasisFunction     KernelFunction      KernelScale    Standardize
+    ________    _____________    _________________    ___________    ___________
+
+    0.089181        none         rationalquadratic    2.4399e+11        true    
+
+Estimated objective function value = 5.2181
+Estimated function evaluation time = 3189.2533
+
+Elapsed time is 22467.969173 seconds.
+Take a copy of the best attributes
+Now use these optimum settings to do an exact GPR fit
+Elapsed time is 118.348583 seconds.
+Train a hyper-parameter optimized Ensemble of Trees model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|===========================================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |       Method | NumLearningC-|    LearnRate |  MinLeafSize | MaxNumSplits | NumVariables-|
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              | ycles        |              |              |              | ToSample     |
+|===========================================================================================================================================================================|
+|    1 |      16 | Best   |      4.6263 |     0.96439 |      4.6263 |      4.6263 |      LSBoost |           11 |      0.18215 |         2368 |            1 |           16 |
+|    2 |      16 | Accept |      5.2182 |      13.592 |      4.6263 |      4.6711 |          Bag |          191 |            - |         2362 |           42 |            2 |
+|    3 |      12 | Accept |      5.2182 |       20.85 |      2.3448 |      2.3449 |          Bag |          252 |            - |         2832 |         3154 |           21 |
+|    4 |      12 | Accept |      2.6223 |      17.159 |      2.3448 |      2.3449 |          Bag |           39 |            - |           50 |         1126 |           31 |
+|    5 |      12 | Accept |      4.7457 |      16.158 |      2.3448 |      2.3449 |      LSBoost |           69 |     0.007726 |           43 |           11 |           27 |
+|    6 |      12 | Accept |       2.785 |      17.205 |      2.3448 |      2.3449 |          Bag |           46 |            - |           68 |           70 |           24 |
+|    7 |      12 | Best   |      2.3448 |      14.362 |      2.3448 |      2.3449 |          Bag |           16 |            - |            2 |          522 |           20 |
+|    8 |      10 | Accept |      4.3792 |      25.001 |      2.3448 |      2.3449 |          Bag |           22 |            - |         1640 |           10 |           27 |
+|    9 |      10 | Accept |      2.6647 |      25.299 |      2.3448 |      2.3449 |      LSBoost |           21 |      0.24046 |           72 |           21 |           11 |
+|   10 |      10 | Accept |      3.9563 |      1.0155 |      2.3448 |      2.3449 |      LSBoost |           10 |      0.19899 |         1050 |            3 |           16 |
+|   11 |      15 | Accept |       3.014 |      29.416 |      2.3448 |      2.3449 |      LSBoost |           26 |      0.39964 |            8 |            2 |           24 |
+|   12 |      15 | Accept |      4.6775 |      28.524 |      2.3448 |      2.3449 |      LSBoost |           32 |      0.31342 |          315 |            2 |            2 |
+|   13 |      13 | Accept |      2.3849 |      33.803 |      2.3448 |      2.3451 |          Bag |           13 |            - |            3 |          442 |           28 |
+|   14 |      13 | Accept |        5.31 |      36.159 |      2.3448 |      2.3451 |      LSBoost |           45 |    0.0058708 |          628 |           19 |           13 |
+|   15 |      13 | Accept |      4.3168 |       1.757 |      2.3448 |      2.3451 |          Bag |           14 |            - |         1201 |            5 |           32 |
+|   16 |      10 | Accept |       4.416 |      18.613 |      2.3448 |      2.3455 |          Bag |          150 |            - |            1 |            1 |           35 |
+|   17 |      10 | Accept |      3.7736 |      15.159 |      2.3448 |      2.3455 |          Bag |           92 |            - |           68 |            3 |           35 |
+|   18 |      10 | Accept |      2.5191 |      9.2633 |      2.3448 |      2.3455 |          Bag |           27 |            - |            5 |           68 |           23 |
+|   19 |      10 | Accept |      4.1728 |      6.9068 |      2.3448 |      2.3455 |      LSBoost |           11 |      0.24759 |         1220 |          841 |           10 |
+|   20 |      16 | Accept |      3.6527 |     0.75799 |      2.3448 |      2.3451 |      LSBoost |           11 |      0.22273 |           11 |            2 |            9 |
+|===========================================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |       Method | NumLearningC-|    LearnRate |  MinLeafSize | MaxNumSplits | NumVariables-|
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              | ycles        |              |              |              | ToSample     |
+|===========================================================================================================================================================================|
+|   21 |      14 | Accept |      2.4411 |      23.176 |      2.3448 |      2.3452 |      LSBoost |           18 |      0.25135 |            2 |           60 |           18 |
+|   22 |      14 | Accept |      5.6423 |      2.1206 |      2.3448 |      2.3452 |      LSBoost |           18 |    0.0020969 |           42 |            9 |            4 |
+|   23 |      14 | Accept |      3.5282 |      4.0271 |      2.3448 |      2.3452 |      LSBoost |           35 |      0.30582 |           38 |            1 |           23 |
+|   24 |      13 | Accept |      3.7256 |      14.409 |      2.3448 |      2.3451 |          Bag |           11 |            - |            1 |            2 |            7 |
+|   25 |      13 | Accept |      2.7252 |       16.46 |      2.3448 |      2.3451 |      LSBoost |           80 |     0.032265 |            1 |           13 |           17 |
+|   26 |      16 | Accept |       3.835 |      59.215 |      2.3448 |      2.3451 |          Bag |          394 |            - |          267 |            3 |           22 |
+|   27 |      14 | Accept |      2.3555 |      96.664 |      2.3448 |       2.345 |          Bag |          388 |            - |            7 |         3325 |            8 |
+|   28 |      14 | Accept |      5.0765 |      94.965 |      2.3448 |       2.345 |      LSBoost |          163 |    0.0091707 |            7 |            1 |            4 |
+|   29 |      14 | Accept |      2.8444 |      47.049 |      2.3448 |       2.345 |          Bag |          203 |            - |            6 |           15 |           27 |
+|   30 |      14 | Accept |       4.456 |      72.131 |      2.3448 |      2.3449 |      LSBoost |           99 |     0.016092 |            2 |           18 |            2 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 30
+Total elapsed time: 117.8649 seconds.
+Total objective function evaluation time: 762.1834
+
+Best observed feasible point:
+    Method    NumLearningCycles    LearnRate    MinLeafSize    MaxNumSplits    NumVariablesToSample
+    ______    _________________    _________    ___________    ____________    ____________________
+
+     Bag             16               NaN            2             522                  20         
+
+Observed objective function value = 2.3448
+Estimated objective function value = 2.3449
+Function evaluation time = 14.3616
+
+Best estimated feasible point (according to models):
+    Method    NumLearningCycles    LearnRate    MinLeafSize    MaxNumSplits    NumVariablesToSample
+    ______    _________________    _________    ___________    ____________    ____________________
+
+     Bag             16               NaN            2             522                  20         
+
+Estimated objective function value = 2.3449
+Estimated function evaluation time = 14.3629
+
+Elapsed time is 121.750021 seconds.
+Train the super learner model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|============================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |        Sigma | BasisFunction| KernelFuncti-|  KernelScale |  Standardize |
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              |              | on           |              |              |
+|============================================================================================================================================================|
+|    1 |      16 | Best   |      5.2182 |      4129.8 |      5.2182 |      5.2182 |       1.9248 |         none |     matern52 |   1.4058e+11 |         true |
+|    2 |      16 | Accept |      21.729 |        4556 |      5.2182 |      5.8747 |   0.00020738 | pureQuadrati |  exponential |   1.2852e+10 |        false |
+|    3 |      16 | Best   |   0.0012339 |      5828.2 |   0.0012339 |     0.54874 |     0.001106 |       linear | rationalquad |   7.6465e+10 |        false |
+|    4 |      16 | Accept |      5.2182 |      2981.1 |   0.0012339 |   0.0021692 |       2.3058 |         none |     matern52 |   1.3447e+10 |         true |
+|    5 |      16 | Accept |      5.2191 |      3927.3 |   0.0012339 |   0.0020573 |      0.35308 |     constant |     matern52 |   3.7784e+12 |         true |
+|    6 |      16 | Accept |    0.028234 |      4140.7 |   0.0012339 |    0.015119 |     0.077058 |       linear | rationalquad |   2.9424e+11 |        false |
+|    7 |      16 | Accept |      5.2182 |       10399 |   0.0012339 |    0.015099 |     0.012766 |         none | squaredexpon |    7.095e+10 |         true |
+|    8 |      16 | Accept |      13.581 |       11105 |   0.0012339 |    0.015175 |       20.788 | pureQuadrati |     matern52 |   2.1764e+11 |         true |
+|    9 |      16 | Accept |      5.2187 |       11116 |   0.0012339 |    0.015123 |      0.44095 |     constant |     matern52 |   1.0379e+10 |         true |
+|   10 |      16 | Accept |      5.2182 |       11810 |   0.0012339 |    0.015107 |   0.00036489 |         none |     matern32 |   2.3819e+12 |         true |
+|   11 |      16 | Accept |      1.5679 |      3718.3 |   0.0012339 |    0.015062 |    0.0011277 |       linear | rationalquad |   1.2034e+11 |         true |
+|   12 |      16 | Accept |   0.0087466 |      2239.4 |   0.0012339 |     0.01502 |   0.00010038 |       linear |     matern52 |   5.6019e+11 |        false |
+|   13 |      16 | Accept |      5.2183 |      1955.8 |   0.0012339 |    0.015019 |     0.013667 |     constant |     matern32 |   1.5822e+10 |         true |
+|   14 |      16 | Accept |    0.024504 |      2845.2 |   0.0012339 |    0.014992 |   0.00010554 |       linear |     matern32 |   7.6059e+11 |        false |
+|   15 |      16 | Accept |      8.1452 |      4407.5 |   0.0012339 |    0.015006 |   0.00016624 |         none |     matern52 |   1.7807e+12 |        false |
+|   16 |      16 | Accept |      13.831 |      9255.9 |   0.0012339 |     0.01504 |   0.00092704 |         none | rationalquad |   8.3118e+10 |        false |
+|   17 |      16 | Accept |   0.0013773 |      1839.6 |   0.0012339 |    0.015016 |   0.00010503 |       linear |     matern32 |   1.4606e+11 |         true |
+|   18 |      16 | Best   |  0.00021824 |      2451.7 |  0.00021824 |    0.014997 |   0.00010504 |       linear |     matern52 |   5.5877e+11 |         true |
+|   19 |      16 | Accept |   0.0036922 |      9465.8 |  0.00021824 |     0.01498 |   0.00010396 |       linear | squaredexpon |   7.7203e+11 |        false |
+|   20 |      16 | Accept |     0.02352 |      2032.8 |  0.00021824 |    0.014965 |   0.00013671 |       linear |  exponential |   1.1958e+11 |         true |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 20 reached.
+Total function evaluations: 20
+Total elapsed time: 20770.7898 seconds.
+Total objective function evaluation time: 110204.7712
+
+Best observed feasible point:
+      Sigma       BasisFunction    KernelFunction    KernelScale    Standardize
+    __________    _____________    ______________    ___________    ___________
+
+    0.00010504       linear           matern52       5.5877e+11        true    
+
+Observed objective function value = 0.00021824
+Estimated objective function value = 0.00068288
+Function evaluation time = 2451.6517
+
+Best estimated feasible point (according to models):
+     Sigma      BasisFunction     KernelFunction      KernelScale    Standardize
+    ________    _____________    _________________    ___________    ___________
+
+    0.001106       linear        rationalquadratic    7.6465e+10        false   
+
+Estimated objective function value = 0.014965
+Estimated function evaluation time = 4529.623
+
+[Warning: Explicit basis matrix in the GPR model is not of full column rank -
+some basis coefficients are not identifiable. This could be because the
+predictor matrix X is rank deficient or has a constant predictor.] 
+[> In classreg.learning.impl/GPImpl/checkExplicitBasisRank (line 3132)
+  In classreg.learning.impl/GPImpl/make (line 236)
+  In RegressionGP (line 277)
+  In classreg.learning/FitTemplate/fit (line 263)
+  In RegressionGP.fit (line 308)
+  In fitrgp (line 469)
+  In classreg.learning.paramoptim.fitToFullDataset (line 7)
+  In classreg.learning.paramoptim.fitoptimizing (line 40)
+  In fitrgp (line 467)
+  In fitrsuperOptimized (line 90)
+  In utdNodesOptSolo2 (line 214)] 
+Elapsed time is 20915.143366 seconds.
+Train the super learner error model for regression
+Copying objective function to workers...
+Done copying objective function to workers.
+|============================================================================================================================================================|
+| Iter | Active  | Eval   | Objective:  | Objective   | BestSoFar   | BestSoFar   |        Sigma | BasisFunction| KernelFuncti-|  KernelScale |  Standardize |
+|      | workers | result | log(1+loss) | runtime     | (observed)  | (estim.)    |              |              | on           |              |              |
+|============================================================================================================================================================|
+|    1 |      16 | Best   |  2.1504e-05 |      4895.1 |  2.1504e-05 |  2.1504e-05 |     0.014612 |         none | rationalquad |   8.4276e+11 |         true |
+|    2 |      16 | Accept |  2.7235e-05 |       14805 |  2.1504e-05 |  2.2434e-05 |   0.00014766 |     constant |     matern52 |     3.34e+10 |        false |
+|    3 |      16 | Accept |  2.1504e-05 |       16833 |  2.1504e-05 |  2.2105e-05 |    0.0066451 |         none |  exponential |   2.0176e+10 |         true |
+|    4 |      16 | Accept |  0.00075722 |       18058 |  2.1504e-05 |  0.00018309 |       0.0113 |       linear | squaredexpon |   2.8131e+11 |         true |
+|    5 |      16 | Accept |   0.0052329 |       30970 |  2.1504e-05 |    0.001212 |     0.011347 |       linear | rationalquad |   4.6352e+11 |         true |
+|    6 |      16 | Best   |   2.116e-05 |       18262 |   2.116e-05 |  2.1395e-05 |      0.00167 |         none |  exponential |   1.0414e+11 |         true |
+|    7 |      16 | Accept |  2.1504e-05 |       33002 |   2.116e-05 |  2.1387e-05 |     0.010179 |         none | rationalquad |   2.3611e+12 |         true |
+|    8 |      16 | Accept |  2.1504e-05 |       33518 |   2.116e-05 |  2.1536e-05 |      0.03308 |         none | rationalquad |   1.2758e+11 |         true |
+|    9 |      16 | Accept |  2.1554e-05 |       21485 |   2.116e-05 |  2.1531e-05 |    0.0061971 |     constant |     matern52 |    1.796e+11 |         true |
+|   10 |      16 | Accept |  2.1505e-05 |       18543 |   2.116e-05 |  2.1528e-05 |     0.012374 |         none | squaredexpon |   5.0798e+11 |         true |
