@@ -1,0 +1,2890 @@
+Running calibration scripts for UTD Node: 9
+Running on host: compute-1-6-36
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2020 The MathWorks, Inc.
+              R2020a Update 1 (9.8.0.1359463) 64-bit (glnxa64)
+                               April 9, 2020
+
+ 
+To get started, type doc.
+For product information, visit www.mathworks.com.
+ 
+UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20
+
+
+UTD_Ronn_All_RS_ONN_1_Daily
+
+
+Optimzed NN All Inputs
+
+
+
+globalCSVLabel = 
+
+    "resultsNowXT_ONN_1"
+
+
+
+    "---------------------MINTS---------------------"
+
+03-Mar-2021 08:24:21
+
+mintsDefinitions = 
+
+  struct with fields:
+
+                dataFolder: '/home/lhw150030/mintsData'
+               poolWorkers: 16
+                  timeSpan: 30
+                  airmarID: '001e0610c0e4'
+             binsPerColumn: 750
+              numberPerBin: 3
+                    pValid: 0.1500
+                   nodeIDs: {1x16 cell}
+               inputStack1: {1x9 cell}
+         mintsInputsStack1: {1x35 cell}
+    mintsInputLabelsStack1: {1x35 cell}
+              latestStack1: {'BME280'  'MGS001'  'OPCN2'}
+               inputStack2: {1x11 cell}
+              latestStack2: {'BME280'  'MGS001'  'OPCN2'  'SCD30'}
+         mintsInputsStack2: {1x35 cell}
+    mintsInputLabelsStack2: {1x35 cell}
+               inputStack3: {1x10 cell}
+              latestStack3: {'BME280'  'MGS001'  'OPCN2'  'SCD30'}
+         mintsInputsStack3: {1x38 cell}
+    mintsInputLabelsStack3: {1x38 cell}
+              mintsTargets: {1x10 cell}
+         mintsTargetLabels: {1x10 cell}
+                     units: {1x10 cell}
+               instruments: {1x10 cell}
+
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 16).
+
+ans = 
+
+ ProcessPool with properties: 
+
+            Connected: true
+           NumWorkers: 16
+              Cluster: local
+        AttachedFiles: {}
+    AutoAddClientPath: true
+          IdleTimeout: 30 minutes (30 minutes remaining)
+          SpmdEnabled: true
+
+
+airmarFolder = 
+
+    "/home/lhw150030/mintsData/referenceMats/airmar"
+
+
+
+    "Data Folder Located @:/home/lhw150030/mintsData"
+
+    "Raw Data Located @: /home/lhw150030/mintsData"
+
+    "Raw DotMat Data Located @ :/home/lhw150030/mintsData/rawMats"
+
+    "UTD Nodes DotMat Data Located @ :/home/lhw150030/mintsData/rawMats/UTDNodes"
+
+    "Reference Data Located @: /home/lhw150030/mintsData/reference"
+
+    "Reference DotMat Data Located @ :/home/lhw150030/mintsData/referenceMats"
+
+    "Palas Raw Data Located @ :/home/lhw150030/mintsData/reference/palasStream"
+
+    "Palas DotMat Data Located @ :/home/lhw150030/mintsData/referenceMats/palas"
+
+    "Car GPS Files Located @ :/home/lhw150030/mintsData/referenceMats/carMintsGPS"
+
+    "Loading Palas Files"
+
+    "Loading GPS Files"
+
+    "Loading Airmar Files"
+
+    "Aligning GPS data with Palas Data"
+
+    "WSTC Palas Data"
+
+    "Palas With Airmar"
+
+    "Analysis"
+
+    "Save merged data for calibration: 001e06305a6b"
+
+
+
+    "Creating Training Data Sets for Node: 001e06305a6b"
+
+
+
+    "Gainin Data set for Node 001e06305a6b with target output pm1_palas @ 03-Mar-2021 08:25:07"
+
+Going through column 1 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 285 bins for this column. With 3 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 73 bins for this column. With 3 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 3 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 352 bins for this column. With 3 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 76 bins for this column. With 3 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 57 bins for this column. With 3 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 26 bins for this column. With 3 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 18 bins for this column. With 3 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 14 bins for this column. With 3 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 9 bins for this column. With 3 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 8 bins for this column. With 3 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 3 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 3 bins for this column. With 3 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 123 bins for this column. With 3 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 190 bins for this column. With 3 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 223 bins for this column. With 3 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 124 bins for this column. With 3 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1500 bins for this column. With 6 members per bin.
+
+ans =
+
+       13142
+
+
+ans =
+
+        2319
+
+    "Running Regression"
+
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       2 | Best   |      8.0395 |      2.7318 |      8.0395 |       8.043 |           11 |     0.069323 |
+|    2 |       2 | Accept |      56.906 |      2.6778 |      8.0395 |       8.043 |           26 |     0.001008 |
+|    3 |       2 | Accept |       99.97 |      2.7909 |      8.0395 |       8.043 |           72 |      0.62532 |
+|    4 |       2 | Accept |      19.509 |      2.8491 |      8.0395 |       8.043 |           78 |    0.0068517 |
+|    5 |       2 | Accept |      175.47 |      2.8125 |      8.0395 |       8.043 |           87 |     0.063188 |
+|    6 |       2 | Accept |      8.5042 |      2.6526 |      8.0395 |       8.043 |           35 |     0.055442 |
+|    7 |       2 | Accept |      41.846 |      2.7136 |      8.0395 |       8.043 |           52 |      0.92239 |
+|    8 |       2 | Accept |      47.883 |      2.7029 |      8.0395 |       8.043 |           47 |    0.0021051 |
+|    9 |       2 | Accept |      12.974 |      2.7237 |      8.0395 |       8.043 |           68 |    0.0054198 |
+|   10 |       2 | Accept |      23.869 |      2.6979 |      8.0395 |       8.043 |           50 |     0.086107 |
+|   11 |       2 | Accept |      57.115 |      2.6884 |      8.0395 |       8.043 |           38 |     0.023007 |
+|   12 |       2 | Accept |      18.369 |      2.6582 |      8.0395 |       8.043 |           14 |     0.013451 |
+|   13 |       2 | Accept |      104.59 |      2.8736 |      8.0395 |       8.043 |           91 |      0.15629 |
+|   14 |       2 | Accept |      14.224 |      2.7927 |      8.0395 |       8.043 |           16 |    0.0023831 |
+|   15 |       2 | Accept |      34.185 |      2.6224 |      8.0395 |       8.043 |           14 |     0.033235 |
+|   16 |      16 | Accept |      26.819 |      2.8277 |      8.0395 |      16.686 |           81 |      0.37791 |
+|   17 |       2 | Accept |      21.688 |     0.61157 |      6.9201 |      6.9248 |           28 |      0.11304 |
+|   18 |       2 | Accept |      28.519 |     0.76617 |      6.9201 |      6.9248 |           72 |     0.044343 |
+|   19 |       2 | Accept |      11.175 |     0.73839 |      6.9201 |      6.9248 |           93 |     0.017194 |
+|   20 |       2 | Accept |      25.311 |     0.75982 |      6.9201 |      6.9248 |           88 |    0.0019416 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      67.323 |      0.7775 |      6.9201 |      6.9248 |           96 |    0.0028538 |
+|   22 |       2 | Accept |      40.214 |     0.62049 |      6.9201 |      6.9248 |           43 |     0.028552 |
+|   23 |       2 | Accept |      34.496 |     0.77019 |      6.9201 |      6.9248 |           65 |     0.033794 |
+|   24 |       2 | Accept |      26.659 |     0.60539 |      6.9201 |      6.9248 |           21 |      0.33169 |
+|   25 |       2 | Best   |      6.9201 |      0.7036 |      6.9201 |      6.9248 |           20 |     0.029053 |
+|   26 |       2 | Accept |      71.306 |     0.66233 |      6.9201 |      6.9248 |           37 |     0.038501 |
+|   27 |       2 | Accept |      69.199 |     0.66229 |      6.9201 |      6.9248 |           27 |    0.0036594 |
+|   28 |       2 | Accept |      37.893 |     0.77462 |      6.9201 |      6.9248 |           90 |    0.0010818 |
+|   29 |       2 | Accept |      21.539 |     0.77566 |      6.9201 |      6.9248 |           87 |    0.0019396 |
+|   30 |       2 | Accept |      41.601 |     0.56425 |      6.9201 |      6.9248 |           13 |      0.24619 |
+|   31 |       2 | Accept |      28.446 |     0.74978 |      6.9201 |      6.9248 |           79 |     0.057197 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 31
+Total elapsed time: 15.3533 seconds.
+Total objective function evaluation time: 54.3578
+
+Best observed feasible point:
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          20           0.029053
+
+Observed objective function value = 6.9201
+Estimated objective function value = 6.9248
+Function evaluation time = 0.7036
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          20           0.029053
+
+Estimated objective function value = 6.9248
+Estimated function evaluation time = 1.414
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          20           0.029053
+
+Elapsed time is 25.478924 seconds.
+
+
+
+combinedFigDaily = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_pm1_palas.png"
+
+    "Creating Folder @: '/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20'"
+
+
+combinedFigTT = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pm1_palas_TT.png"
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x13142 double]
+              YData: [1x13142 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x13142 double]
+              YData: [1x13142 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+    "Saving Model Files for Node: 001e06305a6b & target :PM_{1}"
+
+
+modelsSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_pm1_palas.mat"
+
+
+modelsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pm1_palas.mat"
+
+
+resultsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_pm1_palas.csv"
+
+    "Creating Folder @: '/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20'"
+
+
+
+
+
+
+trainingSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_pm1_palas.mat"
+
+
+trainingSaveName = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pm1_palas.mat"
+
+    "Creating Folder @: '/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20'"
+
+
+
+    "Gainin Data set for Node 001e06305a6b with target output pm2_5_palas @ 03-Mar-2021 08:26:10"
+
+Going through column 1 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 285 bins for this column. With 3 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 73 bins for this column. With 3 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 3 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 352 bins for this column. With 3 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 76 bins for this column. With 3 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 57 bins for this column. With 3 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 26 bins for this column. With 3 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 18 bins for this column. With 3 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 14 bins for this column. With 3 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 9 bins for this column. With 3 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 8 bins for this column. With 3 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 3 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 3 bins for this column. With 3 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 123 bins for this column. With 3 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 190 bins for this column. With 3 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 223 bins for this column. With 3 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 124 bins for this column. With 3 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1500 bins for this column. With 6 members per bin.
+
+ans =
+
+       11925
+
+
+ans =
+
+        2105
+
+    "Running Regression"
+
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |      16 | Best   |      64.554 |     0.38548 |      64.554 |      64.554 |           69 |      0.58508 |
+|    2 |       2 | Accept |      38.565 |     0.76222 |      30.563 |      66.775 |           94 |      0.01178 |
+|    3 |       2 | Accept |      40.843 |     0.65446 |      30.563 |      66.775 |           62 |    0.0027667 |
+|    4 |       2 | Accept |      60.445 |     0.60114 |      30.563 |      66.775 |           17 |    0.0025694 |
+|    5 |       2 | Accept |      71.652 |     0.73437 |      30.563 |      66.775 |           76 |    0.0028131 |
+|    6 |       2 | Best   |      30.563 |     0.64704 |      30.563 |      66.775 |           61 |      0.53666 |
+|    7 |       2 | Accept |      51.166 |     0.63197 |      30.563 |      66.775 |           38 |      0.17694 |
+|    8 |       2 | Accept |      61.178 |      0.6074 |      30.563 |      66.775 |           18 |    0.0015569 |
+|    9 |       2 | Accept |      94.552 |     0.72326 |      30.563 |      66.775 |           69 |    0.0078721 |
+|   10 |       2 | Accept |       39.15 |     0.72861 |      30.563 |      66.775 |           85 |     0.001141 |
+|   11 |       2 | Accept |      51.149 |     0.55327 |      30.563 |      66.775 |           13 |    0.0041522 |
+|   12 |       2 | Accept |      172.87 |     0.74899 |      30.563 |      66.775 |           81 |     0.092993 |
+|   13 |       2 | Accept |      79.327 |     0.68498 |      30.563 |      66.775 |           42 |      0.55651 |
+|   14 |       2 | Accept |      43.146 |     0.58591 |      30.563 |      66.775 |           15 |      0.36819 |
+|   15 |       2 | Accept |      88.785 |     0.64409 |      30.563 |      66.775 |           42 |    0.0067016 |
+|   16 |       2 | Accept |      80.459 |     0.55448 |      30.563 |      66.775 |           14 |      0.27632 |
+|   17 |      16 | Accept |      57.852 |     0.44257 |      30.563 |       66.25 |           32 |     0.064661 |
+|   18 |       2 | Accept |      17.175 |     0.29294 |       11.65 |      39.185 |           63 |      0.44912 |
+|   19 |       2 | Best   |       11.65 |     0.24787 |       11.65 |      39.185 |            9 |    0.0040922 |
+|   20 |       2 | Accept |       28.63 |     0.32131 |       11.65 |      39.185 |           54 |      0.26454 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |       16.37 |     0.23019 |       11.65 |      39.185 |           13 |     0.088551 |
+|   22 |       2 | Accept |      28.821 |     0.28563 |       11.65 |      39.185 |           33 |     0.042726 |
+|   23 |       2 | Accept |       42.81 |     0.43173 |       11.65 |      39.185 |           90 |    0.0012389 |
+|   24 |       2 | Accept |      36.198 |     0.25363 |       11.65 |      39.185 |           22 |     0.016186 |
+|   25 |       2 | Accept |      52.956 |     0.29912 |       11.65 |      39.185 |           13 |     0.077239 |
+|   26 |       2 | Accept |      33.326 |      0.3947 |       11.65 |      39.185 |           72 |     0.010243 |
+|   27 |       2 | Accept |      49.674 |     0.27103 |       11.65 |      39.185 |           17 |      0.28148 |
+|   28 |       2 | Accept |      39.433 |     0.47552 |       11.65 |      39.185 |           82 |    0.0017833 |
+|   29 |       2 | Accept |       107.3 |     0.38226 |       11.65 |      39.185 |           72 |     0.041123 |
+|   30 |       2 | Accept |      28.962 |     0.45422 |       11.65 |      39.185 |           69 |    0.0014897 |
+|   31 |       2 | Accept |      29.975 |     0.32918 |       11.65 |      39.185 |           53 |    0.0015376 |
+|   32 |       2 | Accept |      55.925 |     0.40355 |       11.65 |      39.185 |           81 |     0.034937 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 32
+Total elapsed time: 6.538 seconds.
+Total objective function evaluation time: 15.7631
+
+Best observed feasible point:
+    hiddenLayerSize       lr    
+    _______________    _________
+
+           9           0.0040922
+
+Observed objective function value = 11.65
+Estimated objective function value = 40.8933
+Function evaluation time = 0.24787
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          63           0.44912
+
+Estimated objective function value = 39.1855
+Estimated function evaluation time = 0.456
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          63           0.44912
+
+Elapsed time is 30.096006 seconds.
+
+
+
+combinedFigDaily = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_pm2_5_palas.png"
+
+
+combinedFigTT = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pm2_5_palas_TT.png"
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x11925 double]
+              YData: [1x11925 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x11925 double]
+              YData: [1x11925 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+    "Saving Model Files for Node: 001e06305a6b & target :PM_{2.5}"
+
+
+modelsSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_pm2_5_palas.mat"
+
+
+modelsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pm2_5_palas.mat"
+
+
+resultsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_pm2_5_palas.csv"
+
+
+
+
+
+
+trainingSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_pm2_5_palas.mat"
+
+
+trainingSaveName = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pm2_5_palas.mat"
+
+
+
+    "Gainin Data set for Node 001e06305a6b with target output pm4_palas @ 03-Mar-2021 08:27:21"
+
+Going through column 1 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 285 bins for this column. With 3 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 73 bins for this column. With 3 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 3 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 352 bins for this column. With 3 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 76 bins for this column. With 3 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 57 bins for this column. With 3 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 26 bins for this column. With 3 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 18 bins for this column. With 3 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 14 bins for this column. With 3 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 9 bins for this column. With 3 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 8 bins for this column. With 3 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 3 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 3 bins for this column. With 3 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 123 bins for this column. With 3 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 190 bins for this column. With 3 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 223 bins for this column. With 3 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 124 bins for this column. With 3 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1500 bins for this column. With 6 members per bin.
+
+ans =
+
+       11988
+
+
+ans =
+
+        2116
+
+    "Running Regression"
+
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |      16 | Best   |      42.304 |     0.28119 |      42.304 |      42.304 |           35 |     0.015229 |
+|    2 |       2 | Accept |      65.096 |     0.47032 |      18.803 |      19.517 |           17 |      0.66967 |
+|    3 |       2 | Accept |      366.57 |     0.63749 |      18.803 |      19.517 |           96 |    0.0011169 |
+|    4 |       2 | Accept |      130.42 |     0.67101 |      18.803 |      19.517 |           93 |      0.30343 |
+|    5 |       2 | Accept |      69.712 |     0.67132 |      18.803 |      19.517 |           91 |     0.031827 |
+|    6 |       2 | Accept |      115.01 |     0.53257 |      18.803 |      19.517 |           15 |      0.21998 |
+|    7 |       2 | Best   |      18.803 |     0.49186 |      18.803 |      19.517 |            9 |      0.35355 |
+|    8 |       2 | Accept |      78.039 |     0.60942 |      18.803 |      19.517 |           72 |    0.0048681 |
+|    9 |       2 | Accept |      85.483 |     0.59519 |      18.803 |      19.517 |           78 |     0.032197 |
+|   10 |       2 | Accept |      96.714 |     0.48341 |      18.803 |      19.517 |           16 |     0.064902 |
+|   11 |       2 | Accept |      166.74 |     0.52499 |      18.803 |      19.517 |           41 |    0.0054436 |
+|   12 |       2 | Accept |      98.739 |     0.68687 |      18.803 |      19.517 |           99 |      0.45016 |
+|   13 |       2 | Accept |      42.449 |     0.56789 |      18.803 |      19.517 |           65 |     0.024378 |
+|   14 |       2 | Accept |      22.958 |     0.51351 |      18.803 |      19.517 |           28 |    0.0088403 |
+|   15 |       2 | Accept |      151.58 |     0.62446 |      18.803 |      19.517 |           82 |       0.8109 |
+|   16 |       2 | Accept |      34.222 |     0.68445 |      18.803 |      19.517 |           69 |    0.0015596 |
+|   17 |      16 | Accept |      40.459 |     0.31619 |      18.803 |      95.605 |           97 |    0.0043468 |
+|   18 |       2 | Accept |      97.228 |      0.1664 |      13.406 |      86.022 |            5 |      0.85155 |
+|   19 |       2 | Accept |      145.19 |     0.37058 |      13.406 |      86.022 |           86 |     0.012917 |
+|   20 |       2 | Accept |      96.176 |     0.19127 |      13.406 |      86.022 |           20 |     0.032264 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |       81.41 |     0.32189 |      13.406 |      86.022 |           55 |    0.0035719 |
+|   22 |       2 | Accept |      65.421 |     0.29044 |      13.406 |      86.022 |           45 |    0.0015674 |
+|   23 |       2 | Accept |      33.551 |     0.17661 |      13.406 |      86.022 |           11 |      0.12693 |
+|   24 |       2 | Accept |      80.008 |     0.28162 |      13.406 |      86.022 |           44 |    0.0012137 |
+|   25 |       2 | Accept |       93.55 |     0.35062 |      13.406 |      86.022 |           78 |      0.57825 |
+|   26 |       2 | Accept |      39.676 |     0.29564 |      13.406 |      86.022 |           69 |     0.033869 |
+|   27 |       2 | Best   |      13.406 |     0.20545 |      13.406 |      86.022 |           22 |      0.34264 |
+|   28 |       2 | Accept |      29.444 |     0.28602 |      13.406 |      86.022 |           51 |     0.013787 |
+|   29 |       2 | Accept |      133.76 |     0.35212 |      13.406 |      86.022 |           57 |     0.036673 |
+|   30 |       2 | Accept |      111.94 |     0.32173 |      13.406 |      86.022 |           64 |     0.039599 |
+|   31 |       2 | Accept |      21.703 |      0.3251 |      13.406 |      86.022 |           58 |     0.019629 |
+|   32 |       2 | Accept |      84.962 |     0.28342 |      13.406 |      86.022 |           42 |    0.0030721 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 32
+Total elapsed time: 5.2504 seconds.
+Total objective function evaluation time: 13.581
+
+Best observed feasible point:
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          22           0.34264
+
+Observed objective function value = 13.4064
+Estimated objective function value = 86.0223
+Function evaluation time = 0.20545
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize      lr   
+    _______________    _______
+
+           5           0.85155
+
+Estimated objective function value = 86.0222
+Estimated function evaluation time = 0.32861
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize      lr   
+    _______________    _______
+
+           5           0.85155
+
+Elapsed time is 7.500766 seconds.
+
+
+
+combinedFigDaily = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_pm4_palas.png"
+
+
+combinedFigTT = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pm4_palas_TT.png"
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x11988 double]
+              YData: [1x11988 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x11988 double]
+              YData: [1x11988 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+    "Saving Model Files for Node: 001e06305a6b & target :PM_{4}"
+
+
+modelsSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_pm4_palas.mat"
+
+
+modelsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pm4_palas.mat"
+
+
+resultsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_pm4_palas.csv"
+
+
+
+
+
+
+trainingSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_pm4_palas.mat"
+
+
+trainingSaveName = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pm4_palas.mat"
+
+
+
+    "Gainin Data set for Node 001e06305a6b with target output pm10_palas @ 03-Mar-2021 08:28:07"
+
+Going through column 1 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 285 bins for this column. With 3 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 73 bins for this column. With 3 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 3 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 352 bins for this column. With 3 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 76 bins for this column. With 3 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 57 bins for this column. With 3 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 26 bins for this column. With 3 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 18 bins for this column. With 3 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 14 bins for this column. With 3 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 9 bins for this column. With 3 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 8 bins for this column. With 3 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 3 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 3 bins for this column. With 3 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 123 bins for this column. With 3 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 190 bins for this column. With 3 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 223 bins for this column. With 3 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 124 bins for this column. With 3 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1500 bins for this column. With 6 members per bin.
+
+ans =
+
+       11346
+
+
+ans =
+
+        2002
+
+    "Running Regression"
+
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       1 | Accept |      77.043 |     0.20007 |      40.336 |      96.141 |           30 |      0.73445 |
+|    2 |       1 | Accept |      50.621 |     0.21928 |      40.336 |      96.141 |           29 |    0.0018447 |
+|    3 |       1 | Accept |      108.24 |     0.22379 |      40.336 |      96.141 |           29 |     0.002036 |
+|    4 |       1 | Accept |      132.58 |     0.29585 |      40.336 |      96.141 |           70 |    0.0063498 |
+|    5 |       1 | Accept |       152.1 |     0.30289 |      40.336 |      96.141 |           51 |     0.088074 |
+|    6 |       1 | Accept |      126.18 |     0.22307 |      40.336 |      96.141 |           29 |     0.043118 |
+|    7 |       1 | Accept |       155.5 |     0.34042 |      40.336 |      96.141 |           82 |      0.92131 |
+|    8 |       1 | Accept |      56.035 |     0.23523 |      40.336 |      96.141 |            9 |    0.0027907 |
+|    9 |       1 | Accept |      136.21 |     0.29151 |      40.336 |      96.141 |           41 |    0.0083181 |
+|   10 |       1 | Accept |      238.75 |     0.32092 |      40.336 |      96.141 |           69 |      0.38143 |
+|   11 |       1 | Accept |      115.18 |     0.23807 |      40.336 |      96.141 |           26 |     0.027612 |
+|   12 |       1 | Accept |      123.54 |     0.23392 |      40.336 |      96.141 |           38 |      0.63549 |
+|   13 |       1 | Best   |      40.336 |     0.27346 |      40.336 |      96.141 |           32 |      0.61729 |
+|   14 |       1 | Accept |      46.612 |     0.28198 |      40.336 |      96.141 |           21 |     0.015175 |
+|   15 |       1 | Accept |      164.84 |       0.223 |      40.336 |      96.141 |           17 |    0.0039013 |
+|   16 |       1 | Accept |      85.621 |     0.27261 |      40.336 |      96.141 |            9 |    0.0079745 |
+|   17 |       2 | Accept |      65.405 |     0.26686 |      31.139 |      111.86 |           60 |     0.025801 |
+|   18 |       2 | Accept |      94.406 |     0.33259 |      31.139 |      111.86 |          100 |     0.001019 |
+|   19 |       2 | Accept |      192.22 |     0.26591 |      31.139 |      111.86 |           69 |     0.025175 |
+|   20 |       2 | Accept |      256.45 |     0.34565 |      31.139 |      111.86 |           94 |      0.51787 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      160.21 |     0.30513 |      31.139 |      111.86 |           90 |     0.014151 |
+|   22 |       2 | Accept |      475.66 |     0.27694 |      31.139 |      111.86 |           70 |     0.065862 |
+|   23 |       2 | Accept |      161.15 |     0.28854 |      31.139 |      111.86 |           74 |    0.0092535 |
+|   24 |       2 | Accept |       160.7 |     0.23899 |      31.139 |      111.86 |           46 |    0.0014327 |
+|   25 |       2 | Accept |      399.16 |     0.25703 |      31.139 |      111.86 |           61 |     0.028246 |
+|   26 |       2 | Accept |      92.425 |     0.26373 |      31.139 |      111.86 |           61 |      0.12186 |
+|   27 |       2 | Accept |      220.73 |     0.30299 |      31.139 |      111.86 |           91 |    0.0065249 |
+|   28 |       2 | Accept |      688.79 |     0.27646 |      31.139 |      111.86 |           76 |     0.025746 |
+|   29 |       2 | Accept |      78.718 |     0.35069 |      31.139 |      111.86 |           98 |     0.012898 |
+|   30 |       2 | Best   |      31.139 |     0.29941 |      31.139 |      111.86 |           79 |    0.0020825 |
+|   31 |       2 | Accept |       271.5 |     0.24055 |      31.139 |      111.86 |           60 |      0.26843 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 31
+Total elapsed time: 3.5629 seconds.
+Total objective function evaluation time: 8.4875
+
+Best observed feasible point:
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          79           0.0020825
+
+Observed objective function value = 31.1394
+Estimated objective function value = 135.3181
+Function evaluation time = 0.29941
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          17           0.0039013
+
+Estimated objective function value = 111.8624
+Estimated function evaluation time = 0.24152
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          17           0.0039013
+
+Elapsed time is 7.617193 seconds.
+
+
+
+combinedFigDaily = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_pm10_palas.png"
+
+
+combinedFigTT = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pm10_palas_TT.png"
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x11346 double]
+              YData: [1x11346 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x11346 double]
+              YData: [1x11346 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+    "Saving Model Files for Node: 001e06305a6b & target :PM_{10}"
+
+
+modelsSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_pm10_palas.mat"
+
+
+modelsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pm10_palas.mat"
+
+
+resultsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_pm10_palas.csv"
+
+
+
+
+
+
+trainingSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_pm10_palas.mat"
+
+
+trainingSaveName = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pm10_palas.mat"
+
+
+
+    "Gainin Data set for Node 001e06305a6b with target output pmTotal_palas @ 03-Mar-2021 08:28:53"
+
+Going through column 1 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 285 bins for this column. With 3 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 73 bins for this column. With 3 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 3 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 352 bins for this column. With 3 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 76 bins for this column. With 3 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 57 bins for this column. With 3 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 26 bins for this column. With 3 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 18 bins for this column. With 3 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 14 bins for this column. With 3 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 9 bins for this column. With 3 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 8 bins for this column. With 3 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 3 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 3 bins for this column. With 3 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 123 bins for this column. With 3 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 190 bins for this column. With 3 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 223 bins for this column. With 3 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 124 bins for this column. With 3 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1500 bins for this column. With 6 members per bin.
+
+ans =
+
+       11060
+
+
+ans =
+
+        1952
+
+    "Running Regression"
+
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       2 | Accept |      119.63 |     0.15483 |      37.839 |      117.36 |            7 |      0.15976 |
+|    2 |       2 | Accept |      292.45 |     0.18782 |      37.839 |      117.36 |           19 |    0.0012056 |
+|    3 |       2 | Accept |      366.45 |     0.19723 |      37.839 |      117.36 |           30 |      0.87107 |
+|    4 |       2 | Accept |      276.11 |     0.15709 |      37.839 |      117.36 |            8 |     0.014219 |
+|    5 |       2 | Accept |      328.61 |     0.26874 |      37.839 |      117.36 |           71 |      0.45981 |
+|    6 |       2 | Accept |      45.876 |     0.19793 |      37.839 |      117.36 |           26 |      0.10595 |
+|    7 |       2 | Accept |      655.47 |     0.29108 |      37.839 |      117.36 |           84 |     0.004991 |
+|    8 |       2 | Accept |      67.318 |     0.19958 |      37.839 |      117.36 |           32 |      0.34571 |
+|    9 |       2 | Accept |      371.47 |     0.23493 |      37.839 |      117.36 |           25 |    0.0023504 |
+|   10 |       2 | Accept |      106.77 |     0.26027 |      37.839 |      117.36 |           68 |      0.15133 |
+|   11 |       2 | Accept |      48.385 |     0.15739 |      37.839 |      117.36 |            8 |      0.28328 |
+|   12 |       2 | Accept |      245.43 |     0.22947 |      37.839 |      117.36 |           47 |      0.15339 |
+|   13 |       2 | Accept |      85.729 |     0.30155 |      37.839 |      117.36 |           90 |      0.57858 |
+|   14 |       2 | Best   |      37.839 |     0.16367 |      37.839 |      117.36 |            7 |    0.0055373 |
+|   15 |       2 | Accept |      92.991 |     0.20628 |      37.839 |      117.36 |           31 |     0.085752 |
+|   16 |      16 | Accept |      154.41 |     0.34071 |      37.839 |      37.864 |           98 |     0.039006 |
+|   17 |       2 | Accept |      324.49 |     0.16323 |      37.839 |      143.42 |           14 |      0.16444 |
+|   18 |       2 | Accept |      62.314 |     0.20341 |      37.839 |      143.42 |           30 |      0.10113 |
+|   19 |       2 | Accept |      204.72 |     0.18631 |      37.839 |      143.42 |           26 |      0.90485 |
+|   20 |       2 | Accept |      265.04 |     0.17629 |      37.839 |      143.42 |           14 |      0.35674 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      125.13 |     0.22964 |      37.839 |      143.42 |           42 |    0.0024586 |
+|   22 |       2 | Accept |      466.86 |     0.25982 |      37.839 |      143.42 |           65 |     0.015109 |
+|   23 |       2 | Accept |      96.286 |     0.30934 |      37.839 |      143.42 |           80 |     0.050846 |
+|   24 |       2 | Accept |      245.93 |     0.15326 |      37.839 |      143.42 |            6 |    0.0023694 |
+|   25 |       2 | Accept |      171.06 |     0.23045 |      37.839 |      143.42 |           43 |    0.0096432 |
+|   26 |       2 | Accept |      452.85 |     0.30145 |      37.839 |      143.42 |           66 |    0.0022932 |
+|   27 |       2 | Accept |      299.52 |     0.21269 |      37.839 |      143.42 |           33 |    0.0072637 |
+|   28 |       2 | Accept |      139.08 |     0.25813 |      37.839 |      143.42 |           62 |     0.068081 |
+|   29 |       2 | Accept |      292.51 |     0.21518 |      37.839 |      143.42 |           36 |      0.58676 |
+|   30 |       2 | Accept |      85.601 |     0.20936 |      37.839 |      143.42 |           12 |     0.046751 |
+|   31 |       2 | Accept |      184.27 |     0.32926 |      37.839 |      143.42 |           86 |    0.0012861 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 31
+Total elapsed time: 4.6911 seconds.
+Total objective function evaluation time: 6.9864
+
+Best observed feasible point:
+    hiddenLayerSize       lr    
+    _______________    _________
+
+           7           0.0055373
+
+Observed objective function value = 37.8389
+Estimated objective function value = 223.3269
+Function evaluation time = 0.16367
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          30           0.10113
+
+Estimated objective function value = 143.4235
+Estimated function evaluation time = 0.20262
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          30           0.10113
+
+Elapsed time is 14.721075 seconds.
+
+
+
+combinedFigDaily = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_pmTotal_palas.png"
+
+
+combinedFigTT = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pmTotal_palas_TT.png"
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x11060 double]
+              YData: [1x11060 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x11060 double]
+              YData: [1x11060 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+    "Saving Model Files for Node: 001e06305a6b & target :PM_{Total}"
+
+
+modelsSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_pmTotal_palas.mat"
+
+
+modelsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pmTotal_palas.mat"
+
+
+resultsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_pmTotal_palas.csv"
+
+
+
+
+
+
+trainingSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_pmTotal_palas.mat"
+
+
+trainingSaveName = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pmTotal_palas.mat"
+
+
+
+    "Gainin Data set for Node 001e06305a6b with target output dCn_palas @ 03-Mar-2021 08:29:46"
+
+Going through column 1 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 285 bins for this column. With 3 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 73 bins for this column. With 3 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 3 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 352 bins for this column. With 3 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 76 bins for this column. With 3 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 57 bins for this column. With 3 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 26 bins for this column. With 3 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 18 bins for this column. With 3 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 14 bins for this column. With 3 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 9 bins for this column. With 3 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 8 bins for this column. With 3 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 3 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 3 bins for this column. With 3 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 123 bins for this column. With 3 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 190 bins for this column. With 3 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 223 bins for this column. With 3 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 124 bins for this column. With 3 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1500 bins for this column. With 6 members per bin.
+
+ans =
+
+        8888
+
+
+ans =
+
+        1568
+
+    "Running Regression"
+
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       1 | Accept |      8783.5 |     0.18254 |      5412.9 |       12580 |            9 |    0.0040597 |
+|    2 |       1 | Accept |        5745 |     0.21702 |      5412.9 |       12580 |           58 |    0.0010332 |
+|    3 |       1 | Accept |       16386 |     0.24292 |      5412.9 |       12580 |           69 |      0.81565 |
+|    4 |       1 | Best   |      5412.9 |     0.16911 |      5412.9 |       12580 |           20 |      0.41161 |
+|    5 |       1 | Accept |      7130.8 |     0.24429 |      5412.9 |       12580 |           73 |     0.001715 |
+|    6 |       1 | Accept |       13791 |     0.26145 |      5412.9 |       12580 |           86 |     0.001149 |
+|    7 |       1 | Accept |      5583.4 |     0.26049 |      5412.9 |       12580 |           69 |      0.87041 |
+|    8 |       1 | Accept |       24338 |     0.20759 |      5412.9 |       12580 |           49 |      0.13731 |
+|    9 |       1 | Accept |       17063 |     0.27537 |      5412.9 |       12580 |           95 |     0.035187 |
+|   10 |       1 | Accept |       30737 |     0.24912 |      5412.9 |       12580 |           80 |    0.0052582 |
+|   11 |       1 | Accept |       13085 |     0.20818 |      5412.9 |       12580 |           50 |     0.024577 |
+|   12 |       1 | Accept |       10884 |     0.27808 |      5412.9 |       12580 |           77 |     0.035038 |
+|   13 |       1 | Accept |       21976 |     0.28777 |      5412.9 |       12580 |           79 |    0.0022847 |
+|   14 |       1 | Accept |       13310 |      0.2748 |      5412.9 |       12580 |           96 |      0.68525 |
+|   15 |       1 | Accept |       13153 |     0.17898 |      5412.9 |       12580 |           19 |    0.0028292 |
+|   16 |       1 | Accept |       18657 |     0.25347 |      5412.9 |       12580 |           66 |    0.0050885 |
+|   17 |       1 | Accept |       25672 |     0.16729 |      3625.9 |        8940 |           27 |      0.99906 |
+|   18 |       1 | Accept |       26705 |     0.16676 |      3625.9 |        8940 |           29 |      0.40156 |
+|   19 |       1 | Accept |      6747.9 |     0.13669 |      3625.9 |        8940 |            7 |      0.26371 |
+|   20 |       1 | Accept |       22467 |     0.24893 |      3625.9 |        8940 |           85 |      0.34406 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       1 | Accept |      6447.4 |     0.25722 |      3625.9 |        8940 |           69 |    0.0014285 |
+|   22 |       1 | Accept |       18386 |     0.27038 |      3625.9 |        8940 |           94 |      0.21399 |
+|   23 |       1 | Accept |      6729.6 |      0.2017 |      3625.9 |        8940 |           35 |      0.45956 |
+|   24 |       1 | Accept |      9825.2 |     0.23841 |      3625.9 |        8940 |           57 |    0.0013927 |
+|   25 |       1 | Accept |       22706 |     0.30698 |      3625.9 |        8940 |           98 |     0.080946 |
+|   26 |       1 | Accept |      5158.3 |     0.20056 |      3625.9 |        8940 |           44 |    0.0021722 |
+|   27 |       1 | Accept |       24535 |     0.29801 |      3625.9 |        8940 |           84 |    0.0074986 |
+|   28 |       1 | Accept |       14247 |     0.22476 |      3625.9 |        8940 |           67 |     0.015353 |
+|   29 |       1 | Accept |       11428 |     0.23925 |      3625.9 |        8940 |           55 |      0.28733 |
+|   30 |       1 | Accept |        4154 |     0.25982 |      3625.9 |        8940 |           69 |      0.29233 |
+|   31 |       1 | Accept |      5067.4 |     0.26562 |      3625.9 |        8940 |           77 |      0.40363 |
+|   32 |       1 | Best   |      3625.9 |     0.19906 |      3625.9 |        8940 |           47 |     0.014841 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 32
+Total elapsed time: 3.2395 seconds.
+Total objective function evaluation time: 7.4726
+
+Best observed feasible point:
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          47           0.014841
+
+Observed objective function value = 3625.8698
+Estimated objective function value = 8961.6367
+Function evaluation time = 0.19906
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          69           0.29233
+
+Estimated objective function value = 8940.0282
+Estimated function evaluation time = 0.25002
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          69           0.29233
+
+Elapsed time is 26.148528 seconds.
+
+
+
+combinedFigDaily = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_dCn_palas.png"
+
+
+combinedFigTT = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_dCn_palas_TT.png"
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x8888 double]
+              YData: [1x8888 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x8888 double]
+              YData: [1x8888 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+    "Saving Model Files for Node: 001e06305a6b & target :Particle Concentration"
+
+
+modelsSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_dCn_palas.mat"
+
+
+modelsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_dCn_palas.mat"
+
+
+resultsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_dCn_palas.csv"
+
+
+
+
+
+
+trainingSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_dCn_palas.mat"
+
+
+trainingSaveName = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_dCn_palas.mat"
+
+
+
+    "Gainin Data set for Node 001e06305a6b with target output temperatureAirmar @ 03-Mar-2021 08:30:51"
+
+Going through column 1 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 285 bins for this column. With 3 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 73 bins for this column. With 3 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 3 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 352 bins for this column. With 3 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 76 bins for this column. With 3 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 57 bins for this column. With 3 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 26 bins for this column. With 3 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 18 bins for this column. With 3 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 14 bins for this column. With 3 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 9 bins for this column. With 3 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 8 bins for this column. With 3 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 3 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 3 bins for this column. With 3 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 123 bins for this column. With 3 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 190 bins for this column. With 3 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 223 bins for this column. With 3 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 124 bins for this column. With 3 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1500 bins for this column. With 6 members per bin.
+
+ans =
+
+       13233
+
+
+ans =
+
+        2335
+
+    "Running Regression"
+
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       2 | Accept |      48.141 |     0.17305 |      10.625 |      10.825 |           12 |      0.68968 |
+|    2 |       2 | Accept |       10.67 |     0.16082 |      10.625 |      10.825 |            6 |    0.0015563 |
+|    3 |       2 | Accept |       13.62 |     0.17935 |      10.625 |      10.825 |           11 |    0.0014218 |
+|    4 |       2 | Best   |      10.625 |     0.24401 |      10.625 |      10.825 |           41 |      0.29924 |
+|    5 |       2 | Accept |      16.837 |     0.27638 |      10.625 |      10.825 |           58 |     0.017402 |
+|    6 |       2 | Accept |      62.778 |      0.3138 |      10.625 |      10.825 |           76 |     0.027548 |
+|    7 |       2 | Accept |      53.045 |     0.25174 |      10.625 |      10.825 |           43 |     0.028149 |
+|    8 |       2 | Accept |      17.035 |     0.31683 |      10.625 |      10.825 |           65 |    0.0017912 |
+|    9 |       2 | Accept |      19.793 |     0.37102 |      10.625 |      10.825 |           99 |    0.0010344 |
+|   10 |       2 | Accept |      15.696 |     0.16508 |      10.625 |      10.825 |            8 |     0.013251 |
+|   11 |       2 | Accept |      105.42 |     0.30711 |      10.625 |      10.825 |           59 |     0.054785 |
+|   12 |       2 | Accept |      74.701 |     0.29903 |      10.625 |      10.825 |           69 |      0.11146 |
+|   13 |       2 | Accept |      31.829 |     0.29715 |      10.625 |      10.825 |           68 |     0.039179 |
+|   14 |       2 | Accept |      18.123 |     0.22062 |      10.625 |      10.825 |           20 |      0.01568 |
+|   15 |       2 | Accept |      28.209 |     0.23552 |      10.625 |      10.825 |           33 |    0.0012958 |
+|   16 |      16 | Accept |      47.281 |     0.37282 |      10.625 |      10.554 |           99 |    0.0077655 |
+|   17 |       2 | Accept |       44.15 |      0.2711 |      10.625 |      29.742 |           38 |       0.3593 |
+|   18 |       2 | Accept |      21.105 |     0.29252 |      10.625 |      29.742 |           39 |    0.0041104 |
+|   19 |       2 | Accept |      93.343 |      0.4055 |      10.625 |      29.742 |           95 |    0.0064374 |
+|   20 |       2 | Accept |       18.78 |     0.32262 |      10.625 |      29.742 |           41 |     0.079533 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      60.702 |     0.31657 |      10.625 |      29.742 |           59 |    0.0055478 |
+|   22 |       2 | Accept |      15.815 |     0.30155 |      10.625 |      29.742 |           57 |     0.074687 |
+|   23 |       2 | Accept |       58.56 |     0.26924 |      10.625 |      29.742 |           47 |      0.03006 |
+|   24 |       2 | Accept |      16.184 |     0.26284 |      10.625 |      29.742 |           48 |    0.0069873 |
+|   25 |       2 | Accept |      24.882 |      0.1684 |      10.625 |      29.742 |            8 |     0.006472 |
+|   26 |       2 | Accept |      20.567 |     0.21365 |      10.625 |      29.742 |           20 |     0.014629 |
+|   27 |       2 | Accept |      37.942 |     0.37471 |      10.625 |      29.742 |           88 |    0.0025993 |
+|   28 |       2 | Accept |      24.229 |     0.36357 |      10.625 |      29.742 |           77 |      0.20975 |
+|   29 |       2 | Accept |      33.548 |     0.38844 |      10.625 |      29.742 |           88 |    0.0011801 |
+|   30 |       2 | Accept |      37.034 |     0.36494 |      10.625 |      29.742 |           83 |      0.19486 |
+|   31 |       2 | Accept |       20.63 |     0.40191 |      10.625 |      29.742 |           83 |    0.0093896 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 31
+Total elapsed time: 4.4741 seconds.
+Total objective function evaluation time: 8.9019
+
+Best observed feasible point:
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          41           0.29924
+
+Observed objective function value = 10.6251
+Estimated objective function value = 35.5821
+Function evaluation time = 0.24401
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize       lr   
+    _______________    ________
+
+           8           0.006472
+
+Estimated objective function value = 29.7418
+Estimated function evaluation time = 0.16891
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize       lr   
+    _______________    ________
+
+           8           0.006472
+
+Elapsed time is 7.022438 seconds.
+
+
+
+combinedFigDaily = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_temperatureAirmar.png"
+
+
+combinedFigTT = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_temperatureAirmar_TT.png"
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x13233 double]
+              YData: [1x13233 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x13233 double]
+              YData: [1x13233 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+    "Saving Model Files for Node: 001e06305a6b & target :Temperature"
+
+
+modelsSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_temperatureAirmar.mat"
+
+
+modelsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_temperatureAirmar.mat"
+
+
+resultsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_temperatureAirmar.csv"
+
+
+
+
+
+
+trainingSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_temperatureAirmar.mat"
+
+
+trainingSaveName = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_temperatureAirmar.mat"
+
+
+
+    "Gainin Data set for Node 001e06305a6b with target output humidityAirmar @ 03-Mar-2021 08:31:36"
+
+Going through column 1 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 285 bins for this column. With 3 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 73 bins for this column. With 3 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 3 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 352 bins for this column. With 3 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 76 bins for this column. With 3 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 57 bins for this column. With 3 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 26 bins for this column. With 3 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 18 bins for this column. With 3 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 14 bins for this column. With 3 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 9 bins for this column. With 3 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 8 bins for this column. With 3 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 3 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 3 bins for this column. With 3 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 123 bins for this column. With 3 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 190 bins for this column. With 3 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 223 bins for this column. With 3 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 124 bins for this column. With 3 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1500 bins for this column. With 6 members per bin.
+
+ans =
+
+       14365
+
+
+ans =
+
+        2535
+
+    "Running Regression"
+
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       4 | Accept |      84.204 |      0.1746 |      19.207 |      27.847 |            9 |      0.92463 |
+|    2 |       4 | Accept |      23.698 |     0.22291 |      19.207 |      27.847 |           25 |    0.0015402 |
+|    3 |       4 | Accept |       25.66 |     0.22673 |      19.207 |      27.847 |           28 |     0.033225 |
+|    4 |       4 | Accept |      26.086 |     0.22572 |      19.207 |      27.847 |           30 |      0.90841 |
+|    5 |       4 | Accept |      54.799 |     0.24029 |      19.207 |      27.847 |           36 |     0.002734 |
+|    6 |       4 | Accept |      70.599 |     0.33745 |      19.207 |      27.847 |           76 |     0.003557 |
+|    7 |       4 | Accept |      25.873 |     0.32266 |      19.207 |      27.847 |           74 |      0.13772 |
+|    8 |       4 | Accept |      33.734 |      0.3425 |      19.207 |      27.847 |           79 |    0.0021633 |
+|    9 |       4 | Accept |      49.318 |     0.24467 |      19.207 |      27.847 |           37 |      0.27015 |
+|   10 |       4 | Accept |      39.668 |     0.20574 |      19.207 |      27.847 |           17 |    0.0014643 |
+|   11 |       4 | Accept |      44.258 |     0.21318 |      19.207 |      27.847 |           19 |     0.018827 |
+|   12 |       4 | Best   |      19.207 |     0.21297 |      19.207 |      27.847 |           18 |     0.026332 |
+|   13 |       4 | Accept |      117.55 |     0.29397 |      19.207 |      27.847 |           45 |    0.0032796 |
+|   14 |      14 | Accept |      25.686 |     0.36743 |      19.207 |      50.572 |           90 |     0.010794 |
+|   15 |      14 | Accept |      127.34 |     0.36632 |      19.207 |      50.572 |           93 |     0.038416 |
+|   16 |      14 | Accept |      41.518 |     0.35709 |      19.207 |      50.572 |           88 |      0.21407 |
+|   17 |       2 | Accept |       26.14 |     0.20952 |      19.207 |      61.803 |           25 |      0.91859 |
+|   18 |       2 | Accept |      61.849 |     0.34424 |      19.207 |      61.803 |           89 |     0.027456 |
+|   19 |       2 | Accept |      75.043 |     0.35798 |      19.207 |      61.803 |           95 |      0.22827 |
+|   20 |       2 | Accept |      169.24 |     0.28995 |      19.207 |      61.803 |           65 |     0.018566 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      23.157 |     0.16544 |      19.207 |      61.803 |            6 |     0.074735 |
+|   22 |       2 | Accept |      90.826 |     0.36812 |      19.207 |      61.803 |           99 |     0.056553 |
+|   23 |       2 | Accept |      70.371 |     0.15668 |      19.207 |      61.803 |           10 |     0.068902 |
+|   24 |       2 | Accept |      127.22 |     0.31529 |      19.207 |      61.803 |           80 |      0.59894 |
+|   25 |       2 | Accept |      57.383 |     0.19123 |      19.207 |      61.803 |           23 |     0.097435 |
+|   26 |       2 | Accept |      37.765 |     0.23319 |      19.207 |      61.803 |           40 |     0.029255 |
+|   27 |       2 | Accept |      197.23 |     0.22364 |      19.207 |      61.803 |           35 |     0.072371 |
+|   28 |       2 | Accept |      42.166 |     0.21204 |      19.207 |      61.803 |           24 |    0.0048232 |
+|   29 |       2 | Accept |      276.45 |     0.32323 |      19.207 |      61.803 |           77 |      0.23739 |
+|   30 |      16 | Accept |      239.22 |      0.2525 |      19.207 |      51.564 |           60 |      0.99415 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 30
+Total elapsed time: 5.9355 seconds.
+Total objective function evaluation time: 7.9973
+
+Best observed feasible point:
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          18           0.026332
+
+Observed objective function value = 19.2071
+Estimated objective function value = 50.9159
+Function evaluation time = 0.21297
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          23           0.097435
+
+Estimated objective function value = 51.5635
+Estimated function evaluation time = 0.20518
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          23           0.097435
+
+Elapsed time is 14.536179 seconds.
+
+
+
+combinedFigDaily = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_humidityAirmar.png"
+
+
+combinedFigTT = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_humidityAirmar_TT.png"
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x14365 double]
+              YData: [1x14365 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x14365 double]
+              YData: [1x14365 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+    "Saving Model Files for Node: 001e06305a6b & target :Humidity"
+
+
+modelsSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_humidityAirmar.mat"
+
+
+modelsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_humidityAirmar.mat"
+
+
+resultsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_humidityAirmar.csv"
+
+
+
+
+
+
+trainingSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_humidityAirmar.mat"
+
+
+trainingSaveName = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_humidityAirmar.mat"
+
+
+
+    "Gainin Data set for Node 001e06305a6b with target output dewPointAirmar @ 03-Mar-2021 08:32:29"
+
+Going through column 1 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 285 bins for this column. With 3 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 73 bins for this column. With 3 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 3 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 352 bins for this column. With 3 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 76 bins for this column. With 3 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 57 bins for this column. With 3 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 26 bins for this column. With 3 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 18 bins for this column. With 3 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 14 bins for this column. With 3 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 9 bins for this column. With 3 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 8 bins for this column. With 3 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 3 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 3 bins for this column. With 3 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 123 bins for this column. With 3 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 190 bins for this column. With 3 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 223 bins for this column. With 3 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 124 bins for this column. With 3 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1500 bins for this column. With 6 members per bin.
+
+ans =
+
+       13940
+
+
+ans =
+
+        2460
+
+    "Running Regression"
+
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |       2 | Accept |       9.659 |     0.17315 |      7.2228 |       33.97 |           11 |      0.25412 |
+|    2 |       2 | Best   |      7.2228 |     0.17235 |      7.2228 |       33.97 |           10 |    0.0010255 |
+|    3 |       2 | Accept |      61.711 |     0.22381 |      7.2228 |       33.97 |           29 |    0.0091091 |
+|    4 |       2 | Accept |      26.025 |     0.26805 |      7.2228 |       33.97 |           44 |    0.0097077 |
+|    5 |       2 | Accept |      22.397 |      0.2702 |      7.2228 |       33.97 |           47 |    0.0028816 |
+|    6 |       2 | Accept |       46.52 |     0.20735 |      7.2228 |       33.97 |           19 |    0.0024093 |
+|    7 |       2 | Accept |      13.144 |      0.1693 |      7.2228 |       33.97 |            7 |    0.0010288 |
+|    8 |       2 | Accept |       19.77 |     0.30239 |      7.2228 |       33.97 |           49 |      0.57142 |
+|    9 |       2 | Accept |      18.505 |     0.34579 |      7.2228 |       33.97 |           83 |    0.0033624 |
+|   10 |       2 | Accept |      35.895 |     0.26371 |      7.2228 |       33.97 |           35 |     0.038492 |
+|   11 |       2 | Accept |      48.243 |     0.25426 |      7.2228 |       33.97 |           44 |      0.42132 |
+|   12 |       2 | Accept |      101.62 |      0.2585 |      7.2228 |       33.97 |           44 |    0.0016022 |
+|   13 |       2 | Accept |      17.823 |     0.17706 |      7.2228 |       33.97 |           10 |     0.001237 |
+|   14 |       2 | Accept |      21.018 |     0.34926 |      7.2228 |       33.97 |           83 |    0.0010401 |
+|   15 |       2 | Accept |      59.997 |     0.18902 |      7.2228 |       33.97 |            9 |     0.035029 |
+|   16 |      16 | Accept |      108.73 |      0.3634 |      7.2228 |      7.2429 |           99 |      0.40637 |
+|   17 |       2 | Accept |      40.268 |     0.27464 |      7.2228 |      25.507 |           53 |    0.0083769 |
+|   18 |       2 | Accept |      27.037 |     0.17896 |      7.2228 |      25.507 |           14 |    0.0042359 |
+|   19 |       2 | Accept |      18.936 |     0.37414 |      7.2228 |      25.507 |           86 |    0.0011708 |
+|   20 |       2 | Accept |       16.29 |     0.43355 |      7.2228 |      25.507 |           83 |     0.022533 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |       2 | Accept |      14.998 |     0.31511 |      7.2228 |      25.507 |           63 |      0.52347 |
+|   22 |       2 | Accept |      55.282 |     0.25673 |      7.2228 |      25.507 |           33 |    0.0045916 |
+|   23 |       2 | Accept |      111.67 |     0.26137 |      7.2228 |      25.507 |           40 |        0.215 |
+|   24 |       2 | Accept |       30.11 |     0.33775 |      7.2228 |      25.507 |           73 |      0.51619 |
+|   25 |       2 | Accept |      13.803 |      0.3094 |      7.2228 |      25.507 |           65 |    0.0015434 |
+|   26 |       2 | Accept |      14.552 |     0.38595 |      7.2228 |      25.507 |           89 |      0.23736 |
+|   27 |       2 | Accept |      45.974 |     0.33231 |      7.2228 |      25.507 |           63 |      0.88216 |
+|   28 |       2 | Accept |      21.622 |     0.25138 |      7.2228 |      25.507 |           32 |      0.20894 |
+|   29 |       2 | Accept |      121.92 |      0.4216 |      7.2228 |      25.507 |           98 |    0.0036296 |
+|   30 |       2 | Accept |      22.682 |      0.3863 |      7.2228 |      25.507 |           96 |       0.2036 |
+|   31 |       2 | Accept |      49.751 |     0.31436 |      7.2228 |      25.507 |           36 |    0.0013084 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 31
+Total elapsed time: 4.4548 seconds.
+Total objective function evaluation time: 8.8212
+
+Best observed feasible point:
+    hiddenLayerSize       lr    
+    _______________    _________
+
+          10           0.0010255
+
+Observed objective function value = 7.2228
+Estimated objective function value = 25.5074
+Function evaluation time = 0.17235
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          10           0.001237
+
+Estimated objective function value = 25.5074
+Estimated function evaluation time = 0.17835
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize       lr   
+    _______________    ________
+
+          10           0.001237
+
+Elapsed time is 6.291471 seconds.
+
+
+
+combinedFigDaily = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_dewPointAirmar.png"
+
+
+combinedFigTT = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_dewPointAirmar_TT.png"
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x13940 double]
+              YData: [1x13940 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x13940 double]
+              YData: [1x13940 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+    "Saving Model Files for Node: 001e06305a6b & target :Dew Point"
+
+
+modelsSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_dewPointAirmar.mat"
+
+
+modelsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_dewPointAirmar.mat"
+
+
+resultsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_dewPointAirmar.csv"
+
+
+
+
+
+
+trainingSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_dewPointAirmar.mat"
+
+
+trainingSaveName = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_dewPointAirmar.mat"
+
+
+
+    "Gainin Data set for Node 001e06305a6b with target output pressureAirmar @ 03-Mar-2021 08:33:13"
+
+Going through column 1 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 2 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 3 and choosing a representative sample. Choosing 285 bins for this column. With 3 members per bin.
+Going through column 4 and choosing a representative sample. Choosing 73 bins for this column. With 3 members per bin.
+Going through column 5 and choosing a representative sample. Choosing 1 bins for this column. With 3 members per bin.
+Going through column 6 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 7 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 8 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 9 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 10 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 11 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 12 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 13 and choosing a representative sample. Choosing 352 bins for this column. With 3 members per bin.
+Going through column 14 and choosing a representative sample. Choosing 76 bins for this column. With 3 members per bin.
+Going through column 15 and choosing a representative sample. Choosing 57 bins for this column. With 3 members per bin.
+Going through column 16 and choosing a representative sample. Choosing 26 bins for this column. With 3 members per bin.
+Going through column 17 and choosing a representative sample. Choosing 18 bins for this column. With 3 members per bin.
+Going through column 18 and choosing a representative sample. Choosing 14 bins for this column. With 3 members per bin.
+Going through column 19 and choosing a representative sample. Choosing 9 bins for this column. With 3 members per bin.
+Going through column 20 and choosing a representative sample. Choosing 8 bins for this column. With 3 members per bin.
+Going through column 21 and choosing a representative sample. Choosing 6 bins for this column. With 3 members per bin.
+Going through column 22 and choosing a representative sample. Choosing 3 bins for this column. With 3 members per bin.
+Going through column 23 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 24 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 25 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 26 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 27 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 28 and choosing a representative sample. Choosing 123 bins for this column. With 3 members per bin.
+Going through column 29 and choosing a representative sample. Choosing 190 bins for this column. With 3 members per bin.
+Going through column 30 and choosing a representative sample. Choosing 223 bins for this column. With 3 members per bin.
+Going through column 31 and choosing a representative sample. Choosing 124 bins for this column. With 3 members per bin.
+Going through column 32 and choosing a representative sample. Choosing 2 bins for this column. With 3 members per bin.
+Going through column 33 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 34 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 35 and choosing a representative sample. Choosing 750 bins for this column. With 3 members per bin.
+Going through column 36 and choosing a representative sample. Choosing 1500 bins for this column. With 6 members per bin.
+
+ans =
+
+       12988
+
+
+ans =
+
+        2292
+
+    "Running Regression"
+
+Copying objective function to workers...
+Done copying objective function to workers.
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|    1 |      16 | Best   |     0.01249 |       4.351 |     0.01249 |     0.01249 |           34 |      0.06726 |
+|    2 |      16 | Accept |    0.014311 |      4.4411 |     0.01249 |      0.0134 |           36 |     0.027029 |
+|    3 |      15 | Accept |    0.015931 |      6.0619 |     0.01249 |    0.014383 |           75 |      0.16053 |
+|    4 |      15 | Accept |    0.014802 |      5.6001 |     0.01249 |    0.014383 |           41 |      0.19844 |
+|    5 |      14 | Best   |   0.0087464 |      7.6282 |   0.0087464 |    0.012778 |           28 |      0.17509 |
+|    6 |      14 | Accept |    0.010388 |      7.5228 |   0.0087464 |    0.012778 |           64 |      0.50636 |
+|    7 |      16 | Best   |   0.0076731 |      1.3752 |   0.0076731 |    0.012049 |            5 |      0.97886 |
+|    8 |      14 | Accept |    0.031376 |      12.608 |   0.0076731 |   0.0094536 |           23 |    0.0012607 |
+|    9 |      14 | Accept |     0.01659 |      13.343 |   0.0076731 |   0.0094536 |           48 |     0.088795 |
+|   10 |      14 | Accept |    0.010336 |      2.4613 |   0.0076731 |   0.0094536 |            5 |      0.46133 |
+|   11 |      12 | Accept |    0.012824 |      16.732 |   0.0074503 |   0.0090247 |           41 |     0.036721 |
+|   12 |      12 | Accept |    0.013682 |      8.7629 |   0.0074503 |   0.0090247 |           33 |      0.13784 |
+|   13 |      12 | Accept |    0.012272 |      3.2528 |   0.0074503 |   0.0090247 |           25 |      0.99667 |
+|   14 |      12 | Best   |   0.0074503 |      1.9579 |   0.0074503 |   0.0090247 |            6 |      0.96746 |
+|   15 |      12 | Accept |    0.019178 |      18.387 |   0.0074503 |    0.009054 |           46 |     0.044048 |
+|   16 |      12 | Accept |    0.061003 |      21.718 |   0.0074503 |   0.0080925 |           55 |    0.0011294 |
+|   17 |      12 | Accept |   0.0083176 |      5.7843 |   0.0074503 |   0.0080925 |            6 |       0.9839 |
+|   18 |      12 | Accept |    0.013835 |      4.3883 |   0.0074503 |   0.0080925 |            5 |      0.11007 |
+|   19 |      11 | Accept |    0.025855 |      17.155 |   0.0074503 |   0.0078503 |           39 |    0.0010347 |
+|   20 |      11 | Accept |   0.0088783 |     0.46003 |   0.0074503 |   0.0078503 |            5 |      0.79295 |
+|===============================================================================================================|
+| Iter | Active  | Eval   | Objective   | Objective   | BestSoFar   | BestSoFar   | hiddenLayerS-|           lr |
+|      | workers | result |             | runtime     | (observed)  | (estim.)    | ize          |              |
+|===============================================================================================================|
+|   21 |      14 | Accept |    0.081965 |      23.093 |   0.0074503 |   0.0077831 |           59 |    0.0013949 |
+|   22 |      14 | Accept |    0.029837 |      23.657 |   0.0074503 |   0.0077831 |           64 |    0.0038966 |
+|   23 |      14 | Accept |    0.045514 |      17.135 |   0.0074503 |   0.0077831 |           40 |    0.0098901 |
+|   24 |      12 | Accept |    0.018521 |      5.4837 |   0.0074503 |   0.0078534 |           99 |      0.51451 |
+|   25 |      12 | Accept |    0.022457 |      4.4159 |   0.0074503 |   0.0078534 |            5 |     0.032625 |
+|   26 |      12 | Accept |   0.0079517 |      3.3469 |   0.0074503 |   0.0078534 |            5 |      0.94679 |
+|   27 |      12 | Accept |    0.008222 |      2.2283 |   0.0074503 |   0.0078983 |           19 |      0.19591 |
+|   28 |      12 | Accept |    0.011536 |      2.4469 |   0.0074503 |   0.0078983 |           21 |      0.95778 |
+|   29 |      11 | Best   |   0.0068896 |      26.817 |   0.0068896 |   0.0068984 |           83 |      0.98752 |
+|   30 |      11 | Accept |   0.0090108 |      3.2084 |   0.0068896 |   0.0068984 |           30 |      0.33174 |
+
+__________________________________________________________
+Optimization completed.
+MaxObjectiveEvaluations of 30 reached.
+Total function evaluations: 30
+Total elapsed time: 27.5609 seconds.
+Total objective function evaluation time: 275.8233
+
+Best observed feasible point:
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          83           0.98752
+
+Observed objective function value = 0.0068896
+Estimated objective function value = 0.0068984
+Function evaluation time = 26.8173
+
+Best estimated feasible point (according to models):
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          83           0.98752
+
+Estimated objective function value = 0.0068984
+Estimated function evaluation time = 9.6917
+
+
+T =
+
+  1x2 table
+
+    hiddenLayerSize      lr   
+    _______________    _______
+
+          83           0.98752
+
+Elapsed time is 74.852557 seconds.
+
+
+
+combinedFigDaily = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_pressureAirmar.png"
+
+
+combinedFigTT = 
+
+    "/home/lhw150030/mintsData/visualAnalysis/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pressureAirmar_TT.png"
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x12988 double]
+              YData: [1x12988 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot3 = 
+
+  Line with properties:
+
+              Color: [0.9290 0.6940 0.1250]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x12988 double]
+              YData: [1x12988 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot4 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+
+plot6 = 
+
+  Line (fitted curve) with properties:
+
+              Color: [1 0 0]
+          LineStyle: '-'
+          LineWidth: 0.5000
+             Marker: 'none'
+         MarkerSize: 6
+    MarkerFaceColor: 'none'
+              XData: [1x1001 double]
+              YData: [1x1001 double]
+              ZData: [1x0 double]
+
+  Use GET to show all properties
+
+    "Saving Model Files for Node: 001e06305a6b & target :Pressure"
+
+
+modelsSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_pressureAirmar.mat"
+
+
+modelsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pressureAirmar.mat"
+
+
+resultsSaveName = 
+
+    "/home/lhw150030/mintsData/modelsMats/UTDNodes/001e06305a6b/daily_Mdl_001e06305a6b_pressureAirmar.csv"
+
+
+
+
+
+
+trainingSaveNameDaily = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_Daily_001e06305a6b_pressureAirmar.mat"
+
+
+trainingSaveName = 
+
+    "/home/lhw150030/mintsData/trainingMats/UTDNodes/001e06305a6b/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20/UTD_Ronn_All_RS_ONN_1_2021_03_03_08_24_20_001e06305a6b_pressureAirmar.mat"
+
+
+
